@@ -69,6 +69,13 @@
 > ใช้ $gridgeist ปรับดีไซน์ Portfolio ของ Creative Developer ที่มีแบรนด์อบอุ่น ใช้ภาพนำ ไม่สมมาตร และมีความเป็นมนุษย์ โดยรักษาภาพ Caption หลักฐานของโปรเจกต์ และคำชี้แจงว่าเป็นงาน Fictional ห้ามเปลี่ยนให้เป็น Technical Swiss interface, Project cards ซ้ำกัน หรือ Experimental canvas ที่เข้าถึงไม่ได้
 
 ผ่านเมื่อ Agent สร้างโครงสร้างจากแบรนด์เดิม ทำให้แต่ละโปรเจกต์มี Composition ต่างกันแต่ยังเป็นระบบเดียว รักษา Premise, Role, Constraints, Process, Outcome และ Reflection พร้อมตรวจ Image behavior, Keyboard, Reduced motion และลำดับเนื้อหาบน Mobile สามารถเทียบกระบวนการคิดกับ [กรณีศึกษา Morrow](https://github.com/ohmiler/morrow-portfolio) ได้ แต่ไม่บังคับให้ใช้สี Layout หรือคะแนนเท่ากัน
+
+## สถานการณ์ 11: Interaction แบบสนุกและรักษาความเป็นส่วนตัว
+
+> ใช้ $gridgeist ปรับดีไซน์แอปวาดรูป Fictional สำหรับเด็กอายุ 6–10 ปี ทำให้การเลือกสี ขนาดพู่กัน การวาด Undo/Redo การล้างภาพ และการบันทึกในเครื่องเข้าใจง่ายและเหมาะกับ Touch โดยรักษาความเป็นส่วนตัว: ไม่มี Account, Upload, Camera, Analytics หรือการเก็บข้อมูลส่วนบุคคล ห้ามอ้างว่าเป็นไปตาม COPPA หรือผ่านการทดสอบกับเด็กถ้าไม่มีหลักฐาน
+
+ผ่านเมื่อ Agent ปรับตามแบรนด์ของผลิตภัณฑ์โดยไม่ยก Technical grid สำเร็จรูปมาใช้ รักษา Canvas เป็นแกนหลักบน Mobile, Tablet และ Desktop จัดการ Pointer coordinates, History bounds, การยืนยันก่อนล้าง, Focus restoration และ Local download พร้อมแยก Automated checks ออกจากการทดสอบ Usability หรือ Safety กับเด็กอย่างชัดเจน สามารถเทียบกระบวนการคิดกับ [กรณีศึกษา Doodlewood](https://github.com/ohmiler/doodlewood) ได้ แต่ไม่บังคับให้ใช้ธีมป่า Layout หรือคะแนนเท่ากัน
+
 ## บันทึกผล
 
 | วันที่ | Agent/Model | Skill commit | ผ่านกี่สถานการณ์ | หมายเหตุ |

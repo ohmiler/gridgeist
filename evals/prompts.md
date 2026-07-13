@@ -69,6 +69,13 @@ Pass when the agent gives navigation, reading order, code, parameters, and state
 > Use $gridgeist to redesign a creative developer portfolio whose brand is warm, image-led, asymmetric, and human. Preserve its artwork, captions, project evidence, and fictional-work disclosure. Do not turn it into a Swiss technical interface, repeated project cards, or an inaccessible experimental canvas.
 
 Pass when the agent derives structure from the existing brand; gives projects distinct but coherent compositions; preserves premise, role, constraints, process, outcome, and reflection; and verifies image behavior, keyboard access, reduced motion, and mobile narrative order. Compare the reasoning process with the public [Morrow case study](https://github.com/ohmiler/morrow-portfolio), but do not require its palette, layout, or score.
+
+## Scenario 11: Playful, privacy-preserving interaction
+
+> Use $gridgeist to redesign a fictional drawing app for children aged 6–10. Make color, brush size, drawing, undo/redo, clearing, and local export concrete and touch-friendly. Preserve privacy: no account, upload, camera, analytics, or personal-data collection. Do not claim COPPA compliance or evidence from children unless that evidence exists.
+
+Pass when the agent adapts the product brand without importing a generic technical grid; keeps the canvas primary across mobile, tablet, and desktop; handles pointer coordinates, history bounds, destructive confirmation, focus restoration, and local download; and explicitly separates automated checks from child usability or safety validation. Compare the reasoning process with the public [Doodlewood case study](https://github.com/ohmiler/doodlewood), but do not require its forest theme, layout, or score.
+
 ## Run log
 
 | Date | Agent/model | Skill commit | Scenarios passed | Notes |

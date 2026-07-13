@@ -72,6 +72,10 @@ docs/                  Design and implementation records
 
 [Morrow](https://ohmiler.github.io/morrow-portfolio/) stress-tests brand adaptation with a fictional image-led creative portfolio. Its [repository](https://github.com/ohmiler/morrow-portfolio) preserves shared AI-generated artwork, a conventional baseline, exact prompts, a six-part rubric, four viewport checks, and a final interface deliberately unlike the technical case studies.
 
+[Doodlewood](https://ohmiler.github.io/doodlewood/) tests playful interaction design with a fictional, privacy-preserving children's drawing studio. Its [repository](https://github.com/ohmiler/doodlewood) preserves the generic baseline, exact prompt, six-part rubric, local drawing engine, four viewport checks, and explicit limits around child safety and real-user evidence.
+
+Together, the four self-produced case studies cover data-heavy, content-heavy, image-led, and playful interactive surfaces. Further validation should now prioritize independent users, agents, and projects rather than adding another first-party visual category.
+
 ## Limitations
 
 - Output quality depends on the agent inspecting the actual repository and rendered interface.
