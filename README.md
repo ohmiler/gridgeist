@@ -1,5 +1,7 @@
 # Gridgeist
 
+**English** · [ภาษาไทย](README.th.md) · [Website](https://ohmiler.github.io/gridgeist/) · [Examples](https://ohmiler.github.io/gridgeist/examples/)
+
 Gridgeist is an agent skill for creating, redesigning, and reviewing web interfaces with a strong grid, precise typography, technical minimalism, and editorial discipline. It helps agents move beyond generic AI-generated SaaS patterns while preserving product intent, behavior, responsiveness, and accessibility.
 
 ## Use cases

@@ -24,8 +24,9 @@ button { font: inherit; }
 .wordmark { font-size: 1rem; font-weight: 900; letter-spacing: -.04em; text-decoration: none; }
 .wordmark span { color: var(--blue); font-size: .55em; vertical-align: top; margin-left: .15rem; }
 .site-header nav { display: flex; gap: 2rem; }
-.site-header nav a, .header-github { font: 500 .68rem var(--mono); text-transform: uppercase; text-decoration: none; letter-spacing: .06em; }
-.site-header nav a:hover, .header-github:hover { color: var(--blue); }
+.header-actions { justify-self: end; display: flex; gap: 1.2rem; align-items: center; }
+.site-header nav a, .header-github, .header-language { font: 500 .68rem var(--mono); text-transform: uppercase; text-decoration: none; letter-spacing: .06em; }
+.site-header nav a:hover, .header-github:hover, .header-language:hover { color: var(--blue); }
 .header-github { justify-self: end; }
 
 .hero { min-height: calc(100svh - 76px); padding: 2.4vw; display: grid; grid-template-rows: auto 1fr auto auto; position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }

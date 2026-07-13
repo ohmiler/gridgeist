@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800;900&display=swap");
+body { font-family: "Noto Sans Thai", var(--sans); }
+.language-switch { justify-self: end; display: flex; gap: .45rem; align-items: center; font: .65rem var(--mono); }
+.language-switch a { text-decoration: none; color: var(--muted); }
+.language-switch a:hover { color: var(--blue); }
+.thai-hero h1 { font-size: clamp(4rem,10vw,10.5rem); line-height: .86; letter-spacing: -.07em; }
+.thai-hero h1 span:last-child { color: var(--blue); }
+.thai-hero .hero-footer p { max-width: 650px; }
+.thai-modes { padding: 8rem 2.4vw; display: grid; grid-template-columns: 1fr 1.3fr; gap: 8vw; border-bottom: 1px solid var(--ink); }
+.thai-modes h2,.prompt-guide h2,.thai-prompts h2,.thai-practice h2 { margin: 1.5rem 0 0; font-size: clamp(3rem,6vw,6.5rem); line-height: .95; letter-spacing: -.065em; }
+.thai-modes ol,.prompt-guide ol { margin: 0; padding: 0; list-style: none; border-top: 1px solid; }
+.thai-modes li { padding: 1.5rem 0; display: grid; grid-template-columns: 55px 1fr; border-bottom: 1px solid; }
+.thai-modes li > span,.prompt-guide li > span { font: .6rem var(--mono); }
+.thai-modes h3 { margin: 0 0 .6rem; font-size: 1.55rem; }
+.thai-modes li p { margin: 0; color: var(--muted); line-height: 1.65; }
+.prompt-guide { display: grid; grid-template-columns: 1fr 1.2fr; background: var(--blue); color: white; }
+.prompt-intro { min-height: 650px; padding: 6rem 2.4vw; display: flex; flex-direction: column; }
+.prompt-intro h2 { margin-top: auto; }
+.prompt-intro > p:last-child { max-width: 480px; font-size: 1.1rem; }
+.prompt-guide ol { border-color: rgba(255,255,255,.5); }
+.prompt-guide li { min-height: 162px; padding: 1.5rem 2rem; display: grid; grid-template-columns: 45px 1fr; align-content: center; border-bottom: 1px solid rgba(255,255,255,.5); }
+.prompt-guide li b { font-size: 1.35rem; }
+.prompt-guide li p { grid-column: 2; margin: .3rem 0 0; color: rgba(255,255,255,.7); }
+.thai-prompts { padding: 8rem 2.4vw; display: grid; grid-template-columns: .8fr 1.4fr; gap: 7vw; }
+.prompt-list { border-top: 1px solid; }
+.prompt-list article { border-bottom: 1px solid; }
+.prompt-list article > div { padding: 1rem 0; display: flex; justify-content: space-between; align-items: center; }
+.prompt-list article span,.thai-copy { font: .62rem var(--mono); }
+.thai-copy { padding: .55rem .8rem; border: 1px solid; background: transparent; cursor: pointer; }
+.thai-copy:hover { background: var(--blue); color: white; }
+.prompt-list pre { margin: 0 0 1.5rem; white-space: pre-wrap; font: 400 .95rem/1.8 "Noto Sans Thai",sans-serif; }
+.thai-practice { padding: 7rem 2.4vw; display: grid; grid-template-columns: .6fr 1.2fr 1fr; align-items: start; border-top: 1px solid; }
+.thai-practice > div { padding-top: 1rem; }
+.thai-practice > div p { margin: 0; padding: 1rem 0; border-bottom: 1px solid; }
+.install h2 { letter-spacing: -.07em; }
+
+@media(max-width:800px){
+  .language-switch { grid-column: 2; grid-row: 1; }
+  .thai-hero h1 { font-size: 19vw; }
+  .thai-modes,.thai-prompts,.thai-practice { grid-template-columns: 1fr; padding: 5rem 1rem; gap: 4rem; }
+  .prompt-guide { grid-template-columns: 1fr; }
+  .prompt-intro { min-height: 520px; padding: 5rem 1rem 2rem; }
+  .prompt-guide li { padding: 1.5rem 1rem; }
+  .prompt-list pre { font-size: .88rem; }
+}
