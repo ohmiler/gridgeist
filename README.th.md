@@ -75,6 +75,10 @@ codex plugin add gridgeist@<marketplace-name>
 - ให้ตรวจหลาย Viewport และสถานะ Interaction
 - บอกแบรนด์ที่ต้องรักษา เพื่อไม่ให้ Swiss aesthetic กลายเป็น Preset
 
+## กรณีศึกษาหลัก
+
+[Tracefield](https://ohmiler.github.io/tracefield/) คือ Developer Observability Dashboard ที่ใช้ Gridgeist กับโปรเจกต์จริง โดย [Repository](https://github.com/ohmiler/tracefield) เก็บ Baseline, Prompt ที่ใช้, Rubric ประเมินผล, ชุดทดสอบ และ Final interface ไว้ให้ตรวจสอบได้
+
 ## ข้อจำกัด
 
 - Gridgeist ให้ทิศทางและกระบวนการ แต่คุณภาพยังขึ้นกับ Context ที่ Agent ได้รับ
