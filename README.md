@@ -19,7 +19,17 @@ git clone https://github.com/ohmiler/gridgeist.git
 Copy-Item -Recurse .\gridgeist\gridgeist "$HOME\.agents\skills\gridgeist"
 ```
 
-Restart Codex after installation so it discovers the skill.
+Codex should detect the skill automatically. If it does not appear, restart Codex.
+
+### Plugin package
+
+This repository is also packaged as a Codex plugin through [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json). The plugin points to the same `gridgeist/` directory, so direct skill installs and marketplace distribution share one source of truth.
+
+Once Gridgeist is listed in a marketplace configured in Codex, install it with:
+
+```powershell
+codex plugin add gridgeist@<marketplace-name>
+```
 
 ### Other compatible agents
 
@@ -44,6 +54,8 @@ Gridgeist also allows implicit invocation when the agent recognizes a matching w
 ## Repository layout
 
 ```text
+.codex-plugin/
+  plugin.json          Codex plugin manifest
 gridgeist/             Installable skill
   SKILL.md             Trigger conditions and core workflow
   agents/openai.yaml   Agent-facing interface metadata

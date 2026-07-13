@@ -20,9 +20,19 @@ git clone https://github.com/ohmiler/gridgeist.git
 Copy-Item -Recurse .\gridgeist\gridgeist "$HOME\.agents\skills\gridgeist"
 ```
 
-เปิด Codex session ใหม่หลังติดตั้ง เพื่อให้ระบบค้นพบ Skill
+Codex ควรตรวจพบ Skill โดยอัตโนมัติ หากยังไม่ปรากฏ ให้เปิด Codex session ใหม่
 
 สำหรับ Agent อื่นที่รองรับมาตรฐาน `SKILL.md` ให้คัดลอกโฟลเดอร์ `gridgeist/` ชั้นในไปยัง Skills directory ของ Agent นั้น
+
+### แพ็กเกจ Plugin
+
+Repository นี้เตรียมเป็น Codex Plugin ไว้แล้วผ่าน [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json) โดย Plugin จะชี้ไปยังโฟลเดอร์ `gridgeist/` ชุดเดียวกับวิธีติดตั้งตรง ทำให้แก้ไขและดูแล Skill เพียงแหล่งเดียว
+
+เมื่อ Gridgeist ถูกเพิ่มใน Marketplace ที่ตั้งค่าไว้ใน Codex แล้ว สามารถติดตั้งด้วยคำสั่ง:
+
+```powershell
+codex plugin add gridgeist@<marketplace-name>
+```
 
 ## วิธีเรียกใช้
 
