@@ -81,6 +81,8 @@ codex plugin add gridgeist@<marketplace-name>
 
 [Ledgerline](https://ohmiler.github.io/ledgerline/) ทดสอบ Skill เดียวกันกับเว็บไซต์เอกสาร Payment API ที่มีเนื้อหาหนาแน่น โดย [Repository](https://github.com/ohmiler/ledgerline) เก็บ Baseline, Prompt แบบตรงตัว, Rubric 6 ด้าน, เนื้อหา API ที่กำหนดตายตัว, การตรวจ 4 ขนาดหน้าจอ และ Final interface ไว้ครบ
 
+[Morrow](https://ohmiler.github.io/morrow-portfolio/) ทดสอบการปรับตัวตามแบรนด์ด้วย Creative Portfolio แบบ Image-led ที่เป็น Fictional โดย [Repository](https://github.com/ohmiler/morrow-portfolio) เก็บภาพ AI-generated ชุดเดียวกัน, Baseline, Prompt แบบตรงตัว, Rubric 6 ด้าน, การตรวจ 4 ขนาดหน้าจอ และ Final interface ที่ตั้งใจไม่ใช้ภาษาภาพแบบ Technical ของกรณีศึกษาก่อนหน้า
+
 ## ข้อจำกัด
 
 - Gridgeist ให้ทิศทางและกระบวนการ แต่คุณภาพยังขึ้นกับ Context ที่ Agent ได้รับ

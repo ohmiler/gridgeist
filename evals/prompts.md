@@ -64,6 +64,11 @@ Pass when Gridgeist is not invoked solely because the project happens to use a w
 > Use $gridgeist to redesign payment API documentation with a quickstart, endpoint parameters, cURL and JavaScript examples, errors, and mobile navigation. Preserve the content and anchors, and verify 360 px, 768 px, 1280 px, and 1600 px without merely stacking the desktop layout.
 
 Pass when the agent gives navigation, reading order, code, parameters, and states a product-specific system; preserves semantics and evidence; and verifies interaction, focus, and overflow. Compare the reasoning process with the public [Ledgerline case study](https://github.com/ohmiler/ledgerline), but do not require its visual style or score.
+## Scenario 10: Image-led brand adaptation
+
+> Use $gridgeist to redesign a creative developer portfolio whose brand is warm, image-led, asymmetric, and human. Preserve its artwork, captions, project evidence, and fictional-work disclosure. Do not turn it into a Swiss technical interface, repeated project cards, or an inaccessible experimental canvas.
+
+Pass when the agent derives structure from the existing brand; gives projects distinct but coherent compositions; preserves premise, role, constraints, process, outcome, and reflection; and verifies image behavior, keyboard access, reduced motion, and mobile narrative order. Compare the reasoning process with the public [Morrow case study](https://github.com/ohmiler/morrow-portfolio), but do not require its palette, layout, or score.
 ## Run log
 
 | Date | Agent/model | Skill commit | Scenarios passed | Notes |

@@ -64,6 +64,11 @@
 > ใช้ $gridgeist ปรับดีไซน์เอกสาร Payment API ที่มี Quickstart, Endpoint parameters, ตัวอย่าง cURL กับ JavaScript, Errors และ Mobile navigation โดยรักษาเนื้อหาและ Anchors เดิม พร้อมตรวจที่ 360, 768, 1280 และ 1600 พิกเซลโดยไม่เพียง Stack Layout ของ Desktop
 
 ผ่านเมื่อ Agent สร้างระบบที่เฉพาะกับผลิตภัณฑ์ให้ Navigation, Reading order, Code, Parameters และ States รักษา Semantics กับหลักฐาน และตรวจ Interaction, Focus กับ Overflow สามารถเทียบกระบวนการคิดกับ [กรณีศึกษา Ledgerline](https://github.com/ohmiler/ledgerline) ได้ แต่ไม่บังคับให้ใช้สไตล์หรือได้คะแนนเท่ากัน
+## สถานการณ์ 10: การปรับตัวตามแบรนด์แบบ Image-led
+
+> ใช้ $gridgeist ปรับดีไซน์ Portfolio ของ Creative Developer ที่มีแบรนด์อบอุ่น ใช้ภาพนำ ไม่สมมาตร และมีความเป็นมนุษย์ โดยรักษาภาพ Caption หลักฐานของโปรเจกต์ และคำชี้แจงว่าเป็นงาน Fictional ห้ามเปลี่ยนให้เป็น Technical Swiss interface, Project cards ซ้ำกัน หรือ Experimental canvas ที่เข้าถึงไม่ได้
+
+ผ่านเมื่อ Agent สร้างโครงสร้างจากแบรนด์เดิม ทำให้แต่ละโปรเจกต์มี Composition ต่างกันแต่ยังเป็นระบบเดียว รักษา Premise, Role, Constraints, Process, Outcome และ Reflection พร้อมตรวจ Image behavior, Keyboard, Reduced motion และลำดับเนื้อหาบน Mobile สามารถเทียบกระบวนการคิดกับ [กรณีศึกษา Morrow](https://github.com/ohmiler/morrow-portfolio) ได้ แต่ไม่บังคับให้ใช้สี Layout หรือคะแนนเท่ากัน
 ## บันทึกผล
 
 | วันที่ | Agent/Model | Skill commit | ผ่านกี่สถานการณ์ | หมายเหตุ |
