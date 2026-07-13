@@ -64,9 +64,11 @@ evals/prompts.md       Repeatable manual behavior checks
 docs/                  Design and implementation records
 ```
 
-## Flagship case study
+## Case studies
 
 [Tracefield](https://ohmiler.github.io/tracefield/) applies Gridgeist to a working developer-observability dashboard. Its [repository](https://github.com/ohmiler/tracefield) preserves the generic baseline, exact prompt, evaluation rubric, tested trace domain, and responsive final interface.
+
+[Ledgerline](https://ohmiler.github.io/ledgerline/) tests the same skill on dense payment API documentation. Its [repository](https://github.com/ohmiler/ledgerline) preserves a conventional baseline, exact prompt, six-part rubric, deterministic API content, four viewport checks, and the responsive final interface.
 
 ## Limitations
 

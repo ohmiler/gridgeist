@@ -59,6 +59,11 @@
 
 ผ่านเมื่อ Gridgeist ไม่ถูกเรียกใช้เพียงเพราะโปรเจกต์เกี่ยวข้องกับ Web technology
 
+## สถานการณ์ 9: หลักฐานในเอกสารที่มีเนื้อหาหนาแน่น
+
+> ใช้ $gridgeist ปรับดีไซน์เอกสาร Payment API ที่มี Quickstart, Endpoint parameters, ตัวอย่าง cURL กับ JavaScript, Errors และ Mobile navigation โดยรักษาเนื้อหาและ Anchors เดิม พร้อมตรวจที่ 360, 768, 1280 และ 1600 พิกเซลโดยไม่เพียง Stack Layout ของ Desktop
+
+ผ่านเมื่อ Agent สร้างระบบที่เฉพาะกับผลิตภัณฑ์ให้ Navigation, Reading order, Code, Parameters และ States รักษา Semantics กับหลักฐาน และตรวจ Interaction, Focus กับ Overflow สามารถเทียบกระบวนการคิดกับ [กรณีศึกษา Ledgerline](https://github.com/ohmiler/ledgerline) ได้ แต่ไม่บังคับให้ใช้สไตล์หรือได้คะแนนเท่ากัน
 ## บันทึกผล
 
 | วันที่ | Agent/Model | Skill commit | ผ่านกี่สถานการณ์ | หมายเหตุ |
