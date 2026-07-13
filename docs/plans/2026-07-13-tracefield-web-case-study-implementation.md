@@ -15,7 +15,7 @@
 - Modify: `site/styles.css`
 
 - [ ] Insert `07 / Field proof` between Evaluation and Install and renumber Install to `08`.
-- [ ] Use `12 → 28` as the dominant visual, one explanatory paragraph, and one descriptive case-study link.
+- [ ] Use `10 → 28` as the dominant visual, one explanatory paragraph, and one descriptive case-study link.
 - [ ] Add responsive styles using the existing container and mobile breakpoint.
 
 ### Task 2: Detailed Tracefield case study

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tracefield case study — how Gridgeist turned a generic dashboard into a product-specific observability workspace." />
+    <meta name="theme-color" content="#f2f0e9" />
+    <title>Tracefield Case Study — Gridgeist</title>
+    <link rel="canonical" href="https://ohmiler.github.io/gridgeist/case-studies/tracefield/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Gridgeist" />
+    <meta property="og:title" content="Tracefield Case Study — From generic dashboard to live incident record" />
+    <meta property="og:description" content="The baseline, prompt, final system, rubric, verification evidence, and limits of Gridgeist's first flagship case study." />
+    <meta property="og:url" content="https://ohmiler.github.io/gridgeist/case-studies/tracefield/" />
+    <meta property="og:image" content="https://ohmiler.github.io/gridgeist/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./case-study.css" />
+    <script src="../../script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="../../">GRIDGEIST<span>®</span></a>
+      <nav aria-label="Case study navigation"><a href="#baseline">Baseline</a><a href="#intervention">Prompt</a><a href="#result">Result</a><a href="#rubric">Rubric</a></nav>
+      <a class="header-github" href="https://github.com/ohmiler/tracefield">Source ↗</a>
+    </header>
+
+    <main id="main">
+      <section class="case-hero" aria-labelledby="case-title">
+        <div class="case-kicker"><p class="eyebrow">Flagship case study / 001</p><span>ONE PROJECT · ONE MODEL RUN</span></div>
+        <h1 id="case-title">TRACE<span>FIELD.</span></h1>
+        <div class="case-lede"><p>Can an agent skill turn a generic dashboard into an interface whose identity comes from the product itself?</p><div><a class="button button-dark" href="https://ohmiler.github.io/tracefield/">Open live product <span>↗</span></a><a href="https://github.com/ohmiler/tracefield">Inspect source ↗</a></div></div>
+      </section>
+
+      <section class="case-question reveal"><p class="section-label">01 / The question</p><div><h2>Evidence before<br />aesthetic claims.</h2><p>Tracefield gives backend engineers and SRE teams one job: find a failed or slow API request, then identify the span responsible. The same requirements and deterministic data power both versions.</p></div></section>
+
+      <section class="case-evidence reveal" id="baseline" aria-labelledby="baseline-title">
+        <header><p class="section-label">02 / Baseline</p><h2 id="baseline-title">Interchangeable<br />by construction.</h2></header>
+        <div class="baseline-frame" aria-label="Reconstruction of the generic baseline"><nav><b>Tracefield</b><span>Dashboard &nbsp; Analytics &nbsp; Settings</span><i>Upgrade</i></nav><div class="baseline-body"><small>WELCOME BACK, ALEX</small><h3>Everything looks good.</h3><p>Monitor your application performance from one beautiful dashboard.</p><div class="baseline-cards"><i><span>Total requests</span><b>1,842</b></i><i><span>Error rate</span><b>3.2%</b></i><i><span>Avg. latency</span><b>284ms</b></i></div></div></div>
+        <ol class="findings"><li><span>01</span><p>Equal-weight cards hide the investigation path.</p></li><li><span>02</span><p>Claims and decoration appear before trace evidence.</p></li><li><span>03</span><p>The same composition could sell finance or analytics software.</p></li></ol>
+      </section>
+
+      <section class="intervention reveal" id="intervention" aria-labelledby="intervention-title">
+        <div><p class="section-label section-label-light">03 / Intervention</p><h2 id="intervention-title">Constrain the<br />decision space.</h2><p>The prompt preserved behavior and product evidence while explicitly rejecting the generic dashboard-card mosaic.</p></div>
+        <blockquote><span>$gridgeist / redesign</span><p>Open directly into the operational workspace—do not add a marketing hero. Make trace evidence, latency, and failure state carry the visual identity.</p><p>Use one acid-green accent reserved for focus and important state. Recompose the inspector as an accessible drawer on mobile.</p><a href="https://github.com/ohmiler/tracefield/blob/main/experiment/gridgeist-prompt.md">Read the exact prompt ↗</a></blockquote>
+      </section>
+
+      <section class="result reveal" id="result" aria-labelledby="result-title">
+        <header><p class="section-label">04 / Final system</p><h2 id="result-title">The request<br />becomes the interface.</h2><p>Trace IDs, endpoints, failure state, duration, and spans now determine the hierarchy.</p></header>
+        <div class="trace-specimen"><aside><b>TRACEFIELD<span>_</span></b><nav>Overview<br /><strong>Live traces&nbsp;&nbsp;06</strong><br />Services<br />Alerts&nbsp;&nbsp;02</nav><small>● US-EAST-1</small></aside><div class="trace-stream"><header><span>REQUEST STREAM / LAST 15 MIN</span><b>Find the break.</b></header><div class="trace-row"><code>POST</code><span>/v1/checkout<small>8f2a-91de</small></span><em>FAILED</em><b>982ms</b></div><div class="trace-row"><code>POST</code><span>/v1/checkout<small>74bc-20af</small></span><em class="slow">SLOW</em><b>744ms</b></div><div class="trace-row"><code>GET</code><span>/v1/orders/1842<small>a113-4c09</small></span><em class="healthy">HEALTHY</em><b>118ms</b></div></div><div class="span-panel"><header>TRACE / 8f2a-91de<b>/v1/checkout</b></header><div class="span"><span>gateway.request</span><i style="--start:0%;--width:100%"></i><em>982ms</em></div><div class="span"><span>auth.verify</span><i style="--start:3%;--width:9%"></i><em>86ms</em></div><div class="span"><span>cart.load</span><i style="--start:13%;--width:12%"></i><em>112ms</em></div><div class="span"><span>stripe.charge</span><i class="failed" style="--start:27%;--width:70%"></i><em>691ms</em></div><footer>ROOT CAUSE CANDIDATE<br /><b>stripe.charge owns the longest child span.</b></footer></div></div>
+      </section>
+
+      <section class="rubric reveal" id="rubric" aria-labelledby="rubric-title"><header><p class="section-label section-label-light">05 / Rubric</p><h2 id="rubric-title">Ten became<br />twenty-eight.</h2><p>Six dimensions, scored from one to five after implementation and browser verification.</p></header><div class="score-total"><span>BASELINE</span><b>10</b><i>→</i><b>28</b><span>FINAL</span></div><div class="score-list"><div><span>Hierarchy</span><b>2 → 5</b></div><div><span>Product specificity</span><b>1 → 5</b></div><div><span>Originality</span><b>1 → 4</b></div><div><span>Responsive composition</span><b>2 → 5</b></div><div><span>Accessibility</span><b>2 → 4</b></div><div><span>Implementation quality</span><b>2 → 5</b></div></div></section>
+
+      <section class="verification reveal" aria-labelledby="verification-title"><p class="section-label">06 / Verification</p><div><h2 id="verification-title">The interface<br />had to survive contact.</h2><ul><li><b>4 / 4</b><span>Unit tests</span></li><li><b>5</b><span>Browser tests passed</span></li><li><b>0</b><span>Horizontal overflow</span></li><li><b>200</b><span>Production response</span></li></ul></div><div class="limits"><span>LIMITS</span><p>One project. One model run. Deterministic local data. Tracefield is evidence of a useful result—not a controlled benchmark or proof of universal performance.</p><a href="https://github.com/ohmiler/tracefield/tree/main/experiment">Inspect experiment evidence ↗</a></div></section>
+
+      <section class="case-cta reveal"><p>THE METHOD PRODUCED<br />A PRODUCT-SPECIFIC SYSTEM.</p><h2>Run the next<br />experiment.</h2><div><a class="button button-light" href="../../#install">Install Gridgeist <span>↗</span></a><a class="button button-light outline" href="https://ohmiler.github.io/tracefield/">Open Tracefield <span>↗</span></a></div></section>
+    </main>
+    <footer><a class="wordmark" href="../../">GRIDGEIST®</a><p>Case study / Tracefield</p><p>© 2026 MILER / MIT</p></footer>
+  </body>
+</html>

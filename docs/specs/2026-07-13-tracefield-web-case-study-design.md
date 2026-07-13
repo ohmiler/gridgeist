@@ -13,7 +13,7 @@ Turn the completed Tracefield experiment into a concise, verifiable web case stu
 
 ## Homepage teaser
 
-Use the rubric total `12 → 28` as the dominant visual anchor. Pair it with one short explanation and one link to the detailed case study. The teaser must remain cardless, align with the shared 1280px container, and preserve the existing page rhythm.
+Use the rubric total `10 → 28` as the dominant visual anchor. Pair it with one short explanation and one link to the detailed case study. The teaser must remain cardless, align with the shared 1280px container, and preserve the existing page rhythm.
 
 ## Case study sequence
 
@@ -21,7 +21,7 @@ Use the rubric total `12 → 28` as the dominant visual anchor. Pair it with one
 2. Baseline: a compact HTML/CSS reconstruction of the generic welcome banner and metric cards, accompanied by prioritized shortcomings.
 3. Intervention: the exact Gridgeist prompt and the key constraints it imposed.
 4. Final system: a compact live specimen of the trace stream and span waterfall, built with native HTML/CSS rather than a screenshot.
-5. Rubric: six dimensions comparing baseline and final scores, with a total of 12 and 28.
+5. Rubric: six dimensions comparing baseline and final scores, with a total of 10 and 28.
 6. Verification: unit, lint, build, browser, responsive, focus-return, and deployment evidence.
 7. Limitations: one project, one model run, deterministic local data, and no claim of a controlled benchmark.
 8. Final action: open Tracefield or install Gridgeist.

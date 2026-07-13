@@ -114,6 +114,16 @@ button { font: inherit; }
 .proof-copy p { margin: 2rem 0; line-height: 1.5; color: var(--muted); }
 .proof-copy a { font: .67rem var(--mono); text-transform: uppercase; text-underline-offset: .3rem; }
 
+.field-proof { padding-inline: var(--page-gutter); display: grid; grid-template-columns: 1fr 1fr; background: var(--blue); color: white; }
+.field-proof > div:first-child { min-height: 620px; padding: 6rem 3rem 3rem 0; display: flex; flex-direction: column; }
+.field-proof h2 { margin: auto 0 2rem; font-size: clamp(3.5rem, 6.5vw, 7rem); line-height: .88; letter-spacing: -.07em; }
+.field-proof p:not(.section-label) { max-width: 480px; line-height: 1.5; }
+.field-proof a { margin-top: 2rem; font: .65rem var(--mono); text-transform: uppercase; text-underline-offset: .3rem; }
+.field-score { min-height: 620px; display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto 1fr auto 1fr auto; align-items: center; padding: 3rem; border-left: 1px solid rgba(255,255,255,.5); font: .62rem var(--mono); }
+.field-score span:last-child { align-self: end; }
+.field-score b { grid-column: 2; font: 900 clamp(6rem, 13vw, 13rem)/.7 var(--sans); letter-spacing: -.1em; }
+.field-score b:last-of-type { color: var(--acid); }
+.field-score i { grid-column: 2; justify-self: center; font-size: 2rem; font-style: normal; }
 .install { min-height: 85svh; padding: 5rem var(--page-gutter) 2rem; background: var(--ink); color: white; display: flex; flex-direction: column; }
 .install h2 { margin: auto 0 3rem; font-size: clamp(4rem, 10vw, 10rem); text-transform: uppercase; }
 .command-line { display: flex; justify-content: space-between; align-items: center; border: 1px solid #62635d; }
@@ -166,7 +176,10 @@ footer p:last-child { text-align: right; }
   .principle-grid article:nth-child(odd) { border-left: 0; }
   .proof { gap: 3rem; }
   .proof-number { font-size: 52vw; }
-  .install { padding: 4rem 1rem 1rem; }
+  .field-proof { padding-inline: 1rem; grid-template-columns: 1fr; }
+  .field-proof > div:first-child { min-height: 520px; padding: 5rem 0 2rem; }
+  .field-score { min-height: 500px; padding: 2rem 0; border-left: 0; border-top: 1px solid rgba(255,255,255,.5); }
+  .field-score b { font-size: 35vw; }  .install { padding: 4rem 1rem 1rem; }
   .install h2 { font-size: clamp(3.5rem, 16vw, 6rem); }
   .command-line { align-items: stretch; }
   .command-line code { white-space: nowrap; }
