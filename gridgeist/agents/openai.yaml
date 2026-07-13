@@ -1,0 +1,6 @@
+interface:
+  display_name: "Gridgeist"
+  short_description: "Structure interfaces with taste and spirit"
+  default_prompt: "Use $gridgeist to design or refine this interface with a strong grid, precise typography, and intentional visual hierarchy."
+policy:
+  allow_implicit_invocation: true
