@@ -4,6 +4,23 @@
 
 Gridgeist is an agent skill for creating, redesigning, and reviewing web interfaces with a strong grid, precise typography, technical minimalism, and editorial discipline. It helps agents move beyond generic AI-generated SaaS patterns while preserving product intent, behavior, responsiveness, and accessibility.
 
+## 60-second Quickstart
+
+1. Download this repository:
+
+   ```shell
+   git clone https://github.com/ohmiler/gridgeist.git
+   ```
+
+2. Copy the inner `gridgeist/` directory into your agent's skills directory. The directory location and skill-discovery behavior vary by agent, so check that product's skills documentation if needed.
+3. Start a new agent session in your web project and paste:
+
+   ```text
+   Use the Gridgeist skill to review this interface without editing it yet. Give me a one-line verdict, prioritized findings with evidence, and one coherent redesign direction. Preserve the product's behavior and brand.
+   ```
+
+Agents that support explicit skill invocation can use `$gridgeist` in the prompt. Continue to [Installation](#installation) for product-specific details and more examples.
+
 ## Use cases
 
 - Create a distinctive landing page, dashboard, documentation site, portfolio, or learning platform.

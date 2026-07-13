@@ -13,22 +13,22 @@
 
 ### Task 1: Add the English Quickstart
 
-- [ ] Insert `## 60-second Quickstart` after the opening description in `README.md`.
-- [ ] Include clone, inner-directory copy, session restart, and a review-first English prompt.
-- [ ] State that the skills-directory location varies and that `$gridgeist` can be used where explicit invocation is supported.
-- [ ] Confirm the existing detailed installation and example-prompt sections remain present.
+- [x] Insert `## 60-second Quickstart` after the opening description in `README.md`.
+- [x] Include clone, inner-directory copy, session restart, and a review-first English prompt.
+- [x] State that the skills-directory location varies and that `$gridgeist` can be used where explicit invocation is supported.
+- [x] Confirm the existing detailed installation and example-prompt sections remain present.
 
 ### Task 2: Add the Thai Quickstart
 
-- [ ] Insert `## เริ่มใช้ใน 60 วินาที` after the opening description in `README.th.md`.
-- [ ] Mirror the English steps and caveats in natural Thai.
-- [ ] Provide an equivalent review-first Thai prompt.
-- [ ] Confirm the existing detailed Thai installation and usage sections remain present.
+- [x] Insert `## เริ่มใช้ใน 60 วินาที` after the opening description in `README.th.md`.
+- [x] Mirror the English steps and caveats in natural Thai.
+- [x] Provide an equivalent review-first Thai prompt.
+- [x] Confirm the existing detailed Thai installation and usage sections remain present.
 
 ### Task 3: Validate and publish
 
-- [ ] Verify each README contains exactly one new Quickstart heading and matching three-step structure.
-- [ ] Verify required detailed sections, links, code fences, and UTF-8 Thai text remain intact.
-- [ ] Run `git diff --check` and inspect the final diff.
-- [ ] Commit the README changes as `docs: add agent-neutral quickstart`.
-- [ ] Push `main` and verify local and remote commit hashes match.
+- [x] Verify each README contains exactly one new Quickstart heading and matching three-step structure.
+- [x] Verify required detailed sections, links, code fences, and UTF-8 Thai text remain intact.
+- [x] Run `git diff --check` and inspect the final diff.
+- [x] Commit the README changes as `docs: add agent-neutral quickstart`.
+- [x] Push `main` and verify local and remote commit hashes match.
