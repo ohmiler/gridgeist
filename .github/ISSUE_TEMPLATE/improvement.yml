@@ -1,0 +1,46 @@
+name: 'Improvement idea'
+description: 'Suggest a focused improvement backed by a real use case.'
+title: '[Idea]: '
+labels: []
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: 'Area'
+      options:
+        - 'Skill workflow'
+        - 'Design language'
+        - 'Review checklist'
+        - 'Documentation or installation'
+        - 'Examples or website'
+        - 'Other'
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 'Problem or opportunity'
+      description: 'Describe the use case and why the current behavior is limiting.'
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 'Proposed improvement'
+      description: 'What should change, and what would a good result look like?'
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 'Examples or evidence'
+      description: 'Add screenshots, prompts, links, or alternatives that clarify the idea.'
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 'Before submitting'
+      options:
+        - label: 'I checked that an existing issue does not already cover this idea.'
+          required: true

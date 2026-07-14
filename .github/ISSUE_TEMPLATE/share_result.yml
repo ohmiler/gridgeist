@@ -1,0 +1,44 @@
+name: 'Share a result'
+description: 'Show what you made with Gridgeist and what you learned.'
+title: '[Showcase]: '
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: 'Real examples help us understand where Gridgeist works and where it needs improvement.'
+  - type: input
+    id: project
+    attributes:
+      label: 'Project or page'
+      description: 'Give the result a short, descriptive name.'
+      placeholder: 'Example: Analytics dashboard redesign'
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 'Context and prompt'
+      description: 'What were you building, and how did you ask the agent to use Gridgeist?'
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 'Result'
+      description: 'Drag in before and after screenshots, or add a public demo or repository link.'
+    validations:
+      required: true
+  - type: textarea
+    id: learning
+    attributes:
+      label: 'What worked or did not work?'
+      description: 'Tell us which guidance was useful and where you had to intervene.'
+    validations:
+      required: true
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: 'Sharing permission'
+      options:
+        - label: 'The content and links in this issue are safe to share publicly.'
+          required: true
