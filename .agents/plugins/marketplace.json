@@ -1,0 +1,20 @@
+{
+  "name": "gridgeist",
+  "interface": {
+    "displayName": "Gridgeist"
+  },
+  "plugins": [
+    {
+      "name": "gridgeist",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ohmiler/gridgeist.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

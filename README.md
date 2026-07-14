@@ -29,7 +29,7 @@ Same content and operating data; a different design system. Gridgeist shifts the
    git clone https://github.com/ohmiler/gridgeist.git
    ```
 
-2. Copy the inner `gridgeist/` directory into your agent's skills directory. The directory location and skill-discovery behavior vary by agent, so check that product's skills documentation if needed.
+2. Copy the `skills/gridgeist/` directory into your agent's skills directory. The directory location and skill-discovery behavior vary by agent, so check that product's skills documentation if needed.
 3. Start a new agent session in your web project and paste:
 
    ```text
@@ -50,24 +50,27 @@ Agents that support explicit skill invocation can use `$gridgeist` in the prompt
 
 ```powershell
 git clone https://github.com/ohmiler/gridgeist.git
-Copy-Item -Recurse .\gridgeist\gridgeist "$HOME\.agents\skills\gridgeist"
+Copy-Item -Recurse .\gridgeist\skills\gridgeist "$HOME\.agents\skills\gridgeist"
 ```
 
 Codex should detect the skill automatically. If it does not appear, restart Codex.
 
 ### Plugin package
 
-This repository is also packaged as a Codex plugin through [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json). The plugin points to the same `gridgeist/` directory, so direct skill installs and marketplace distribution share one source of truth.
+This repository is also packaged as a Codex plugin through [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json). The plugin points to the same `skills/gridgeist/` directory, so direct skill installs and marketplace distribution share one source of truth.
 
-Once Gridgeist is listed in a marketplace configured in Codex, install it with:
+Add the Gridgeist marketplace, then install the plugin:
 
 ```powershell
-codex plugin add gridgeist@<marketplace-name>
+codex plugin marketplace add ohmiler/gridgeist
+codex plugin add gridgeist@gridgeist
 ```
+
+Start a new Codex session after installation so the bundled skill is discovered.
 
 ### Other compatible agents
 
-Copy the inner `gridgeist/` directory to the skills directory used by your agent. The agent must support the Agent Skills `SKILL.md` convention. Discovery and invocation behavior can differ between products.
+Copy the `skills/gridgeist/` directory to the skills directory used by your agent. The agent must support the Agent Skills `SKILL.md` convention. Discovery and invocation behavior can differ between products.
 
 ## Example prompts
 
@@ -90,7 +93,7 @@ Gridgeist also allows implicit invocation when the agent recognizes a matching w
 ```text
 .codex-plugin/
   plugin.json          Codex plugin manifest
-gridgeist/             Installable skill
+skills/gridgeist/      Installable skill
   SKILL.md             Trigger conditions and core workflow
   agents/openai.yaml   Agent-facing interface metadata
   references/          Design language and review checklist
@@ -120,7 +123,7 @@ Together, the four self-produced case studies cover data-heavy, content-heavy, i
 ## Validation
 
 ```powershell
-python "$HOME\.codex\skills\.system\skill-creator\scripts\quick_validate.py" .\gridgeist
+python "$HOME\.codex\skills\.system\skill-creator\scripts\quick_validate.py" .\skills\gridgeist
 ```
 
 Behavioral evaluation prompts are in [`evals/prompts.md`](evals/prompts.md).

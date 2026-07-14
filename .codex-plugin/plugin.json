@@ -1,6 +1,6 @@
 {
   "name": "gridgeist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design, redesign, and review distinctive web interfaces with a strong grid, precise typography, and product-specific visual systems.",
   "author": {
     "name": "Miler",
@@ -16,7 +16,7 @@
     "design-system",
     "agent-skill"
   ],
-  "skills": "./gridgeist/",
+  "skills": "./skills/",
   "interface": {
     "displayName": "Gridgeist",
     "shortDescription": "Structure interfaces with taste and spirit.",
