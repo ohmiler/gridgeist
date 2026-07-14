@@ -36,6 +36,7 @@ body { font-family: "Noto Sans Thai", var(--sans); }
 
 @media(max-width:800px){
   .language-switch { grid-column: 2; grid-row: 1; }
+  .language-switch a { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
   .thai-hero h1 { font-size: 19vw; }
   .thai-modes,.thai-prompts,.thai-practice { grid-template-columns: 1fr; padding: 5rem 1rem; gap: 4rem; }
   .prompt-guide { padding-inline: 1rem; grid-template-columns: 1fr; }

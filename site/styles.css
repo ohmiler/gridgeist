@@ -134,10 +134,10 @@ button { font: inherit; }
 .button-light { background: white; color: var(--ink); }
 .button-light:hover { background: var(--acid); }
 .install-actions p { margin: 0; color: #aaa; text-align: right; font: .58rem/1.6 var(--mono); text-transform: uppercase; }
-footer { min-height: 110px; padding: 2rem var(--page-gutter); display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: end; font: .6rem var(--mono); text-transform: uppercase; }
-footer p { margin: 0; }
-footer p:nth-child(2) { text-align: center; }
-footer p:last-child { text-align: right; }
+body > footer { min-height: 110px; padding: 2rem var(--page-gutter); display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: end; font: .6rem var(--mono); text-transform: uppercase; }
+body > footer p { margin: 0; }
+body > footer p:nth-child(2) { text-align: center; }
+body > footer p:last-child { text-align: right; }
 
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s, transform .7s; }
 .reveal.visible { opacity: 1; transform: none; }
@@ -146,9 +146,10 @@ footer p:last-child { text-align: right; }
 @media (max-width: 800px) {
   .site-header { height: 64px; padding: 0 1rem; grid-template-columns: 1fr auto; }
   .site-header nav { display: none; }
+  .site-header .wordmark, .header-github, .header-language { min-height: 44px; display: inline-flex; align-items: center; }
   .hero { min-height: calc(100svh - 64px); padding: 1rem; }
   .hero-grid { background-size: 25% 100%, 100% 20%; }
-  .hero h1 { font-size: clamp(3.6rem, 19vw, 6rem); line-height: .8; }
+  .hero h1 { font-size: clamp(3rem, 15.75vw, 6rem); line-height: .8; }
   .hero-footer { min-width: 0; display: block; }
   .hero-footer p { margin-bottom: 1.5rem; }
   .button { width: 100%; }
@@ -159,11 +160,12 @@ footer p:last-child { text-align: right; }
   .comparison { padding: 5rem 1rem; }
   .comparison-head { display: block; }
   .view-switch { margin-top: 2rem; width: 100%; }
-  .view-switch button { flex: 1; }
+  .view-switch button { min-height: 44px; flex: 1; }
   .demo { min-height: 540px; }
   .demo-before { min-height: 495px; padding: 1rem; }
   .fake-cards i { width: 75px; height: 65px; }
   .demo-after { min-height: 495px; grid-template-columns: 1fr; }
+  .demo-after > * { min-width: 0; }
   .demo-after aside { min-height: 130px; border-right: 0; border-bottom: 1px solid #55564f; display: grid; grid-template-columns: 1fr 1fr; }
   .demo-after aside strong { margin: 1rem 0; grid-column: 1 / -1; }
   .demo-after aside small { text-align: right; }
@@ -185,8 +187,19 @@ footer p:last-child { text-align: right; }
   .command-line code { white-space: nowrap; }
   .install-actions { display: block; }
   .install-actions p { margin-top: 1.5rem; text-align: left; }
-  footer { padding: 2rem 1rem; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-  footer p:nth-child(2) { display: none; }
+  body > footer { padding: 2rem 1rem; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  body > footer p:nth-child(2) { display: none; }
+}
+
+@media (max-width: 480px) {
+  .principle-grid { grid-template-columns: 1fr; }
+  .principle-grid article,
+  .principle-grid article:nth-child(odd) { min-height: 220px; border-left: 0; border-bottom: 1px solid rgba(255,255,255,.45); }
+  .principle-grid article:last-child { border-bottom: 0; }
+}
+
+@media (max-width: 360px) {
+  .lesson-pane h3 { font-size: clamp(2.5rem, 13vw, 3.2rem); }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,5 +1,5 @@
 .gallery-hero { min-height: calc(88svh - 76px); padding: 2.4vw var(--page-gutter); display: flex; flex-direction: column; justify-content: space-between; border-bottom: 1px solid var(--line); background-image: linear-gradient(to right,var(--line) 1px,transparent 1px); background-size: calc(100% / 12); overflow: hidden; }
-.gallery-hero h1 { margin: auto 0; font-size: clamp(6rem,18vw,18rem); font-weight: 900; line-height: .73; letter-spacing: -.1em; }
+.gallery-hero h1 { margin: auto 0; font-size: clamp(6rem,18vw,17rem); font-weight: 900; line-height: .73; letter-spacing: -.1em; }
 .gallery-hero h1 span { display: block; }
 .gallery-hero h1 span:last-child { color: var(--blue); }
 .gallery-intro { display: flex; align-items: end; justify-content: space-between; border-top: 1px solid var(--ink); padding-top: 1rem; }
@@ -96,7 +96,7 @@
 @media(max-width:800px){
   .gallery-hero { min-height: calc(82svh - 64px); padding: 1rem; }
   .specimen-index { padding-inline: 0; }
-  .gallery-hero h1 { font-size: 24vw; }
+  .gallery-hero h1 { font-size: 18.5vw; }
   .gallery-intro { display: block; }
   .gallery-intro span { display: block; margin-top: 2rem; }
   .specimen-index { grid-template-columns: 1fr; }
@@ -105,14 +105,17 @@
   .case-head { grid-template-columns: 1fr; gap: 3rem; }
   .case-thesis { margin: 0; }
   .case-controls { margin-top: 2rem; }
-  .case-controls button { flex: 1; }
+  .case-controls button { min-height: 44px; flex: 1; }
   .stage { min-height: 580px; }
   .stage > section { min-height: 578px; }
+  .stage > section,.trace-work,.lesson { min-width: 0; }
   .generic-row i { width: 80px; height: 75px; }
   .trace-after,.learn-after { grid-template-columns: 1fr; }
   .trace-after aside,.learn-after aside { min-height: 150px; border-right: 0; border-bottom: 1px solid; }
   .trace-after aside nav { margin: 2rem 0; grid-template-columns: repeat(4,auto); gap: .5rem; overflow: hidden; }
   .trace-work { min-height: 425px; padding: 1rem; }
+  .trace-work footer { grid-template-columns: auto 1fr; }
+  .trace-work footer code { grid-column: 1/-1; margin-top: .75rem; }
   .trace-work footer strong { font-size: 2.5rem; }
   .generic-dashboard { padding: 2rem 1rem; }
   .dashboard-cards { grid-template-columns: 1fr 1fr; }
