@@ -4,6 +4,23 @@
 
 Gridgeist คือ Agent Skill สำหรับสร้าง ปรับดีไซน์ และรีวิวหน้าเว็บด้วยระบบกริดที่ชัดเจน การจัดตัวอักษรที่แม่นยำ และลำดับข้อมูลที่มีเหตุผล ช่วยลดหน้าตาแบบ Generic AI SaaS โดยยังรักษาแบรนด์ ฟังก์ชัน Responsive behavior และ Accessibility ของผลิตภัณฑ์
 
+## เห็นความต่างได้ทันที
+
+ตัวอย่าง Northline Logistics นี้สร้างจากหน้า HTML/CSS แบบเต็มสองเวอร์ชัน โดยใช้ผลิตภัณฑ์ เนื้อหา ข้อมูล และขนาดหน้าจอชุดเดียวกัน
+
+<table>
+  <tr>
+    <th width='50%'>ไม่ใช้ Gridgeist - Generic SaaS</th>
+    <th width='50%'>ใช้ Gridgeist - ระบบที่สะท้อนผลิตภัณฑ์</th>
+  </tr>
+  <tr>
+    <td><img src='docs/assets/northline-before.png' alt='หน้าเว็บ Northline Logistics แบบ Generic ที่ใช้ข้อความการตลาด กราฟ และการ์ดตัวเลขซึ่งพบได้ทั่วไป' width='100%' /></td>
+    <td><img src='docs/assets/northline-after.png' alt='หน้าเว็บ Northline Logistics ที่จัดระบบจากเส้นทางขนส่ง สถานะเที่ยวขนส่ง เวลาถึง และข้อมูลปฏิบัติการจริง' width='100%' /></td>
+  </tr>
+</table>
+
+เนื้อหาและข้อมูลปฏิบัติการเหมือนเดิม แต่ใช้ระบบการออกแบบต่างกัน Gridgeist เปลี่ยนภาพลักษณ์จากการ์ดทั่วไปให้เป็นเครือข่ายขนส่งที่สร้างจากหลักฐานของผลิตภัณฑ์ [เปิดหน้า Before](https://ohmiler.github.io/gridgeist/readme-showcase/?view=before) หรือ [เปิดหน้า After](https://ohmiler.github.io/gridgeist/readme-showcase/?view=after)
+
 ## เริ่มใช้ใน 60 วินาที
 
 1. ดาวน์โหลด Repository นี้:

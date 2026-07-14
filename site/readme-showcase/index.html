@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang='en' data-view='before'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='robots' content='noindex' />
+    <title>Northline Before and After</title>
+    <link rel='stylesheet' href='./showcase.css' />
+    <script src='./showcase.js' defer></script>
+  </head>
+  <body>
+    <main class='version version-before' aria-label='Northline generic baseline'>
+      <header class='before-header'>
+        <a class='before-brand' href='#'>Northline</a>
+        <nav aria-label='Primary navigation'>
+          <a href='#'>Product</a>
+          <a href='#'>Solutions</a>
+          <a href='#'>Company</a>
+          <a href='#'>Resources</a>
+        </nav>
+        <div class='before-actions'>
+          <a href='#'>Log in</a>
+          <a class='before-button before-button-primary' href='#'>Get started</a>
+        </div>
+      </header>
+
+      <section class='before-hero'>
+        <div class='before-glow' aria-hidden='true'></div>
+        <div class='before-copy'>
+          <span class='before-pill'>Real-time freight visibility</span>
+          <h1>Move freight<br />with confidence.</h1>
+          <p>Northline helps operations teams track every lane, exception, and handoff in one place.</p>
+          <div class='before-cta'>
+            <a class='before-button before-button-primary' href='#'>Start for free</a>
+            <a class='before-button before-button-secondary' href='#'>Book a demo</a>
+          </div>
+        </div>
+
+        <div class='before-dashboard' aria-label='Freight overview preview'>
+          <div class='before-dashboard-head'>
+            <div><i></i><i></i><i></i></div>
+            <span>Network overview</span>
+            <b>Live</b>
+          </div>
+          <div class='before-chart'>
+            <div class='before-chart-title'><span>Delivery performance</span><strong>96.4%</strong></div>
+            <svg viewBox='0 0 520 190' role='img' aria-label='Rising delivery performance chart'>
+              <defs>
+                <linearGradient id='chart-fill' x1='0' y1='0' x2='0' y2='1'>
+                  <stop offset='0%' stop-color='#7657f5' stop-opacity='.28' />
+                  <stop offset='100%' stop-color='#7657f5' stop-opacity='0' />
+                </linearGradient>
+              </defs>
+              <path class='area' d='M0 158 C45 148 68 128 108 136 S170 112 212 119 S277 83 319 94 S385 58 427 70 S476 34 520 27 L520 190 L0 190 Z' />
+              <path class='line' d='M0 158 C45 148 68 128 108 136 S170 112 212 119 S277 83 319 94 S385 58 427 70 S476 34 520 27' />
+            </svg>
+          </div>
+          <div class='before-mini-grid'>
+            <article><span>Active shipments</span><strong>148</strong><small>+12 today</small></article>
+            <article><span>On-time delivery</span><strong>96.4%</strong><small>+2.1 this week</small></article>
+            <article><span>Exceptions</span><strong>03</strong><small>Needs attention</small></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main class='version version-after' aria-label='Northline with Gridgeist'>
+      <header class='after-header'>
+        <a class='after-brand' href='#'>NORTHLINE<span>_</span></a>
+        <p>LIVE FREIGHT NETWORK / APAC</p>
+        <nav aria-label='Primary navigation'>
+          <a href='#'>Network</a>
+          <a href='#'>Lanes</a>
+          <a href='#'>Exceptions <b>03</b></a>
+        </nav>
+        <a class='after-enter' href='#'>Enter operations <span>↗</span></a>
+      </header>
+
+      <section class='after-hero'>
+        <div class='after-copy'>
+          <p class='after-kicker'>Freight visibility / 24.07</p>
+          <h1><span>EVERY LANE.</span><span>UNDER CONTROL.</span></h1>
+          <div class='after-intro'>
+            <p>Track every lane, exception, and handoff in one live operating picture.</p>
+            <a href='#'>View the network <span>↓</span></a>
+          </div>
+        </div>
+
+        <div class='network-panel'>
+          <header><span>LIVE NETWORK / 06:42 ICT</span><b><i></i> 148 ACTIVE</b></header>
+          <div class='route-map' aria-label='Active freight routes'>
+            <div class='map-grid' aria-hidden='true'></div>
+            <svg viewBox='0 0 660 410' role='img' aria-label='Routes connecting Bangkok, Singapore, Ho Chi Minh City, and Hong Kong'>
+              <path class='route route-one' d='M92 270 C215 245 266 318 374 252 S510 130 588 156' />
+              <path class='route route-two' d='M92 270 C178 198 260 164 342 184 S494 236 588 156' />
+              <path class='route route-three' d='M342 184 C402 120 472 89 548 74' />
+              <circle cx='92' cy='270' r='7' />
+              <circle cx='342' cy='184' r='7' />
+              <circle cx='374' cy='252' r='7' />
+              <circle cx='588' cy='156' r='7' />
+              <circle cx='548' cy='74' r='7' />
+              <circle class='pulse' cx='342' cy='184' r='14' />
+            </svg>
+            <span class='city city-bkk'>BKK <b>Bangkok</b></span>
+            <span class='city city-sgn'>SGN <b>Ho Chi Minh</b></span>
+            <span class='city city-sin'>SIN <b>Singapore</b></span>
+            <span class='city city-hkg'>HKG <b>Hong Kong</b></span>
+          </div>
+          <div class='route-list'>
+            <div><span>NL—2048</span><strong>BKK → SIN</strong><em>ON TIME</em><b>08:45</b></div>
+            <div><span>NL—1184</span><strong>SGN → HKG</strong><em class='attention'>CHECK</em><b>11:20</b></div>
+            <div><span>NL—0912</span><strong>BKK → SGN</strong><em>ON TIME</em><b>13:10</b></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class='after-metrics'>
+        <div><span>Active shipments</span><strong>148</strong><small>+12 today</small></div>
+        <div><span>On-time delivery</span><strong>96.4%</strong><small>+2.1 this week</small></div>
+        <div><span>Exceptions</span><strong>03</strong><small>Needs attention</small></div>
+        <p>Northline helps operations teams move freight with confidence.</p>
+      </footer>
+    </main>
+  </body>
+</html>
