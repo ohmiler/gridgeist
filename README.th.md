@@ -71,6 +71,26 @@ codex plugin marketplace add ohmiler/gridgeist
 codex plugin add gridgeist@gridgeist
 ```
 
+หลังติดตั้งให้เปิด Codex session ใหม่ เพื่อให้ระบบตรวจพบ Skill ที่อยู่ใน Plugin
+
+### ตัวติดตั้งแบบ Universal
+
+สำหรับ Claude Code, Cursor, Gemini CLI, GitHub Copilot, OpenCode และ Agent อื่นที่รองรับ ใช้ [open agent skills CLI](https://github.com/vercel-labs/skills) ติดตั้ง Gridgeist ได้ด้วยคำสั่งเดียว:
+
+```powershell
+npx skills add ohmiler/gridgeist -g
+```
+
+ตัวติดตั้งจะค้นพบ `skills/gridgeist/` และให้เลือก Agent เป้าหมาย หากต้องการระบุ Agent โดยตรง ให้ส่งชื่อ Agent เช่น:
+
+```powershell
+npx skills add ohmiler/gridgeist -g -a claude-code
+```
+
+### ติดตั้งด้วยตนเอง
+
+คัดลอกโฟลเดอร์ `skills/gridgeist/` ไปยัง Skills directory ของ Agent ที่รองรับมาตรฐาน Agent Skills `SKILL.md` การตรวจพบและวิธีเรียกใช้อาจแตกต่างกันในแต่ละผลิตภัณฑ์
+
 ## วิธีเรียกใช้
 
 เรียกใช้โดยตรงด้วย `$gridgeist` แล้วระบุ 4 อย่าง:

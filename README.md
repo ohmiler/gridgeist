@@ -68,7 +68,21 @@ codex plugin add gridgeist@gridgeist
 
 Start a new Codex session after installation so the bundled skill is discovered.
 
-### Other compatible agents
+### Universal installer
+
+For Claude Code, Cursor, Gemini CLI, GitHub Copilot, OpenCode, and other compatible agents, install Gridgeist with the [open agent skills CLI](https://github.com/vercel-labs/skills):
+
+```powershell
+npx skills add ohmiler/gridgeist -g
+```
+
+The installer discovers `skills/gridgeist/` and prompts you to choose the target agents. To select one directly, pass its agent name; for example:
+
+```powershell
+npx skills add ohmiler/gridgeist -g -a claude-code
+```
+
+### Manual installation
 
 Copy the `skills/gridgeist/` directory to the skills directory used by your agent. The agent must support the Agent Skills `SKILL.md` convention. Discovery and invocation behavior can differ between products.
 
