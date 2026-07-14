@@ -80,4 +80,4 @@ Pass when the agent adapts the product brand without importing a generic technic
 
 | Date | Agent/model | Skill commit | Scenarios passed | Notes |
 |---|---|---|---:|---|
-| | | | | |
+| 2026-07-15 | Codex CLI 0.144.4 / default model | fcc620e / plugin 1.0.1 | 9 / 11 | Read-only behavioral run; fixtures for scenarios 2–5; scenarios 10 and 11 failed; rendered implementation was not verified. |
