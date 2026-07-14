@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Gridgeist</title>
+  <desc id="desc">GG monogram on a cobalt grid.</desc>
+  <rect width="128" height="128" fill="#F2F0E9"/>
+  <path d="M32 0V128M64 0V128M96 0V128M0 32H128M0 64H128M0 96H128" stroke="#11120F" stroke-opacity="0.18"/>
+  <path d="M96 0V128M0 96H128" stroke="#1547FF" stroke-width="3"/>
+  <text x="10" y="82" fill="#11120F" font-family="Inter, Arial, Helvetica, sans-serif" font-size="61" font-weight="900" letter-spacing="-7">G</text>
+  <text x="58" y="82" fill="#1547FF" font-family="Inter, Arial, Helvetica, sans-serif" font-size="61" font-weight="900" letter-spacing="-7">G</text>
+  <circle cx="96" cy="96" r="4" fill="#1547FF"/>
+</svg>

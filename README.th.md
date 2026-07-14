@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="skills/gridgeist/assets/gridgeist.svg" alt="Gridgeist — Agent Skill สำหรับกำหนดทิศทาง Web Interface" width="240" />
+</p>
+
 # Gridgeist — คู่มือภาษาไทย
 
 [English](README.md) · **ภาษาไทย** · [เว็บไซต์](https://ohmiler.github.io/gridgeist/th/) · [ตัวอย่าง](https://ohmiler.github.io/gridgeist/examples/)

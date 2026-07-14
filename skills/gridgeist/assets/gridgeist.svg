@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Gridgeist</title>
+  <desc id="desc">Gridgeist typographic mark on a precise cobalt grid.</desc>
+  <defs><pattern id="grid" width="128" height="128" patternUnits="userSpaceOnUse"><path d="M128 0H0V128" fill="none" stroke="#11120F" stroke-opacity="0.16" stroke-width="2"/></pattern></defs>
+  <rect width="1024" height="1024" fill="#F2F0E9"/>
+  <rect x="1" y="1" width="1022" height="1022" fill="url(#grid)" stroke="#11120F" stroke-width="2"/>
+  <path d="M768 0V1024M0 768H1024" stroke="#1547FF" stroke-width="8"/>
+  <g font-family="Inter, Arial, Helvetica, sans-serif" font-weight="900" letter-spacing="-20">
+    <text x="56" y="477" font-size="326" fill="#11120F">GRID</text>
+    <text x="56" y="754" font-size="290" fill="#1547FF">GEIST.</text>
+  </g>
+  <g font-family="Consolas, monospace" font-size="22" font-weight="500" letter-spacing="2" fill="#11120F">
+    <text x="56" y="72">AGENT SKILL / WEB INTERFACE DIRECTION</text>
+    <text x="56" y="962">GG-01</text>
+    <text x="836" y="962">OPEN SOURCE</text>
+  </g>
+  <circle cx="768" cy="768" r="13" fill="#1547FF"/>
+</svg>
