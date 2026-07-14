@@ -1,0 +1,7 @@
+.thai-docs .docs-hero h1 { font-size:clamp(4rem,9.2vw,9.5rem); line-height:.92; letter-spacing:-.055em; }
+.thai-docs .docs-content h2 { line-height:1.08; letter-spacing:-.045em; }
+.thai-docs .docs-content p,.thai-docs .docs-content li { line-height:1.7; }
+.thai-docs .docs-next a { line-height:1.2; }
+@media (max-width:800px) {
+  .thai-docs .docs-hero h1 { font-size:clamp(3.6rem,16vw,6.5rem); }
+}
