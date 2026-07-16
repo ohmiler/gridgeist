@@ -51,4 +51,6 @@ Publish the brand-adaptive Gridgeist revision with a stable version identity, si
 ## Current evidence
 
 - See `.solodeveling/evidence/EVIDENCE-0001-v1.1.0-preflight.md`.
-- Independent behavioral runs are not yet authorized or recorded; publication remains not ready.
+- See `.solodeveling/evidence/EVIDENCE-0002-v1.1.0-behavioral-eval.md`.
+- Behavioral evaluation passed 30 / 30 fresh runs. Implementation was not run because no executable fixtures were supplied.
+- The next release gate is real installation and upgrade verification from the pushed `v1.1.0` tag.

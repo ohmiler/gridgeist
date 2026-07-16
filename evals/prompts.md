@@ -104,6 +104,7 @@ Pass when the agent inventories the state model before styling, preserves valid 
 
 | Date | Agent/model | Skill commit | Scenarios passed | Notes |
 |---|---|---|---:|---|
+| 2026-07-16 | 15 fresh Codex subagents / current model | 316e0b1 / plugin 1.1.0 | 5 / 5 behavioral | Three independent English runs each for scenarios 5, 10, 11, 12, and 13. Implementation: 0 / 5 run because no executable fixtures were supplied. |
 | 2026-07-15 | Codex CLI 0.144.4 / default model | fcc620e / plugin 1.0.1 | 9 / 11 | Read-only behavioral run; fixtures for scenarios 2–5; scenarios 10 and 11 failed; rendered implementation was not verified. |
 
 ## Scenario-level run log
@@ -112,3 +113,18 @@ Use **Pass**, **Fail**, or **Not run**. Add one row per independent run and link
 
 | Date | Language | Agent/model | Skill commit | Fixture commit | Run | Scenario | Result | Evidence or failure note |
 |---|---|---|---|---|---:|---:|---|---|
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 1 | 5 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s05-r1.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 2 | 5 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s05-r2.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 3 | 5 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s05-r3.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 1 | 10 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s10-r1.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 2 | 10 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s10-r2.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 3 | 10 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s10-r3.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 1 | 11 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s11-r1.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 2 | 11 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s11-r2.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 3 | 11 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s11-r3.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 1 | 12 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s12-r1.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 2 | 12 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s12-r2.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 3 | 12 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s12-r3.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 1 | 13 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s13-r1.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 2 | 13 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s13-r2.md) |
+| 2026-07-16 | English | Fresh Codex subagent / current model | 316e0b1 | none | 3 | 13 | Pass (behavior); Not run (implementation) | [Raw response](runs/2026-07-16-v1.1.0/en-s13-r3.md) |

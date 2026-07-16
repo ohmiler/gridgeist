@@ -104,6 +104,7 @@
 
 | วันที่ | Agent/Model | Skill commit | ผ่านกี่สถานการณ์ | หมายเหตุ |
 |---|---|---|---:|---|
+| 2026-07-16 | Fresh Codex subagents 15 agents / โมเดลปัจจุบัน | 316e0b1 / plugin 1.1.0 | Behavioral 5 / 5 | รันภาษาไทยแบบอิสระ 3 ครั้งต่อสถานการณ์สำหรับสถานการณ์ 5, 10, 11, 12 และ 13; Implementation ไม่ได้รัน 5 / 5 เพราะไม่มี Fixture ที่รันได้ |
 | 2026-07-15 | Codex CLI 0.144.4 / โมเดลเริ่มต้น | fcc620e / plugin 1.0.1 | 8 / 11 | รันพฤติกรรมแบบ read-only; ใช้ Fixture สำหรับสถานการณ์ 2–5; ไม่ผ่านสถานการณ์ 5, 10 และ 11; ไม่ได้ตรวจ Implementation ที่ Render จริง |
 
 ## บันทึกผลรายสถานการณ์
@@ -112,3 +113,18 @@
 
 | วันที่ | ภาษา | Agent/Model | Skill commit | Fixture commit | Run | สถานการณ์ | ผล | หลักฐานหรือสาเหตุที่ไม่ผ่าน |
 |---|---|---|---|---|---:|---:|---|---|
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 1 | 5 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s05-r1.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 2 | 5 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s05-r2.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 3 | 5 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s05-r3.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 1 | 10 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s10-r1.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 2 | 10 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s10-r2.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 3 | 10 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s10-r3.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 1 | 11 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s11-r1.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 2 | 11 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s11-r2.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 3 | 11 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s11-r3.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 1 | 12 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s12-r1.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 2 | 12 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s12-r2.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 3 | 12 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s12-r3.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 1 | 13 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s13-r1.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 2 | 13 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s13-r2.md) |
+| 2026-07-16 | ไทย | Fresh Codex subagent / โมเดลปัจจุบัน | 316e0b1 | ไม่มี | 3 | 13 | ผ่าน (พฤติกรรม); ไม่ได้รัน (Implementation) | [Raw response](runs/2026-07-16-v1.1.0/th-s13-r3.md) |
