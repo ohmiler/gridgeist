@@ -23,7 +23,7 @@ This illustrative Northline logistics comparison is rendered from two full HTML/
   </tr>
 </table>
 
-Same content and sample operating data; a different design system. Gridgeist shifts the visual identity from generic cards to a live freight network built from product evidence, while labeling the concept honestly. Both README images are browser captures of the working pages. [Open the Before page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=before) or [open the After page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=after).
+Same content and sample operating data; a different design system. Gridgeist shifts the visual identity from generic cards to a live freight network built from product evidence, while labeling the concept honestly. Both README images are browser captures of the working pages. [Open the Before page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=before) or [open the After page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=after&rev=b4380726).
 
 ## 60-second Quickstart
 

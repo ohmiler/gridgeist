@@ -4,7 +4,7 @@ solodeveling_schema: 1
 
 # WORK-0007: Publish the GridGeist v1.1.0 README showcase
 
-- **Status:** Active
+- **Status:** Done
 - **Class:** Audited release
 - **Authority:** On 2026-07-17 the user explicitly requested `commit & push`, authorizing a commit to `main`, push to `origin/main`, and the resulting GitHub Pages deployment.
 
@@ -39,3 +39,5 @@ Candidate `7569c8e1ca732da6b34d12a2237faf6e5bc9a87e` was pushed to `origin/main`
 - **Repair:** Reference the unchanged verified CSS through its content-hash prefix, `showcase.css?v=b4380726`, so refreshed HTML selects a distinct browser cache key.
 - **Authority:** The user's instruction to continue authorizes committing, pushing, and observing this bounded production hotfix.
 - **Acceptance:** The deployed HTML contains the versioned stylesheet URL; that URL returns the verified v1.1.0 CSS; validation and Pages deployment succeed; the public After layout matches the README design without requiring a hard refresh.
+
+The cache-coherence hotfix was published at `b534a64ae60d4d29ce1a134c4e914864255dd3f0`. The public HTML now selects the verified CSS by content-hash cache key, and the README EN/TH After links use the same revision key so returning browsers do not reuse the prior page/asset cache entry.
