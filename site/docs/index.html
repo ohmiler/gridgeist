@@ -16,25 +16,28 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="./docs.css" />
+    <script src="../script.js" defer></script>
   </head>
   <body class="docs-page">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <a class="wordmark" href="../" aria-label="Gridgeist home">GRIDGEIST<span aria-hidden="true">®</span></a>
-      <nav aria-label="Primary navigation">
+      <nav class="desktop-nav" aria-label="Primary navigation">
         <a class="is-current" href="./" aria-current="page">Docs</a>
-        <a href="../#method">Method</a><a href="../#modes">Modes</a><a href="../examples/">Examples</a><a href="../#install">Install</a>
+        <a href="../#method">Method</a><a href="../#adaptation">Adaptation</a><a href="../examples/">Examples</a><a href="../#install">Install</a>
       </nav>
+      <details class="mobile-menu"><summary>Menu</summary><nav aria-label="Mobile navigation"><a aria-current="page" href="./">Docs</a><a href="../#method">Method</a><a href="../#adaptation">Adaptation</a><a href="../examples/">Examples</a><a href="../#install">Install</a></nav></details>
       <div class="header-actions"><a class="header-language" href="../th/docs/" lang="th">ไทย</a><a class="header-github" href="https://github.com/ohmiler/gridgeist">GitHub ↗</a></div>
     </header>
 
     <main id="main">
       <section class="docs-hero" aria-labelledby="docs-title">
-        <p class="eyebrow">Documentation / v1.0</p>
-        <h1 id="docs-title">FROM INTENT<br /><span>TO SYSTEM.</span></h1>
+        <p class="eyebrow">Field manual / v1.1</p>
+        <div class="docs-hero-mark" aria-hidden="true"><span>GG—DOCS</span><span>READ / DECIDE / VERIFY</span></div>
+        <h1 id="docs-title">FROM SIGNAL<br /><span>TO SYSTEM.</span></h1>
         <div class="docs-hero-intro">
-          <p>Use Gridgeist to create, redesign, or review a web interface with a clear hierarchy and a product-specific visual language.</p>
-          <dl><div><dt>READ TIME</dt><dd>08 MIN</dd></div><div><dt>MODES</dt><dd>03</dd></div><div><dt>LICENSE</dt><dd>MIT</dd></div></dl>
+          <p>A decision-first guide to creating, redesigning, or reviewing an interface that belongs to its product—not to a house style.</p>
+          <dl><div><dt>VERSION</dt><dd>1.1.0</dd></div><div><dt>ENTRY MODES</dt><dd>03</dd></div><div><dt>LICENSE</dt><dd>MIT</dd></div></dl>
         </div>
       </section>
 
@@ -42,16 +45,17 @@
         <aside class="docs-sidebar" aria-label="Documentation sections">
           <p>ON THIS PAGE</p>
           <nav>
-            <a href="#quickstart"><span>01</span> Quickstart</a><a href="#install"><span>02</span> Installation</a><a href="#modes"><span>03</span> Choose a mode</a><a href="#brief"><span>04</span> Write the brief</a><a href="#workflow"><span>05</span> Workflow</a><a href="#verify"><span>06</span> Verify</a><a href="#limits"><span>07</span> Limits</a>
+            <a href="#quickstart"><span>01</span> Quickstart</a><a href="#install"><span>02</span> Install + update</a><a href="#modes"><span>03</span> Choose a mode</a><a href="#adaptation"><span>04</span> Adapt the system</a><a href="#brief"><span>05</span> Write the brief</a><a href="#workflow"><span>06</span> Workflow</a><a href="#verify"><span>07</span> Verify</a><a href="#limits"><span>08</span> Limits</a>
           </nav>
         </aside>
 
         <article class="docs-content">
           <section id="quickstart" aria-labelledby="quickstart-title">
             <p class="section-label">01 / Quickstart</p>
-            <h2 id="quickstart-title">Start with the product,<br />not an aesthetic label.</h2>
-            <p class="lead">Invoke <code>$gridgeist</code> and describe the product, the people using it, the job to do, what must remain unchanged, and how the result should be checked.</p>
-            <div class="code-block"><div><span>PROMPT / CREATE</span><span>PLAIN TEXT</span></div><pre><code>Use $gridgeist to design a landing page for a SQL learning platform.
+            <h2 id="quickstart-title">Give the agent<br />a decision surface.</h2>
+            <p class="lead">Invoke <code>$gridgeist</code>, name the product and audience, choose the job, preserve what matters, and define the evidence required before completion.</p>
+            <ol class="start-sequence"><li><span>01</span><b>Open the real surface</b><p>Repository, rendered page, routes, content, and established brand.</p></li><li><span>02</span><b>Name the decision</b><p>Create, redesign, or review—and the outcome that should become true.</p></li><li><span>03</span><b>Bind the proof</b><p>Viewports, interactions, keyboard paths, project checks, and known limits.</p></li></ol>
+            <div class="code-block"><div><span>PROMPT / CREATE</span><button type="button" data-copy-target="docs-create-prompt">Copy prompt</button></div><pre id="docs-create-prompt"><code>Use $gridgeist to design a landing page for a SQL learning platform.
 Make the lesson, query editor, and results the visual evidence.
 Avoid generic SaaS card grids.
 Verify desktop, mobile, keyboard use, and accessibility.</code></pre></div>
@@ -59,16 +63,16 @@ Verify desktop, mobile, keyboard use, and accessibility.</code></pre></div>
           </section>
 
           <section id="install" aria-labelledby="install-title">
-            <p class="section-label">02 / Installation</p><h2 id="install-title">Install for your agent.</h2>
+            <p class="section-label">02 / Install + update</p><h2 id="install-title">Choose the path<br />you can maintain.</h2>
             <div class="install-methods">
-              <article><div><span>01</span><h3>Codex plugin</h3><small>RECOMMENDED</small></div><p>Add the marketplace, install the plugin, then start a new Codex session.</p><pre><code>codex plugin marketplace add ohmiler/gridgeist
-codex plugin add gridgeist@gridgeist</code></pre></article>
-              <article><div><span>02</span><h3>Compatible agents</h3><small>UNIVERSAL</small></div><p>Use the open agent skills CLI for Claude Code, Cursor, Gemini CLI, Copilot, OpenCode, and other compatible agents.</p><pre><code>npx skills add ohmiler/gridgeist -g</code></pre></article>
+              <article class="install-featured"><div><span>01</span><h3>Codex plugin</h3><small>RECOMMENDED</small></div><p>Add the marketplace, install the plugin, then start a new Codex session.</p><div class="install-command"><pre id="docs-install-codex"><code>codex plugin marketplace add ohmiler/gridgeist
+codex plugin add gridgeist@gridgeist</code></pre><button type="button" data-copy-target="docs-install-codex">Copy</button></div></article>
+              <article><div><span>02</span><h3>Compatible agents</h3><small>UNIVERSAL</small></div><p>Use the open Agent Skills CLI for Claude Code, Cursor, Gemini CLI, Copilot, OpenCode, and other compatible agents.</p><div class="install-command"><pre id="docs-install-skills"><code>npx skills add ohmiler/gridgeist -g</code></pre><button type="button" data-copy-target="docs-install-skills">Copy</button></div></article>
               <article><div><span>03</span><h3>Manual</h3><small>PORTABLE</small></div><p>Copy <code>skills/gridgeist/</code> into the skills directory used by an agent that supports the Agent Skills <code>SKILL.md</code> convention.</p></article>
-              <article><div><span>04</span><h3>Update an existing install</h3><small>EXPLICIT</small></div><p>Gridgeist does not update silently. Refresh and reinstall a Codex plugin, or use the skills CLI update command, then start a new agent session. Manual copies must be replaced from a tagged release.</p><pre><code>codex plugin marketplace upgrade gridgeist
+              <article><div><span>04</span><h3>Update an existing install</h3><small>EXPLICIT</small></div><p>Gridgeist does not update silently. Refresh and reinstall a Codex plugin, or use the Skills CLI update command, then start a new agent session. Manual copies must be replaced from a tagged release.</p><div class="install-command"><pre id="docs-update"><code>codex plugin marketplace upgrade gridgeist
 codex plugin add gridgeist@gridgeist
 
-npx skills update gridgeist -g -y</code></pre></article>
+npx skills update gridgeist -g -y</code></pre><button type="button" data-copy-target="docs-update">Copy</button></div></article>
             </div>
           </section>
 
@@ -76,14 +80,26 @@ npx skills update gridgeist -g -y</code></pre></article>
             <p class="section-label">03 / Choose a mode</p><h2 id="modes-title">One method.<br />Three entry points.</h2>
             <div class="mode-table" role="table" aria-label="Gridgeist operating modes">
               <div class="mode-row mode-head" role="row"><span role="columnheader">MODE</span><span role="columnheader">USE WHEN</span><span role="columnheader">START WITH</span></div>
-              <div class="mode-row" role="row"><strong role="cell">Create</strong><span role="cell">Building a new interface</span><span role="cell">Content hierarchy + visual thesis</span></div>
-              <div class="mode-row" role="row"><strong role="cell">Redesign</strong><span role="cell">Restyling a working product</span><span role="cell">Behavior preservation + pattern inventory</span></div>
+              <div class="mode-row" role="row"><strong role="cell">Create</strong><span role="cell">Building a new interface</span><span role="cell">Audience + primary task + authentic evidence</span></div>
+              <div class="mode-row" role="row"><strong role="cell">Redesign</strong><span role="cell">Changing a working product</span><span role="cell">Preserved behavior + brand signals + state inventory</span></div>
               <div class="mode-row" role="row"><strong role="cell">Review</strong><span role="cell">Diagnosing a draft before edits</span><span role="cell">Prioritized findings + evidence</span></div>
             </div>
           </section>
 
+          <section id="adaptation" class="docs-adaptation" aria-labelledby="adaptation-title">
+            <p class="section-label section-label-light">04 / Adapt the system</p><h2 id="adaptation-title">Expose only the structure<br />the product needs.</h2>
+            <p class="lead">Choose visibility from audience, task, content, and brand. Gridgeist is the decision method—not the visible treatment.</p>
+            <div class="structure-scale">
+              <article><span>VISIBLE</span><b>Data + technical</b><p>Let relationships, commands, status, and operational evidence align on explicit tracks.</p><i aria-hidden="true"></i></article>
+              <article><span>QUIET</span><b>Content + editorial</b><p>Use controlled measure and persistent orientation while prose or imagery leads.</p><i aria-hidden="true"></i></article>
+              <article><span>INVISIBLE</span><b>Canvas + direct action</b><p>Let the primary tool dominate; keep structure in control placement and behavior.</p><i aria-hidden="true"></i></article>
+              <article><span>STATE-LED</span><b>Transactional flow</b><p>Use stable controls, explicit validation, confirmation, and recovery to form hierarchy.</p><i aria-hidden="true"></i></article>
+            </div>
+            <p class="adaptation-test"><span>RECOGNIZABILITY TEST</span>If the borders, mono labels, and visible grid disappear, the result should still belong to the product.</p>
+          </section>
+
           <section id="brief" aria-labelledby="brief-title">
-            <p class="section-label">04 / Write the brief</p><h2 id="brief-title">Four inputs remove<br />most ambiguity.</h2>
+            <p class="section-label">05 / Write the brief</p><h2 id="brief-title">Four inputs remove<br />most ambiguity.</h2>
             <ol class="brief-list">
               <li><span>01</span><div><h3>Product + audience</h3><p>What is being designed, and who needs to use it?</p></div></li>
               <li><span>02</span><div><h3>Mode + outcome</h3><p>Create, redesign, or review—and what should be true when the work is done?</p></div></li>
@@ -100,24 +116,25 @@ and one coherent replacement direction.</code></pre></details>
           </section>
 
           <section id="workflow" aria-labelledby="workflow-title">
-            <p class="section-label">05 / Workflow</p><h2 id="workflow-title">Inspect before composing.</h2>
+            <p class="section-label">06 / Workflow</p><h2 id="workflow-title">Inspect before composing.</h2>
             <ol class="workflow-list">
               <li><b>01</b><span>Inspect</span><p>Understand the product, audience, routes, components, tokens, and rendered UI.</p></li>
               <li><b>02</b><span>Set a thesis</span><p>Write one sentence that governs hierarchy, structure, expression, and product evidence.</p></li>
               <li><b>03</b><span>Define the system</span><p>Set the container, columns, spacing, type roles, colors, borders, and responsive transformations.</p></li>
               <li><b>04</b><span>Compose</span><p>Build hierarchy before detail. Let real code, data, workflows, or imagery carry visual weight.</p></li>
               <li><b>05</b><span>Implement</span><p>Follow repository conventions, semantic HTML, keyboard behavior, and existing primitives.</p></li>
-              <li><b>06</b><span>Refine</span><p>Fix clarity first, then hierarchy, alignment, type, interaction, accessibility, and implementation quality.</p></li>
+              <li><b>06</b><span>Verify</span><p>Render representative widths, exercise states and inputs, fix observed issues, and report remaining gaps.</p></li>
             </ol>
           </section>
 
           <section id="verify" aria-labelledby="verify-title">
-            <p class="section-label">06 / Verification</p><h2 id="verify-title">Evidence before<br />the verdict.</h2>
-            <div class="check-grid"><div><span>A</span><h3>Clarity</h3><p>Product, audience, and next action are obvious.</p></div><div><span>B</span><h3>Hierarchy</h3><p>Each viewport has one dominant element and a readable order.</p></div><div><span>C</span><h3>Response</h3><p>Mobile is recomposed around priority; code and tables do not overflow.</p></div><div><span>D</span><h3>Access</h3><p>Landmarks, focus, contrast, motion, and keyboard paths work.</p></div></div>
+            <p class="section-label">07 / Verification</p><h2 id="verify-title">Evidence before<br />the verdict.</h2>
+            <div class="check-grid"><div><span>A</span><h3>Clarity</h3><p>Product, audience, primary task, and next action are obvious.</p></div><div><span>B</span><h3>Hierarchy</h3><p>Each viewport has one dominant element and a readable order.</p></div><div><span>C</span><h3>Response</h3><p>Mobile is recomposed around priority; code and tables do not overflow.</p></div><div><span>D</span><h3>States</h3><p>Default, loading, empty, error, success, disabled, and destructive states are considered when applicable.</p></div><div><span>E</span><h3>Access</h3><p>Landmarks, focus, names, contrast, motion, and keyboard paths are observed.</p></div><div><span>F</span><h3>Integrity</h3><p>Claims name the commands, viewports, flows, limits, and evidence actually observed.</p></div></div>
+            <div class="evidence-strip"><b>30 / 30</b><p><span>TARGETED v1.1 BEHAVIORAL RUNS</span>Passed in English and Thai. Implementation fixtures were not run.</p></div>
           </section>
 
           <section id="limits" aria-labelledby="limits-title">
-            <p class="section-label">07 / Limits</p><h2 id="limits-title">A method,<br />not a preset.</h2>
+            <p class="section-label">08 / Limits</p><h2 id="limits-title">A method,<br />not a preset.</h2>
             <ul class="limits-list"><li>Grid, type, and color defaults are starting points—not fixed rules.</li><li>Output quality depends on the product context available to the agent.</li><li>Automated checks do not replace inspecting the rendered interface.</li><li>Model output can vary; re-test when the agent or skill changes.</li></ul>
             <div class="docs-next"><p>READY TO SEE THE METHOD IN PRACTICE?</p><a href="../examples/">Explore the field studies <span aria-hidden="true">↗</span></a></div>
           </section>

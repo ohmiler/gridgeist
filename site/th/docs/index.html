@@ -20,25 +20,28 @@
     <link rel="stylesheet" href="../../docs/docs.css" />
     <link rel="stylesheet" href="../thai.css" />
     <link rel="stylesheet" href="./docs.th.css" />
+    <script src="../../script.js" defer></script>
   </head>
   <body class="docs-page thai-docs">
     <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
     <header class="site-header">
       <a class="wordmark" href="../../" aria-label="หน้าแรก Gridgeist">GRIDGEIST<span aria-hidden="true">®</span></a>
-      <nav aria-label="เมนูหลัก">
+      <nav class="desktop-nav" aria-label="เมนูหลัก">
         <a class="is-current" href="./" aria-current="page">DOCS</a>
-        <a href="../#start">แนวคิด</a><a href="../#modes">รูปแบบงาน</a><a href="../../examples/">ตัวอย่าง</a><a href="../#install">ติดตั้ง</a>
+        <a href="../#start">แนวคิด</a><a href="../#adaptation">การปรับใช้</a><a href="../../examples/">ตัวอย่าง</a><a href="../#install">ติดตั้ง</a>
       </nav>
+      <details class="mobile-menu"><summary>เมนู</summary><nav aria-label="เมนูมือถือ"><a aria-current="page" href="./">DOCS</a><a href="../#start">แนวคิด</a><a href="../#adaptation">การปรับใช้</a><a href="../../examples/">ตัวอย่าง</a><a href="../#install">ติดตั้ง</a></nav></details>
       <div class="header-actions"><a class="header-language" href="../../docs/" lang="en">EN</a><a class="header-github" href="https://github.com/ohmiler/gridgeist">GitHub ↗</a></div>
     </header>
 
     <main id="main">
       <section class="docs-hero" aria-labelledby="docs-title">
-        <p class="eyebrow">คู่มือการใช้งาน / v1.0</p>
-        <h1 id="docs-title">จากเจตนา<br /><span>สู่ระบบ.</span></h1>
+        <p class="eyebrow">คู่มือภาคสนาม / v1.1</p>
+        <div class="docs-hero-mark" aria-hidden="true"><span>GG—DOCS</span><span>อ่าน / ตัดสินใจ / ตรวจสอบ</span></div>
+        <h1 id="docs-title">จากสัญญาณ<br /><span>สู่ระบบ.</span></h1>
         <div class="docs-hero-intro">
-          <p>ใช้ Gridgeist เพื่อสร้าง ปรับดีไซน์ หรือรีวิวหน้าเว็บ ด้วยลำดับข้อมูลที่ชัดเจนและภาษาภาพที่เฉพาะเจาะจงกับผลิตภัณฑ์</p>
-          <dl><div><dt>เวลาอ่าน</dt><dd>08 นาที</dd></div><div><dt>รูปแบบงาน</dt><dd>03</dd></div><div><dt>สัญญาอนุญาต</dt><dd>MIT</dd></div></dl>
+          <p>คู่มือที่เริ่มจากการตัดสินใจ เพื่อสร้าง ปรับดีไซน์ หรือรีวิว Interface ที่เป็นของผลิตภัณฑ์นั้นจริง ๆ ไม่ใช่ของสไตล์สำเร็จรูป</p>
+          <dl><div><dt>เวอร์ชัน</dt><dd>1.1.0</dd></div><div><dt>รูปแบบงาน</dt><dd>03</dd></div><div><dt>สัญญาอนุญาต</dt><dd>MIT</dd></div></dl>
         </div>
       </section>
 
@@ -46,16 +49,17 @@
         <aside class="docs-sidebar" aria-label="สารบัญคู่มือ">
           <p>เนื้อหาในหน้านี้</p>
           <nav>
-            <a href="#quickstart"><span>01</span> เริ่มต้นใช้งาน</a><a href="#install"><span>02</span> การติดตั้ง</a><a href="#modes"><span>03</span> เลือกรูปแบบงาน</a><a href="#brief"><span>04</span> เขียน Brief</a><a href="#workflow"><span>05</span> ขั้นตอนทำงาน</a><a href="#verify"><span>06</span> ตรวจผลลัพธ์</a><a href="#limits"><span>07</span> ข้อจำกัด</a>
+            <a href="#quickstart"><span>01</span> เริ่มต้นใช้งาน</a><a href="#install"><span>02</span> ติดตั้ง + อัปเดต</a><a href="#modes"><span>03</span> เลือกรูปแบบงาน</a><a href="#adaptation"><span>04</span> ปรับระบบ</a><a href="#brief"><span>05</span> เขียน Brief</a><a href="#workflow"><span>06</span> ขั้นตอนทำงาน</a><a href="#verify"><span>07</span> ตรวจผลลัพธ์</a><a href="#limits"><span>08</span> ข้อจำกัด</a>
           </nav>
         </aside>
 
         <article class="docs-content">
           <section id="quickstart" aria-labelledby="quickstart-title">
             <p class="section-label">01 / เริ่มต้นใช้งาน</p>
-            <h2 id="quickstart-title">เริ่มจากผลิตภัณฑ์<br />ไม่ใช่ชื่อสไตล์.</h2>
-            <p class="lead">เรียกใช้ <code>$gridgeist</code> แล้วอธิบายผลิตภัณฑ์ ผู้ใช้งาน งานที่ต้องการ สิ่งที่ห้ามเปลี่ยน และวิธีตรวจผลลัพธ์</p>
-            <div class="code-block"><div><span>PROMPT / CREATE</span><span>ภาษาไทย</span></div><pre><code>ใช้ $gridgeist ออกแบบ Landing Page สำหรับแพลตฟอร์มเรียน SQL
+            <h2 id="quickstart-title">สร้างพื้นผิว<br />สำหรับการตัดสินใจ.</h2>
+            <p class="lead">เรียกใช้ <code>$gridgeist</code> ระบุผลิตภัณฑ์และผู้ใช้ เลือกงาน รักษาสิ่งสำคัญ และกำหนดหลักฐานที่ต้องมีก่อนบอกว่างานเสร็จ</p>
+            <ol class="start-sequence"><li><span>01</span><b>เปิดของจริง</b><p>Repository หน้าเว็บที่ Render แล้ว Route เนื้อหา และแบรนด์เดิม</p></li><li><span>02</span><b>ระบุการตัดสินใจ</b><p>Create, Redesign หรือ Review พร้อมผลลัพธ์ที่ควรเป็นจริง</p></li><li><span>03</span><b>ผูกกับหลักฐาน</b><p>Viewport, Interaction, Keyboard path, Project checks และข้อจำกัด</p></li></ol>
+            <div class="code-block"><div><span>PROMPT / CREATE</span><button type="button" data-copy-target="docs-create-prompt-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกข้อความ">คัดลอก Prompt</button></div><pre id="docs-create-prompt-th"><code>ใช้ $gridgeist ออกแบบ Landing Page สำหรับแพลตฟอร์มเรียน SQL
 ให้บทเรียน Query editor และผลลัพธ์เป็นหลักฐานสำคัญของงานภาพ
 หลีกเลี่ยงกริดการ์ด SaaS แบบทั่วไป
 ตรวจทั้ง Desktop, Mobile, Keyboard และ Accessibility</code></pre></div>
@@ -63,16 +67,16 @@
           </section>
 
           <section id="install" aria-labelledby="install-title">
-            <p class="section-label">02 / การติดตั้ง</p><h2 id="install-title">ติดตั้งให้ Agent<br />ที่คุณใช้งาน.</h2>
+            <p class="section-label">02 / ติดตั้ง + อัปเดต</p><h2 id="install-title">เลือกเส้นทาง<br />ที่คุณดูแลต่อได้.</h2>
             <div class="install-methods">
-              <article><div><span>01</span><h3>Codex Plugin</h3><small>แนะนำ</small></div><p>เพิ่ม Marketplace ติดตั้ง Plugin แล้วเริ่ม Codex session ใหม่</p><pre><code>codex plugin marketplace add ohmiler/gridgeist
-codex plugin add gridgeist@gridgeist</code></pre></article>
-              <article><div><span>02</span><h3>Agent ที่รองรับ</h3><small>UNIVERSAL</small></div><p>ใช้ open agent skills CLI สำหรับ Claude Code, Cursor, Gemini CLI, Copilot, OpenCode และ Agent อื่นที่รองรับ</p><pre><code>npx skills add ohmiler/gridgeist -g</code></pre></article>
+              <article class="install-featured"><div><span>01</span><h3>Codex Plugin</h3><small>แนะนำ</small></div><p>เพิ่ม Marketplace ติดตั้ง Plugin แล้วเริ่ม Codex session ใหม่</p><div class="install-command"><pre id="docs-install-codex-th"><code>codex plugin marketplace add ohmiler/gridgeist
+codex plugin add gridgeist@gridgeist</code></pre><button type="button" data-copy-target="docs-install-codex-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
+              <article><div><span>02</span><h3>Agent ที่รองรับ</h3><small>UNIVERSAL</small></div><p>ใช้ Agent Skills CLI สำหรับ Claude Code, Cursor, Gemini CLI, Copilot, OpenCode และ Agent อื่นที่รองรับ</p><div class="install-command"><pre id="docs-install-skills-th"><code>npx skills add ohmiler/gridgeist -g</code></pre><button type="button" data-copy-target="docs-install-skills-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
               <article><div><span>03</span><h3>ติดตั้งด้วยตนเอง</h3><small>PORTABLE</small></div><p>คัดลอก <code>skills/gridgeist/</code> ไปยัง Skills directory ของ Agent ที่รองรับมาตรฐาน Agent Skills แบบ <code>SKILL.md</code></p></article>
-              <article><div><span>04</span><h3>อัปเดตของเดิม</h3><small>สั่งอัปเดต</small></div><p>Gridgeist จะไม่อัปเดตแบบเงียบ ให้ Refresh และติดตั้ง Codex Plugin ซ้ำ หรือใช้คำสั่ง Update ของ skills CLI แล้วเริ่ม Agent session ใหม่ ส่วนการคัดลอกเองต้องแทนที่จาก Release tag</p><pre><code>codex plugin marketplace upgrade gridgeist
+              <article><div><span>04</span><h3>อัปเดตของเดิม</h3><small>สั่งอัปเดต</small></div><p>Gridgeist จะไม่อัปเดตแบบเงียบ ให้ Refresh และติดตั้ง Codex Plugin ซ้ำ หรือใช้คำสั่ง Update ของ Skills CLI แล้วเริ่ม Agent session ใหม่ ส่วนการคัดลอกเองต้องแทนที่จาก Release tag</p><div class="install-command"><pre id="docs-update-th"><code>codex plugin marketplace upgrade gridgeist
 codex plugin add gridgeist@gridgeist
 
-npx skills update gridgeist -g -y</code></pre></article>
+npx skills update gridgeist -g -y</code></pre><button type="button" data-copy-target="docs-update-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
             </div>
           </section>
 
@@ -80,14 +84,26 @@ npx skills update gridgeist -g -y</code></pre></article>
             <p class="section-label">03 / เลือกรูปแบบงาน</p><h2 id="modes-title">ระบบเดียว.<br />สามทางเข้า.</h2>
             <div class="mode-table" role="table" aria-label="รูปแบบการทำงานของ Gridgeist">
               <div class="mode-row mode-head" role="row"><span role="columnheader">รูปแบบ</span><span role="columnheader">ใช้เมื่อ</span><span role="columnheader">เริ่มจาก</span></div>
-              <div class="mode-row" role="row"><strong role="cell">Create</strong><span role="cell">สร้าง Interface ใหม่</span><span role="cell">ลำดับเนื้อหา + Visual thesis</span></div>
-              <div class="mode-row" role="row"><strong role="cell">Redesign</strong><span role="cell">ปรับดีไซน์ผลิตภัณฑ์เดิม</span><span role="cell">รักษา Behavior + สำรวจ Pattern</span></div>
+              <div class="mode-row" role="row"><strong role="cell">Create</strong><span role="cell">สร้าง Interface ใหม่</span><span role="cell">ผู้ใช้ + งานหลัก + หลักฐานจริง</span></div>
+              <div class="mode-row" role="row"><strong role="cell">Redesign</strong><span role="cell">เปลี่ยนดีไซน์ผลิตภัณฑ์เดิม</span><span role="cell">รักษา Behavior + สัญญาณแบรนด์ + State inventory</span></div>
               <div class="mode-row" role="row"><strong role="cell">Review</strong><span role="cell">วิเคราะห์ Draft ก่อนแก้ไข</span><span role="cell">ปัญหาตามลำดับความสำคัญ + หลักฐาน</span></div>
             </div>
           </section>
 
+          <section id="adaptation" class="docs-adaptation" aria-labelledby="adaptation-title">
+            <p class="section-label section-label-light">04 / ปรับระบบ</p><h2 id="adaptation-title">เผยโครงสร้างเท่าที่<br />ผลิตภัณฑ์ต้องการ.</h2>
+            <p class="lead">เลือกระดับการมองเห็นจากผู้ใช้ งาน เนื้อหา และแบรนด์ Gridgeist คือวิธีตัดสินใจ ไม่ใช่หน้าตาที่ต้องมองเห็นเสมอ</p>
+            <div class="structure-scale">
+              <article><span>มองเห็น</span><b>ข้อมูล + ระบบเทคนิค</b><p>ใช้แนวจัดวางชัดเจนกับความสัมพันธ์ คำสั่ง สถานะ และหลักฐานเชิงปฏิบัติการ</p><i aria-hidden="true"></i></article>
+              <article><span>เงียบ</span><b>เนื้อหา + บทบรรณาธิการ</b><p>ควบคุมความกว้างการอ่านและตำแหน่งอ้างอิง โดยให้ข้อความหรือภาพเป็นผู้นำ</p><i aria-hidden="true"></i></article>
+              <article><span>มองไม่เห็น</span><b>Canvas + การควบคุมตรง</b><p>ให้เครื่องมือหลักครองพื้นที่ และเก็บโครงสร้างไว้ในตำแหน่งคำสั่งกับ Behavior</p><i aria-hidden="true"></i></article>
+              <article><span>สถานะนำ</span><b>ขั้นตอนธุรกรรม</b><p>ใช้ตำแหน่งคำสั่งที่คงที่ Validation, Confirmation และ Recovery สร้างลำดับ</p><i aria-hidden="true"></i></article>
+            </div>
+            <p class="adaptation-test"><span>ทดสอบความเป็นแบรนด์</span>ถ้าเอาเส้น Mono label และกริดที่มองเห็นออก ผลลัพธ์ยังต้องเป็นของผลิตภัณฑ์นั้น</p>
+          </section>
+
           <section id="brief" aria-labelledby="brief-title">
-            <p class="section-label">04 / เขียน Brief</p><h2 id="brief-title">ข้อมูลสี่อย่าง<br />ลดความคลุมเครือ.</h2>
+            <p class="section-label">05 / เขียน Brief</p><h2 id="brief-title">ข้อมูลสี่อย่าง<br />ลดความคลุมเครือ.</h2>
             <ol class="brief-list">
               <li><span>01</span><div><h3>ผลิตภัณฑ์ + ผู้ใช้</h3><p>กำลังออกแบบอะไร และใครเป็นคนใช้งาน?</p></div></li>
               <li><span>02</span><div><h3>รูปแบบงาน + ผลลัพธ์</h3><p>Create, Redesign หรือ Review และเมื่อเสร็จแล้วอะไรควรเป็นจริง?</p></div></li>
@@ -104,24 +120,25 @@ npx skills update gridgeist -g -y</code></pre></article>
           </section>
 
           <section id="workflow" aria-labelledby="workflow-title">
-            <p class="section-label">05 / ขั้นตอนทำงาน</p><h2 id="workflow-title">สำรวจก่อน<br />จัดองค์ประกอบ.</h2>
+            <p class="section-label">06 / ขั้นตอนทำงาน</p><h2 id="workflow-title">สำรวจก่อน<br />จัดองค์ประกอบ.</h2>
             <ol class="workflow-list">
               <li><b>01</b><span>Inspect</span><p>ทำความเข้าใจผลิตภัณฑ์ ผู้ใช้ Route, Component, Token และ UI ที่ Render แล้ว</p></li>
               <li><b>02</b><span>Set a thesis</span><p>เขียนหนึ่งประโยคที่กำกับลำดับ โครงสร้าง การแสดงออก และหลักฐานจากผลิตภัณฑ์</p></li>
               <li><b>03</b><span>Define the system</span><p>กำหนด Container, Column, Spacing, Type role, สี เส้น และการเปลี่ยน Layout ตามหน้าจอ</p></li>
               <li><b>04</b><span>Compose</span><p>สร้างลำดับก่อนรายละเอียด ให้ Code, Data, Workflow หรือภาพจริงทำหน้าที่สื่อสาร</p></li>
               <li><b>05</b><span>Implement</span><p>ทำตาม Convention ของ Repository, Semantic HTML, Keyboard behavior และ Primitive เดิม</p></li>
-              <li><b>06</b><span>Refine</span><p>แก้ความชัดเจนก่อน แล้วจึงแก้ลำดับ แนววาง ตัวอักษร Interaction, Accessibility และคุณภาพโค้ด</p></li>
+              <li><b>06</b><span>Verify</span><p>Render หลายขนาด ทดลอง State และ Input แก้ปัญหาที่พบ และรายงานสิ่งที่ยังไม่ได้ตรวจ</p></li>
             </ol>
           </section>
 
           <section id="verify" aria-labelledby="verify-title">
-            <p class="section-label">06 / ตรวจผลลัพธ์</p><h2 id="verify-title">ใช้หลักฐาน<br />ก่อนตัดสิน.</h2>
-            <div class="check-grid"><div><span>A</span><h3>ความชัดเจน</h3><p>ผลิตภัณฑ์ ผู้ใช้ และสิ่งที่ต้องทำต่อเข้าใจได้ทันที</p></div><div><span>B</span><h3>ลำดับ</h3><p>แต่ละ Viewport มีจุดเด่นหลักหนึ่งจุดและลำดับการอ่านที่ชัดเจน</p></div><div><span>C</span><h3>การตอบสนอง</h3><p>Mobile ถูกจัดใหม่ตามความสำคัญ และ Code กับ Table ไม่ล้นจอ</p></div><div><span>D</span><h3>การเข้าถึง</h3><p>Landmark, Focus, Contrast, Motion และ Keyboard path ใช้งานได้</p></div></div>
+            <p class="section-label">07 / ตรวจผลลัพธ์</p><h2 id="verify-title">ใช้หลักฐาน<br />ก่อนตัดสิน.</h2>
+            <div class="check-grid"><div><span>A</span><h3>ความชัดเจน</h3><p>ผลิตภัณฑ์ ผู้ใช้ งานหลัก และสิ่งที่ต้องทำต่อเข้าใจได้ทันที</p></div><div><span>B</span><h3>ลำดับ</h3><p>แต่ละ Viewport มีจุดเด่นหลักหนึ่งจุดและลำดับการอ่านที่ชัดเจน</p></div><div><span>C</span><h3>การตอบสนอง</h3><p>Mobile ถูกจัดใหม่ตามความสำคัญ และ Code กับ Table ไม่ล้นจอ</p></div><div><span>D</span><h3>สถานะ</h3><p>ตรวจ Default, Loading, Empty, Error, Success, Disabled และ Destructive เมื่อเกี่ยวข้อง</p></div><div><span>E</span><h3>การเข้าถึง</h3><p>สังเกต Landmark, Focus, ชื่อ, Contrast, Motion และ Keyboard path</p></div><div><span>F</span><h3>ความซื่อตรง</h3><p>ระบุคำสั่ง Viewport, Flow, ข้อจำกัด และหลักฐานที่ตรวจจริง</p></div></div>
+            <div class="evidence-strip"><b>30 / 30</b><p><span>รอบ BEHAVIORAL เป้าหมายของ v1.1</span>ผ่านทั้งภาษาไทยและอังกฤษ ส่วน Implementation fixture ไม่ได้รัน</p></div>
           </section>
 
           <section id="limits" aria-labelledby="limits-title">
-            <p class="section-label">07 / ข้อจำกัด</p><h2 id="limits-title">เป็นวิธีคิด.<br />ไม่ใช่ Preset.</h2>
+            <p class="section-label">08 / ข้อจำกัด</p><h2 id="limits-title">เป็นวิธีคิด.<br />ไม่ใช่ Preset.</h2>
             <ul class="limits-list"><li>ค่าเริ่มต้นด้าน Grid, Type และสีเป็นเพียงจุดเริ่ม ไม่ใช่กฎตายตัว</li><li>คุณภาพผลลัพธ์ขึ้นอยู่กับ Context ของผลิตภัณฑ์ที่ Agent ได้รับ</li><li>Automated checks ไม่สามารถแทนการตรวจหน้าเว็บที่ Render จริงได้</li><li>ผลลัพธ์จากโมเดลอาจเปลี่ยน ควรทดสอบซ้ำเมื่อเปลี่ยน Agent หรือแก้ Skill</li></ul>
             <div class="docs-next"><p>พร้อมดูวิธีนี้ในงานจริงหรือยัง?</p><a href="../../examples/">ดูกรณีศึกษาทั้งหมด <span aria-hidden="true">↗</span></a></div>
           </section>

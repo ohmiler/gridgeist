@@ -6,7 +6,7 @@ solodeveling_schema: 1
 
 ## Active
 
-None.
+1. Redesign and publish the bilingual Docs as a v1.1 field manual.
 
 ## Next
 
