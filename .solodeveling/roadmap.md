@@ -6,10 +6,13 @@ solodeveling_schema: 1
 
 ## Active
 
-1. Release v1.1.0 with brand-adaptive skill guidance and a reproducible upgrade path.
+No active release work.
 
 ## Next
 
-1. Validate upgrade behavior across Codex plugin and `npx skills` distribution.
-2. Publish v1.1.0 only after tagged-source installation succeeds.
-3. Prioritize external user and project evidence over additional first-party visual categories.
+1. Prioritize external user and project evidence over additional first-party visual categories.
+2. Add executable implementation fixtures when a representative target project is available.
+
+## Completed
+
+1. Released v1.1.0 with brand-adaptive guidance, bilingual update documentation, automated validation, behavioral evidence, and verified Codex/Agent Skills update paths.
