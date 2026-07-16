@@ -4,9 +4,9 @@ solodeveling_schema: 1
 
 # State
 
-- **Goal:** Learn from the published Gridgeist v1.1 website and prioritize external product evidence.
-- **Progress:** The bilingual homepage and Docs redesigns are published. Local checks, GitHub validation/Pages workflows, and post-deploy EN/TH critical routes passed after repairing a favicon 404.
-- **Active work:** None.
+- **Goal:** Repair the mobile Docs index and installation Copy layout reported after publication.
+- **Progress:** The shared CSS repair is implemented; focused EN/TH mobile reproduction passed and WORK-0004 is Verifying.
+- **Active work:** `WORK-0004-repair-mobile-docs-controls`
 - **Blockers:** None.
-- **Current risks:** Real-user comprehension, cross-browser behavior beyond Chromium, and pixel-level visual review remain unmeasured.
-- **Next action:** Collect external user/project evidence before opening another design or skill change.
+- **Current risks:** Losing quick section access on mobile or shrinking command text while correcting the control layout.
+- **Next action:** Verify mobile and desktop boundaries, record evidence, publish the repair, and observe the public routes.

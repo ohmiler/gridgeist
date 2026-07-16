@@ -6,7 +6,7 @@ solodeveling_schema: 1
 
 ## Active
 
-None.
+1. Repair the published mobile Docs index and installation Copy layout.
 
 ## Next
 

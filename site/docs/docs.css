@@ -47,7 +47,7 @@ pre code { display:block; padding:1.4rem; font:.76rem/1.8 var(--mono); white-spa
 .install-methods { border-top:1px solid var(--ink); }
 .install-methods article { padding:1.5rem 0; border-bottom:1px solid var(--ink); }
 .install-methods .install-featured { padding-left:1.2rem; border-left:4px solid var(--blue); }
-.install-methods article>div { display:grid; grid-template-columns:2.5rem 1fr auto; align-items:baseline; }
+.install-methods article>div:first-child { display:grid; grid-template-columns:2.5rem 1fr auto; align-items:baseline; }
 .install-methods span,.install-methods small { font:.58rem var(--mono); }
 .install-methods small { color:var(--blue); }
 .install-methods h3 { margin:0; font-size:1.5rem; letter-spacing:-.04em; }
@@ -126,7 +126,7 @@ pre code { display:block; padding:1.4rem; font:.76rem/1.8 var(--mono); white-spa
   .docs-hero h1 { grid-column:1/-1; font-size:clamp(3.5rem,16vw,7rem); }
   .docs-hero-intro { grid-column:1/-1; grid-template-columns:1fr; gap:1.5rem; }
   .docs-layout { display:block; padding:0; }
-  .docs-sidebar { position:sticky; top:76px; z-index:4; max-height:none; padding:0; overflow-x:auto; background:var(--paper); border-bottom:1px solid var(--ink); scrollbar-width:none; }
+  .docs-sidebar { position:relative; top:auto; z-index:2; max-height:none; padding:0; overflow-x:auto; background:var(--paper); border-bottom:1px solid var(--ink); scrollbar-width:none; }
   .docs-sidebar::-webkit-scrollbar { display:none; }
   .docs-sidebar>p { display:none; }
   .docs-sidebar nav { width:max-content; display:flex; padding:0 1rem; }
@@ -147,11 +147,11 @@ pre code { display:block; padding:1.4rem; font:.76rem/1.8 var(--mono); white-spa
   .docs-hero-intro>p { font-size:1rem; }
   .mode-row { grid-template-columns:1fr; gap:.35rem; padding:1rem 0; }
   .mode-head { display:none; }
-  .install-methods article>div { grid-template-columns:2.2rem 1fr; }
+  .install-methods article>div:first-child { grid-template-columns:2.2rem 1fr; }
   .install-methods small { grid-column:2; margin-top:.4rem; }
   .install-methods p,.install-command { margin-left:0; }
-  .install-command { grid-template-columns:1fr; }
-  .install-command button { min-height:44px; border-left:0; border-top:1px solid #55564f; }
+  .install-command { grid-template-columns:minmax(0,1fr) auto; }
+  .install-command button { min-width:64px; min-height:44px; border-left:1px solid #55564f; border-top:0; }
   .structure-scale { grid-template-columns:1fr; }
   .structure-scale article { min-height:210px; }
   .adaptation-test { grid-template-columns:1fr; gap:.6rem; }
