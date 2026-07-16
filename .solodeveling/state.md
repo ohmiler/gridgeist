@@ -5,8 +5,8 @@ solodeveling_schema: 1
 # State
 
 - **Goal:** Keep GridGeist distribution simple, maintainable, and verified across supported agents.
-- **Progress:** Primary installation guidance is aligned in EN/TH, and isolated live install/update smoke tests now gate release tags and manual CI runs.
+- **Progress:** Primary installation guidance is aligned in EN/TH; local and hosted install/update smoke tests passed, including GitHub Actions run `29530131787`.
 - **Active work:** None.
 - **Blockers:** None.
-- **Current risks:** Hosted smoke execution depends on GitHub/npm availability and has not yet been observed in GitHub Actions; external user comprehension remains unmeasured.
-- **Next action:** Observe the `smoke-install` job on the next tag or manual workflow dispatch, then continue collecting external user/project evidence.
+- **Current risks:** Hosted smoke execution depends on GitHub/npm availability; external user comprehension remains unmeasured.
+- **Next action:** Continue collecting external user/project evidence before expanding distribution or changing the design system.

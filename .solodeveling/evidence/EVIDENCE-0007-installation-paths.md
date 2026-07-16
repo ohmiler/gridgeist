@@ -7,7 +7,7 @@ solodeveling_schema: 1
 - **Work item:** `WORK-0005-installation-paths`
 - **Date:** 2026-07-17
 - **Target:** README installation guidance, release validation, and isolated installer behavior.
-- **Result:** Pass locally; hosted GitHub Actions execution remains unobserved until a tag or manual run.
+- **Result:** Pass locally and in GitHub Actions workflow run `29530131787` for commit `969c613a4cf3b67367745622e5f2945dbf2f0632`.
 
 ## Pre-implementation probes
 
@@ -24,7 +24,7 @@ solodeveling_schema: 1
 - Probes used temporary directories under `C:\tmp` and restored environment variables before cleanup.
 - The first two Codex probes were diagnostic failures that established required preconditions; neither changed the repository or personal Codex configuration.
 - The universal updater exposed an upstream Windows shutdown assertion only when `DISABLE_TELEMETRY=1` was set. Isolated reruns proved that `CI` and `NO_COLOR` are safe; the smoke runner does not override telemetry.
-- The GitHub-hosted `smoke-install` job was parsed and inspected but not observed on GitHub because this work did not push a tag or dispatch the workflow.
+- GitHub-hosted verification completed successfully on Ubuntu with Python 3.12 and Node.js 22 in workflow run `29530131787`.
 
 ## Acceptance verification
 
@@ -34,10 +34,15 @@ solodeveling_schema: 1
 | Detailed channel priority | Diff inspection of both README files and existing EN/TH website cards | Pass: plugin is primary, `npx skills` is cross-agent, clone/copy is fallback. |
 | Codex lifecycle | `python -X utf8 scripts/smoke_test_install.py` | Pass: temporary `CODEX_HOME`, Git marketplace add, v1.1.0 install, enabled listing, refresh, reinstall, manifest and skill-tree checks. |
 | Universal lifecycle | Same combined smoke command | Pass: temporary user home/npm cache, GitHub install, lock metadata, skill-tree/list checks, documented update, and second list. |
-| Release CI wiring | PyYAML parse and static workflow inspection | Pass: tag/manual-only `smoke-install` depends on `validate`, provisions Python 3.12 and Node 22, installs Codex, and runs the combined smoke script. Hosted execution is not yet observed. |
+| Release CI wiring | PyYAML parse, workflow inspection, and hosted workflow dispatch | Pass: run `29530131787` completed successfully; `validate` passed in 8s and `smoke-install` passed in 22s after exercising both distribution channels. |
 | Project checks and isolation | Release validator, official quick validator, in-memory Python compile, PyYAML parse, `git diff --check`, temporary-path assertions | Pass; only task files changed and the pre-existing untracked `.agents/skills/` directory was preserved. |
 
 ## Commands and observed results
+
+### Hosted verification
+
+- GitHub Actions run `29530131787` succeeded for commit `969c613a4cf3b67367745622e5f2945dbf2f0632`.
+- Hosted logs reported successful Codex plugin clean install, marketplace refresh, reinstall, and universal installer clean install/update.
 
 - `python -X utf8 scripts/smoke_test_install.py` — pass for both live channels.
 - `python -X utf8 scripts/validate_release.py` — `[OK] Gridgeist v1.1.0 skill, release metadata, docs, and evals are aligned.`
