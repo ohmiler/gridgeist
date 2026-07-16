@@ -7,7 +7,8 @@ solodeveling_schema: 1
 - **Work item:** `WORK-0004-repair-mobile-docs-controls`
 - **Date:** 2026-07-16
 - **Target:** Shared EN/TH Docs CSS and GitHub Pages.
-- **Result before publication:** Pass locally; production observation pending.
+- **Published repair:** `581158761afbe8ffadfd9948525eda255751de75`
+- **Result:** Pass locally and on the published EN/TH routes.
 
 ## Diagnosis
 
@@ -31,8 +32,16 @@ solodeveling_schema: 1
 
 - Only shared Docs CSS and Solodeveling records changed; HTML, commands, routes, and copy JavaScript were preserved.
 - Pixel-level screenshot inspection remains unavailable because the environment image viewer cannot launch without the Windows sandbox helper.
-- Production workflow and route observation are pending publication.
+- Pixel-level screenshot inspection remains unverified, but computed layout, overflow, interaction feedback, and console state were observed locally and in production.
 
 ## Post-push observation
 
-Pending.
+- GitHub validation run `29515433639` succeeded.
+- GitHub Pages deployment run `29515433673` succeeded.
+- Fresh public EN/TH sessions at 390 px both reported:
+  - sidebar `position: relative`;
+  - code width about 271 px and Copy width 64 px;
+  - 390/390 client/scroll width;
+  - sidebar top moved to approximately -1189 px EN / -1153 px TH after navigating to Install;
+  - `Copied` / `คัดลอกแล้ว` feedback;
+  - zero console errors and warnings.

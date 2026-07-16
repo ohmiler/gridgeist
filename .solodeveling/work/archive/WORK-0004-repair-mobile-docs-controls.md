@@ -4,7 +4,7 @@ solodeveling_schema: 1
 
 # WORK-0004: Repair mobile Docs navigation and command controls
 
-- **Status:** Verifying
+- **Status:** Done
 - **Class:** Standard (production follow-up)
 - **Problem:** At mobile width, the on-page Docs navigation remains sticky below the site header. A broad installation selector also overrides the command container grid, squeezing code into a narrow column while the Copy button occupies most of the row.
 - **Root cause evidence:** At 390 px, `.docs-sidebar` computed to `position: sticky`. The first installation Copy button measured about 300 px inside a 335 px command container because `.install-methods article > div` also matches `.install-command`.
@@ -32,6 +32,6 @@ Let the mobile documentation index scroll naturally with the page and restore a 
 
 Revert the repair commit if navigation access or command copying regresses.
 
-## Next action
+## Outcome
 
-Verify mobile and desktop boundaries, record evidence, publish the repair, and observe the public routes.
+Repaired, published, and observed on 2026-07-16. Mobile Docs indexes now scroll naturally, command text retains the flexible column, and Copy controls remain compact and functional in EN/TH. Evidence is recorded in `EVIDENCE-0006-mobile-docs-controls.md`.

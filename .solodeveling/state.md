@@ -4,9 +4,9 @@ solodeveling_schema: 1
 
 # State
 
-- **Goal:** Repair the mobile Docs index and installation Copy layout reported after publication.
-- **Progress:** The shared CSS repair is implemented; focused EN/TH mobile reproduction passed and WORK-0004 is Verifying.
-- **Active work:** `WORK-0004-repair-mobile-docs-controls`
+- **Goal:** Learn from the published Gridgeist v1.1 website and prioritize external product evidence.
+- **Progress:** The reported mobile Docs index and Copy layout issues are repaired, published, and verified on EN/TH public routes.
+- **Active work:** None.
 - **Blockers:** None.
-- **Current risks:** Losing quick section access on mobile or shrinking command text while correcting the control layout.
-- **Next action:** Verify mobile and desktop boundaries, record evidence, publish the repair, and observe the public routes.
+- **Current risks:** Real-user comprehension, cross-browser behavior beyond Chromium, and pixel-level visual review remain unmeasured.
+- **Next action:** Collect further external user/project evidence before another design change.
