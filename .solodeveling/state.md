@@ -4,9 +4,9 @@ solodeveling_schema: 1
 
 # State
 
-- **Goal:** Redesign and publish the bilingual Docs as a reading-first Gridgeist v1.1 field manual.
-- **Progress:** The bilingual Docs redesign is implemented; focused static and Chromium checks passed and WORK-0003 is Verifying.
-- **Active work:** `WORK-0003-redesign-docs`
+- **Goal:** Learn from the published Gridgeist v1.1 website and prioritize external product evidence.
+- **Progress:** The bilingual homepage and Docs redesigns are published. Local checks, GitHub validation/Pages workflows, and post-deploy EN/TH critical routes passed after repairing a favicon 404.
+- **Active work:** None.
 - **Blockers:** None.
-- **Current risks:** Reading density, bilingual drift, mobile navigation regression, and production rendering after the Pages deployment.
-- **Next action:** Reconcile evidence and release readiness, then commit and push the verified candidate to `origin/main`.
+- **Current risks:** Real-user comprehension, cross-browser behavior beyond Chromium, and pixel-level visual review remain unmeasured.
+- **Next action:** Collect external user/project evidence before opening another design or skill change.

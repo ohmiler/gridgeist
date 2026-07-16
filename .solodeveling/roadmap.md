@@ -6,7 +6,7 @@ solodeveling_schema: 1
 
 ## Active
 
-1. Redesign and publish the bilingual Docs as a v1.1 field manual.
+None.
 
 ## Next
 
@@ -17,3 +17,4 @@ solodeveling_schema: 1
 
 1. Released v1.1.0 with brand-adaptive guidance, bilingual update documentation, automated validation, behavioral evidence, and verified Codex/Agent Skills update paths.
 2. Refreshed and locally verified the bilingual main site to demonstrate the v1.1 product-native, brand-adaptive method.
+3. Redesigned, published, and post-deploy verified the bilingual Docs as a reading-first v1.1 field manual.

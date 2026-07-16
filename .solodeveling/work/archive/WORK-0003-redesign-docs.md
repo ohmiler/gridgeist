@@ -4,7 +4,7 @@ solodeveling_schema: 1
 
 # WORK-0003: Redesign the bilingual documentation site
 
-- **Status:** Verifying
+- **Status:** Done
 - **Class:** Standard (audited release)
 - **Users:** Developers evaluating, installing, updating, and applying Gridgeist in English or Thai.
 - **Problem:** The Docs pages retain a strong visual base but still identify themselves as v1.0, hide cross-site navigation on mobile, under-explain v1.1 brand adaptation, and present commands without the copy behavior used by the main site.
@@ -62,6 +62,6 @@ A field manual for solo builders organized by persistent reading orientation, de
 4. Record the acceptance matrix and release candidate, archive the work item, commit, and push.
 5. Observe GitHub checks and the public Docs routes; record unavailable production signals as gaps.
 
-## Next action
+## Outcome
 
-Reconcile the acceptance matrix, release candidate, evidence, and publication readiness before committing and pushing.
+Implemented, published, and observed on 2026-07-16. Evidence is recorded in `EVIDENCE-0005-docs-redesign-release.md`; a production favicon 404 found during observation was repaired and re-verified.
