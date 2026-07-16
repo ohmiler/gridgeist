@@ -1,74 +1,77 @@
 ---
 name: gridgeist
-description: Use when creating, redesigning, or reviewing web interfaces that need a strong grid, precise typography, technical minimalism, Swiss or editorial influence, visible borders, or relief from generic AI-generated SaaS aesthetics. Applies to React, Next.js, Tailwind CSS, HTML/CSS, landing pages, dashboards, documentation, portfolios, and learning platforms.
+description: Use when creating, redesigning, or reviewing web interfaces that need product-specific structure, clear hierarchy, responsive composition, accessible interaction, or relief from generic AI-generated SaaS aesthetics. Adapt grid, typography, imagery, motion, and product evidence to the established brand—including technical, editorial, image-led, warm, playful, and utilitarian directions—across React, Next.js, Tailwind CSS, HTML/CSS, landing pages, dashboards, documentation, portfolios, and interactive tools.
 ---
 
 # Gridgeist
 
 ## Overview
 
-Craft distinctive interfaces from content and product intent. Make grid, type, spacing, borders, and product UI the visual language; decoration supports the system.
+Craft distinctive, product-native interfaces from audience, content, behavior, and brand intent. Use grid as structural logic; make it visible only when it serves the product.
 
 ## Select a mode
 
-| Intent | Mode | Start with |
+| Intent and authorization | Mode | Start with |
 |---|---|---|
-| Build a new interface | Create | Content hierarchy and visual thesis |
-| Restyle working UI | Redesign | Behavior preservation and pattern inventory |
-| Improve a draft | Review | Prioritized diagnosis before edits |
+| Build an interface without an existing design | Create | Audience, primary task, content, and evidence |
+| Change an existing interface with permission to edit | Redesign | Preserved behavior, brand signals, and state inventory |
+| Diagnose without changing files | Review | Prioritized findings grounded in rendered evidence |
 
-If direction materially affects brand identity, present 2–3 concise options for approval. Otherwise proceed.
+Let user authorization determine whether files change. Derive direction from an established brand; present options only when brand signals conflict materially or the user requests exploration.
 
 ## Workflow
 
-1. **Inspect** — Understand product, audience, content, routes, components, tokens, and rendered desktop/mobile UI. Preserve intentional brand and behavior.
-2. **Set a thesis** — Write one governing sentence, such as: “A precise learning workspace built on an editorial grid, quiet rules, dense product evidence, and one blue accent.” Read [design-language.md](references/design-language.md) when selecting influences.
-3. **Define the system** — Establish container, columns, spacing rhythm, type roles, colors, radius, borders, shadows, and responsive transformations. Prefer reusable tokens over one-off values.
-4. **Compose** — Build hierarchy before detail. Align related content, use visible rules to clarify structure, vary section composition, and make one area dominant. Let real code, data, lessons, screenshots, or workflows carry visual weight.
-5. **Implement** — Follow repository conventions, semantic HTML, keyboard behavior, and existing primitives. Recompose mobile layouts rather than shrinking desktop. Avoid dependencies for simple CSS effects.
-6. **Refine** — Use [review-checklist.md](references/review-checklist.md). Fix issues in this order: clarity, hierarchy, alignment, type/color, interaction/responsiveness, accessibility, implementation quality. Reinspect the rendered result.
+1. **Inspect** — Understand the audience, primary tasks, brand signals, content, product evidence, routes, components, tokens, and rendered desktop/mobile UI. Inventory important interaction states and constraints. Do not invent customers, metrics, outcomes, research, or compliance.
+2. **Set a thesis** — Write one governing sentence combining audience, primary task, structural logic, brand expression, and a product-native motif. Read [design-language.md](references/design-language.md) before choosing the direction, especially for image-led, warm, playful, or otherwise nontechnical brands.
+3. **Define the system** — Establish container and tracks, type roles, spacing rhythm, semantic color, shape and surface roles, image behavior, motion, and responsive transformations. Decide whether the grid should be visible, quiet, or invisible. Prefer reusable tokens over one-off values.
+4. **Compose** — Build hierarchy before detail. Make one area dominant, align related content, vary sections within shared logic, and let the most authentic material—product UI, data, prose, imagery, artwork, code, or the primary tool—carry visual weight.
+5. **Implement** — Preserve required behavior and states. Follow repository conventions, semantic HTML, keyboard and touch behavior, and existing primitives. Recompose mobile layouts rather than shrinking desktop. Avoid dependencies for simple CSS effects.
+6. **Verify** — Use [review-checklist.md](references/review-checklist.md). Render representative widths and exercise primary flows, states, focus behavior, reduced motion, overflow, and dynamic content. Fix clarity and hierarchy before polish. Report what was observed separately from what remains inferred or untested.
+
+For interactive products, inventory at least default, loading, empty, error, success, disabled, and destructive states when applicable. Preserve privacy, safety, data, and platform constraints as product behavior, not optional polish.
 
 ## Anti-slop contract
 
 - Use one thesis and one coherent system.
-- Build hierarchy through scale, position, density, and contrast.
-- Give borders, radii, shadows, gradients, and motion defined roles.
-- Prefer product-specific copy and evidence over interchangeable decoration.
-- Give sections distinct compositions within the shared grid.
+- Preserve or deliberately evolve the brand instead of importing a house aesthetic.
+- Build hierarchy through scale, position, density, rhythm, and contrast.
+- Give grid visibility, borders, radii, shadows, gradients, and motion defined roles.
+- Prefer authentic product evidence; label sample or fictional material and never fabricate proof.
+- Give sections or workflows distinct compositions within shared structural logic.
 
-Repeated rounded cards, centered hero copy, gradient blobs, excessive pills, uniform sections, arbitrary icon boxes, and generic claims are diagnostic signals, not automatic violations. Replace weak structure with a stronger product-specific idea.
+Repeated rounded cards, centered hero copy, gradient blobs, excessive pills, uniform sections, arbitrary icon boxes, generic claims, and technical chrome on nontechnical brands are diagnostic signals, not automatic violations. Replace weak structure with a stronger product-specific idea.
 
-## Quick reference
+## Decision reference
 
-| Element | Starting point |
+| Dimension | Decide from |
 |---|---|
-| Grid | 12 wide-screen columns; simpler purposeful tracks below |
-| Type | Sans hierarchy; mono only for technical metadata |
-| Spacing | Small token scale with controlled dense/airy contrast |
-| Borders | Quiet 1px rules that organize rather than outline everything |
-| Shape | Restrained, consistent radii; square corners are valid |
-| Color | Neutral base with one controlled accent family |
-| Motion | Short functional transitions with reduced-motion support |
-| Visuals | Authentic product UI, code, data, diagrams, or imagery |
-
-Adapt these defaults to the brand; do not turn them into a preset.
+| Structure | Information order, task flow, shared alignments, and the brand's degree of regularity |
+| Type | Brand voice, reading needs, and role hierarchy; reserve mono for genuinely technical content |
+| Visual lead | Product UI, data, prose, imagery, artwork, code, or a primary interactive surface |
+| Shape and surface | Brand geometry, containment, adjacency, state, and interaction—not fashion |
+| Color | Existing brand palette and semantic roles; do not assume neutral plus one accent |
+| Motion | Causality, feedback, spatial change, and tone, with reduced-motion support |
+| Responsive | Priority, order, density, input method, and content behavior at each range |
 
 ## Output contract
 
-For creation/redesign, provide: **Direction**, complete responsive **Implementation**, and **Review** evidence. For review-only tasks, provide: one-line **Verdict**, prioritized findings with evidence, and a coherent replacement **Direction**.
+For Create or Redesign, provide **Direction** with the thesis and preserved constraints, complete responsive **Implementation**, and **Verification** evidence naming observed viewports, flows, states, and remaining gaps. For Review, make no edits and provide a one-line **Verdict**, prioritized findings with location, evidence, impact, and the smallest coherent correction, plus one replacement **Direction**. Never claim verification without observation.
 
 ## Common mistakes
 
 | Mistake | Correction |
 |---|---|
-| Copying a reference literally | Extract principles and preserve the user's brand |
-| Drawing lines around everything | Use rules to reveal hierarchy and alignment |
-| Calling any sparse page Swiss | Require rational grid, type hierarchy, and information order |
-| Making minimalism empty | Add useful product evidence and controlled density |
-| Styling before understanding content | Establish information hierarchy first |
-| Stacking desktop UI on mobile | Redesign order, density, navigation, and interaction |
-| Reporting subjective taste alone | Tie findings to usability, consistency, brand, or accessibility |
+| Treating Gridgeist as a visible-grid preset | Use grid as underlying logic and expose it only when the brand benefits |
+| Copying a reference literally | Extract principles and preserve the user's identity and content |
+| Styling before understanding behavior | Inventory tasks, constraints, and states before composing |
+| Making minimalism empty | Add useful evidence and controlled density |
+| Improving the default state only | Design loading, empty, error, success, disabled, and destructive paths |
+| Stacking desktop UI on mobile | Redesign order, density, navigation, media, and interaction |
+| Reporting subjective taste alone | Tie findings to comprehension, usability, consistency, brand, or accessibility |
+| Reporting automated checks as user evidence | Separate technical verification from usability, safety, and research claims |
 
-## Example
+## Contrasting examples
 
-> Use Gridgeist to redesign this Next.js course landing page. Keep its functionality and blue brand color, replace the generic SaaS cards with a visible editorial grid, and verify desktop and mobile behavior.
+> Redesign dense API documentation with a visible information grid, precise code states, and verified mobile navigation.
+
+> Redesign a warm image-led portfolio with an invisible alignment system, expressive type, artwork-led pacing, and accessible project narratives.

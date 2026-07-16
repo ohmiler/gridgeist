@@ -65,6 +65,10 @@ Verify desktop, mobile, keyboard use, and accessibility.</code></pre></div>
 codex plugin add gridgeist@gridgeist</code></pre></article>
               <article><div><span>02</span><h3>Compatible agents</h3><small>UNIVERSAL</small></div><p>Use the open agent skills CLI for Claude Code, Cursor, Gemini CLI, Copilot, OpenCode, and other compatible agents.</p><pre><code>npx skills add ohmiler/gridgeist -g</code></pre></article>
               <article><div><span>03</span><h3>Manual</h3><small>PORTABLE</small></div><p>Copy <code>skills/gridgeist/</code> into the skills directory used by an agent that supports the Agent Skills <code>SKILL.md</code> convention.</p></article>
+              <article><div><span>04</span><h3>Update an existing install</h3><small>EXPLICIT</small></div><p>Gridgeist does not update silently. Refresh and reinstall a Codex plugin, or use the skills CLI update command, then start a new agent session. Manual copies must be replaced from a tagged release.</p><pre><code>codex plugin marketplace upgrade gridgeist
+codex plugin add gridgeist@gridgeist
+
+npx skills update gridgeist -g -y</code></pre></article>
             </div>
           </section>
 

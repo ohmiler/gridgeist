@@ -1,9 +1,9 @@
 interface:
   display_name: "Gridgeist"
-  short_description: "Structure interfaces with taste and spirit"
+  short_description: "Build product-native interfaces with clear structure"
   icon_small: "./assets/gridgeist-small.svg"
   icon_large: "./assets/gridgeist.png"
   brand_color: "#1547FF"
-  default_prompt: "Use $gridgeist to design or refine this interface with a strong grid, precise typography, and intentional visual hierarchy."
+  default_prompt: "Use $gridgeist to design or refine this interface around its product, brand, and behavior, then verify responsive and accessible results."
 policy:
   allow_implicit_invocation: true

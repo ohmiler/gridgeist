@@ -69,6 +69,10 @@
 codex plugin add gridgeist@gridgeist</code></pre></article>
               <article><div><span>02</span><h3>Agent ที่รองรับ</h3><small>UNIVERSAL</small></div><p>ใช้ open agent skills CLI สำหรับ Claude Code, Cursor, Gemini CLI, Copilot, OpenCode และ Agent อื่นที่รองรับ</p><pre><code>npx skills add ohmiler/gridgeist -g</code></pre></article>
               <article><div><span>03</span><h3>ติดตั้งด้วยตนเอง</h3><small>PORTABLE</small></div><p>คัดลอก <code>skills/gridgeist/</code> ไปยัง Skills directory ของ Agent ที่รองรับมาตรฐาน Agent Skills แบบ <code>SKILL.md</code></p></article>
+              <article><div><span>04</span><h3>อัปเดตของเดิม</h3><small>สั่งอัปเดต</small></div><p>Gridgeist จะไม่อัปเดตแบบเงียบ ให้ Refresh และติดตั้ง Codex Plugin ซ้ำ หรือใช้คำสั่ง Update ของ skills CLI แล้วเริ่ม Agent session ใหม่ ส่วนการคัดลอกเองต้องแทนที่จาก Release tag</p><pre><code>codex plugin marketplace upgrade gridgeist
+codex plugin add gridgeist@gridgeist
+
+npx skills update gridgeist -g -y</code></pre></article>
             </div>
           </section>
 

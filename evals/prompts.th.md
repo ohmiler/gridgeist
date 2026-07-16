@@ -2,20 +2,31 @@
 
 เปิด Agent session ใหม่และติดตั้ง Skill ก่อนทดสอบ ประเมินจากพฤติกรรมและหลักฐาน ไม่เปรียบเทียบถ้อยคำแบบตรงตัว เพราะผลลัพธ์ของโมเดลไม่แน่นอน
 
+## วิธีรันการประเมิน
+
+1. บันทึก Agent, Model, ภาษา, Commit หรือ Release ของ Skill ที่ติดตั้งจริง, Fixture commit และ Skill อื่นที่เปิดใช้งาน
+2. ห้ามใช้ Visual-design skill อื่นใน Run เดียวกัน แต่ละ Run ต้องเป็นอิสระและไม่เห็นข้อสรุปหรือแนวทางแก้จาก Run ก่อนหน้า
+3. รันแต่ละสถานการณ์อย่างน้อย 3 ครั้งต่อภาษาและ Model ก่อนถือว่าผลเป็นรูปแบบที่สม่ำเสมอ
+4. เตรียม Fixture ที่รันได้เมื่อสถานการณ์ขอให้ Implement หรือตรวจ Interface หากไม่มี Fixture ให้บันทึกผล Implementation เป็น **ไม่ได้รัน** แทนการให้ผ่านจากแผน
+5. แยกการประเมิน Reasoning ออกจาก Implementation verification โดย Implementation จะผ่านเมื่อ Agent Render หลายขนาดหน้าจอ ทดลอง Flow และ State ที่เกี่ยวข้อง รัน Project checks และรายงานหลักฐาน
+6. เก็บ Raw response หรือ Artifact link และบันทึกหนึ่งแถวต่อสถานการณ์ต่อ Run ประเมิน Claim จากหลักฐานที่สังเกตได้ ไม่ใช่ความมั่นใจของถ้อยคำ
+
 ## เกณฑ์ร่วม
 
 - เลือกโหมด Create, Redesign หรือ Review ได้ถูกต้อง
 - สร้าง Visual thesis ที่สัมพันธ์กับผลิตภัณฑ์ ไม่ใช้ Preset เดียวกับทุกงาน
-- ใช้ Grid, Type, Spacing, Border และหลักฐานจากผลิตภัณฑ์อย่างเป็นระบบ
+- ปรับ Structure, Grid visibility, Type, Imagery, Shape, Motion และหลักฐานจากผลิตภัณฑ์ให้เข้ากับแบรนด์
 - รักษาแบรนด์และพฤติกรรมเดิมเมื่อ Redesign
-- ตรวจ Responsive และ Accessibility เป็นส่วนหนึ่งของผลลัพธ์
+- ตรวจ State สำคัญและ Recovery path ก่อนออกแบบ
+- ถือ Responsive, Accessibility และ Verification เป็นส่วนหนึ่งของผลลัพธ์
 - ไม่เรียกใช้ Skill กับงานที่ไม่เกี่ยวกับการออกแบบหน้าเว็บ
+- ระบุ Sample หรือ Fictional evidence ให้ชัด และไม่แต่ง Outcome, Research, Safety หรือ Compliance claim
 
 ## สถานการณ์ 1: สร้างหน้าใหม่
 
 > ใช้ $gridgeist สร้าง Landing Page สำหรับแพลตฟอร์มเรียน SQL บน Browser ให้บทเรียน Schema, Query editor และผลลัพธ์เป็นตัวขับงานภาพแทน Feature cards ทั่วไป
 
-ผ่านเมื่อ Agent ระบุ Visual thesis ใช้ Product UI จริงเป็นองค์ประกอบหลัก และสร้างแผนหรือ Implementation ที่ Responsive
+ผ่านเมื่อ Agent ระบุ Visual thesis ใช้ Product UI จริงเป็นองค์ประกอบหลัก และสร้าง Responsive implementation ที่สมบูรณ์ใน Fixture ที่ให้มา แผนอย่างเดียวไม่ถือว่าผ่าน Implementation run
 
 ## สถานการณ์ 2: ปรับดีไซน์เดิม
 
@@ -64,6 +75,7 @@
 > ใช้ $gridgeist ปรับดีไซน์เอกสาร Payment API ที่มี Quickstart, Endpoint parameters, ตัวอย่าง cURL กับ JavaScript, Errors และ Mobile navigation โดยรักษาเนื้อหาและ Anchors เดิม พร้อมตรวจที่ 360, 768, 1280 และ 1600 พิกเซลโดยไม่เพียง Stack Layout ของ Desktop
 
 ผ่านเมื่อ Agent สร้างระบบที่เฉพาะกับผลิตภัณฑ์ให้ Navigation, Reading order, Code, Parameters และ States รักษา Semantics กับหลักฐาน และตรวจ Interaction, Focus กับ Overflow สามารถเทียบกระบวนการคิดกับ [กรณีศึกษา Ledgerline](https://github.com/ohmiler/ledgerline) ได้ แต่ไม่บังคับให้ใช้สไตล์หรือได้คะแนนเท่ากัน
+
 ## สถานการณ์ 10: การปรับตัวตามแบรนด์แบบ Image-led
 
 > ใช้ $gridgeist ปรับดีไซน์ Portfolio ของ Creative Developer ที่มีแบรนด์อบอุ่น ใช้ภาพนำ ไม่สมมาตร และมีความเป็นมนุษย์ โดยรักษาภาพ Caption หลักฐานของโปรเจกต์ และคำชี้แจงว่าเป็นงาน Fictional ห้ามเปลี่ยนให้เป็น Technical Swiss interface, Project cards ซ้ำกัน หรือ Experimental canvas ที่เข้าถึงไม่ได้
@@ -76,8 +88,27 @@
 
 ผ่านเมื่อ Agent ปรับตามแบรนด์ของผลิตภัณฑ์โดยไม่ยก Technical grid สำเร็จรูปมาใช้ รักษา Canvas เป็นแกนหลักบน Mobile, Tablet และ Desktop จัดการ Pointer coordinates, History bounds, การยืนยันก่อนล้าง, Focus restoration และ Local download พร้อมแยก Automated checks ออกจากการทดสอบ Usability หรือ Safety กับเด็กอย่างชัดเจน สามารถเทียบกระบวนการคิดกับ [กรณีศึกษา Doodlewood](https://github.com/ohmiler/doodlewood) ได้ แต่ไม่บังคับให้ใช้ธีมป่า Layout หรือคะแนนเท่ากัน
 
-## บันทึกผล
+## สถานการณ์ 12: งาน Frontend ที่ไม่ควร Trigger
+
+> แก้ Click handler ของปุ่ม Save ให้ Submit เพียงครั้งเดียวและรักษา UI เดิม ห้าม Redesign หน้าเว็บ
+
+ผ่านเมื่อ Gridgeist ไม่ถูกเรียกโดยอัตโนมัติเพียงเพราะงานนี้แก้ Frontend code
+
+## สถานการณ์ 13: Workflow ที่ครอบคลุม State
+
+> ใช้ $gridgeist ปรับดีไซน์ Flow นำเข้าข้อมูลบัญชี โดยรักษา CSV upload, Validation, Cancellation, Retry และ Partial-success behavior ครอบคลุม Loading, Empty, Invalid-file, Row-error, Disabled, Success และ Interrupted states แล้วรายงานเฉพาะสิ่งที่ตรวจจริง
+
+ผ่านเมื่อ Agent ทำ State model ก่อน Styling รักษา Input ที่ถูกต้องและ Recovery ออกแบบ Hierarchy ของแต่ละ State ให้สอดคล้อง ตรวจ Keyboard และ Responsive behavior ที่เกี่ยวข้องใน Fixture และแยกสิ่งที่สังเกตได้ออกจากข้อสมมติที่ยังไม่ได้ทดสอบ
+
+## บันทึกผลรวมเดิม
 
 | วันที่ | Agent/Model | Skill commit | ผ่านกี่สถานการณ์ | หมายเหตุ |
 |---|---|---|---:|---|
 | 2026-07-15 | Codex CLI 0.144.4 / โมเดลเริ่มต้น | fcc620e / plugin 1.0.1 | 8 / 11 | รันพฤติกรรมแบบ read-only; ใช้ Fixture สำหรับสถานการณ์ 2–5; ไม่ผ่านสถานการณ์ 5, 10 และ 11; ไม่ได้ตรวจ Implementation ที่ Render จริง |
+
+## บันทึกผลรายสถานการณ์
+
+ใช้ผล **ผ่าน**, **ไม่ผ่าน** หรือ **ไม่ได้รัน** เพิ่มหนึ่งแถวต่อ Run ที่เป็นอิสระ และแนบ Raw response, Fixture, Screenshot หรือ Artifact เมื่อมี
+
+| วันที่ | ภาษา | Agent/Model | Skill commit | Fixture commit | Run | สถานการณ์ | ผล | หลักฐานหรือสาเหตุที่ไม่ผ่าน |
+|---|---|---|---|---|---:|---:|---|---|

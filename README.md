@@ -6,7 +6,7 @@
 
 **English** · [ภาษาไทย](README.th.md) · [Website](https://ohmiler.github.io/gridgeist/) · [Examples](https://ohmiler.github.io/gridgeist/examples/)
 
-Gridgeist is an agent skill for creating, redesigning, and reviewing web interfaces with a strong grid, precise typography, technical minimalism, and editorial discipline. It helps agents move beyond generic AI-generated SaaS patterns while preserving product intent, behavior, responsiveness, and accessibility.
+Gridgeist is an agent skill for creating, redesigning, and reviewing product-native web interfaces. It adapts structure, typography, imagery, interaction, and product evidence to the established brand, using grids as visible, quiet, or invisible logic. It helps agents move beyond generic AI-generated SaaS patterns while preserving product intent, behavior, responsiveness, and accessibility.
 
 ## See the difference
 
@@ -47,6 +47,7 @@ Agents that support explicit skill invocation can use `$gridgeist` in the prompt
 - Create a distinctive landing page, dashboard, documentation site, portfolio, or learning platform.
 - Redesign an existing interface without breaking its behavior or brand.
 - Review a draft and prioritize hierarchy, composition, responsiveness, accessibility, and implementation quality.
+- Adapt technical, editorial, image-led, playful, utilitarian, or visible-grid direction without erasing the brand.
 
 ## Installation
 
@@ -89,6 +90,35 @@ npx skills add ohmiler/gridgeist -g -a claude-code
 ### Manual installation
 
 Copy the `skills/gridgeist/` directory to the skills directory used by your agent. The agent must support the Agent Skills `SKILL.md` convention. Discovery and invocation behavior can differ between products.
+
+## Updating
+
+Gridgeist releases do not update silently. Use the command for the channel that installed the skill, then start a new agent session.
+
+### Codex plugin
+
+Refresh the Git-backed marketplace snapshot, then reinstall the plugin version exposed by that release:
+
+```powershell
+codex plugin marketplace upgrade gridgeist
+codex plugin add gridgeist@gridgeist
+```
+
+Confirm the installed version with `codex plugin list`. If the current session still uses older instructions, start a new thread or restart the Codex app.
+
+### Universal installer
+
+Update a global Gridgeist installation:
+
+```powershell
+npx skills update gridgeist -g -y
+```
+
+For a project-scoped installation, use `npx skills update gridgeist -p -y` instead.
+
+### Git clone or manual copy
+
+Run `git pull --ff-only` in an existing clone, then reinstall from `skills/gridgeist/`. Manual copies do not retain source or version metadata, so replace the complete skill directory from a tagged release. Prefer the Codex plugin or universal installer when future updates matter.
 
 ## Example prompts
 
@@ -141,7 +171,7 @@ Together, the four self-produced case studies cover data-heavy, content-heavy, i
 ## Validation
 
 ```powershell
-python "$HOME\.codex\skills\.system\skill-creator\scripts\quick_validate.py" .\skills\gridgeist
+python -X utf8 "$HOME\.codex\skills\.system\skill-creator\scripts\quick_validate.py" .\skills\gridgeist
 ```
 
 Behavioral evaluation prompts are in [`evals/prompts.md`](evals/prompts.md).

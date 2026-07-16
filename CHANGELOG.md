@@ -3,6 +3,30 @@
 All notable changes to Gridgeist are documented here. This project follows
 [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+## [1.1.0] - 2026-07-16
+
+### Added
+
+- Added explicit update instructions for Codex plugins, `npx skills`, Git clones,
+  and manual installations in English and Thai documentation.
+- Added dependency-free release validation and GitHub Actions checks for skill,
+  plugin, marketplace, documentation, and bilingual evaluation alignment.
+
+### Changed
+
+- Reframed Gridgeist around product-native structure so grids may be visible,
+  quiet, or invisible according to the established brand.
+- Added explicit adaptation guidance for image-led, playful, technical,
+  content-heavy, and transactional interfaces.
+- Added interaction-state inventory, verification evidence, and claim-integrity
+  requirements to the core workflow and review checklist.
+- Strengthened behavioral evaluation guidance with repeat runs,
+  scenario-level evidence, implementation checks, and trigger boundaries.
+- Made the documented Windows validation command explicitly use UTF-8.
+- Pinned the public marketplace entry to the v1.1.0 release tag.
+
 ## [1.0.1] - 2026-07-14
 
 ### Fixed
@@ -37,6 +61,8 @@ Gridgeist's first stable release.
 - English and Thai documentation and evaluation prompts.
 - Interactive examples and a responsive GitHub Pages website.
 
+[Unreleased]: https://github.com/ohmiler/gridgeist/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/ohmiler/gridgeist/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/ohmiler/gridgeist/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/ohmiler/gridgeist/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/ohmiler/gridgeist/releases/tag/v0.1.0

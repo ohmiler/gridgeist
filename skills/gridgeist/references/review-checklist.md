@@ -1,56 +1,68 @@
 # Gridgeist Review Checklist
 
-Use this checklist after implementation or for a review-only request. Report only meaningful findings.
+Use this checklist after implementation or for a review-only request. Report only meaningful findings and distinguish observed evidence from inference.
 
-## 1. Product clarity
+## 1. Product clarity and truth
 
-- Can a first-time visitor identify the product, audience, and next action quickly?
-- Does each section answer a distinct question?
-- Is the copy specific to the product rather than interchangeable SaaS language?
-- Are real product evidence and outcomes visible?
+- Can a first-time user identify the product, audience, primary task, and next action quickly?
+- Does each section or workflow stage answer a distinct question?
+- Is copy specific rather than interchangeable SaaS language?
+- Are authentic product evidence and outcomes visible?
+- Are sample, fictional, estimated, or unverified claims labeled honestly?
 
-## 2. Composition and hierarchy
+## 2. Brand fidelity and direction
 
-- Is there one clear dominant element in each viewport?
+- Does the interface preserve recognizable voice, imagery, geometry, palette, and interaction character?
+- Does the visual thesis fit the audience and task rather than merely looking fashionable?
+- Is the grid visible, quiet, or invisible for a clear reason?
+- Would the product remain recognizable after removing generic technical chrome?
+
+## 3. Composition and hierarchy
+
+- Is there one clear dominant element in each viewport or workflow stage?
 - Do related elements share alignment and proximity?
 - Does the page alternate density and breathing room intentionally?
-- Do section layouts vary without losing the common grid?
-- Are visible lines explaining structure rather than adding noise?
+- Do sections vary without losing shared structural logic?
+- Are rules, overlap, asymmetry, or empty space explaining structure rather than adding noise?
 
-## 3. Typography
+## 4. Typography, spacing, and geometry
 
-- Are type roles limited and consistent?
+- Are type roles limited, consistent, and appropriate to the brand?
 - Is body text comfortable to read at the rendered width?
 - Do headings wrap deliberately at common breakpoints?
-- Is mono type reserved for genuinely technical information?
-
-## 4. Spacing and geometry
-
 - Are gaps drawn from a coherent token scale?
-- Are outer gutters, section padding, and component padding distinct?
-- Are radius, border, and shadow choices consistent?
+- Are radius, border, shadow, crop, and aspect-ratio choices systematic?
 - Are optical misalignments corrected where mathematical alignment looks wrong?
 
 ## 5. Responsive behavior
 
-Inspect at narrow mobile, wide mobile, tablet, laptop, and large desktop widths.
+Inspect project-defined widths or, when absent, approximately 360, 768, 1280, and 1600 px.
 
-- Does content order still match priority?
-- Do navigation and controls remain usable by touch?
-- Are grids recomposed instead of squeezed?
-- Are code, tables, and media handled without unintended overflow?
-- Do long labels, localization, and dynamic content remain resilient?
+- Does content and control order still match priority?
+- Do navigation and controls remain usable by touch and keyboard?
+- Are grids and narratives recomposed instead of squeezed or blindly stacked?
+- Are code, tables, artwork, canvas, and media handled without unintended overflow?
+- Do long labels, localization, zoom, and dynamic content remain resilient?
 
-## 6. Interaction and accessibility
+## 6. Interaction states and recovery
+
+- Inventory default, hover, focus, active, selected, disabled, loading, empty, error, success, and destructive states when applicable.
+- Does the primary task remain clear in every important state?
+- Do errors explain recovery without destroying valid input?
+- Are destructive actions confirmed or reversible in proportion to risk?
+- Do overlays close with Escape and restore focus correctly?
+- Do pointer, touch, keyboard, and resize behavior preserve the same underlying task?
+
+## 7. Accessibility and constraints
 
 - Use semantic landmarks, headings, buttons, links, labels, and lists.
-- Verify keyboard order, visible focus, escape behavior, and focus return for overlays.
-- Check text and state contrast.
+- Verify keyboard order, visible focus, accessible names, contrast, and non-color state cues.
 - Provide useful alternative text or mark decorative visuals appropriately.
-- Avoid conveying state by color alone.
-- Respect reduced motion and zoom.
+- Respect reduced motion without removing essential feedback.
+- Preserve privacy, safety, data, and platform constraints.
+- Do not turn automated checks into claims of usability, compliance, safety, or user research.
 
-## 7. Implementation quality
+## 8. Implementation quality
 
 - Follow existing component and styling conventions.
 - Reuse real tokens rather than duplicating magic values.
@@ -58,6 +70,18 @@ Inspect at narrow mobile, wide mobile, tablet, laptop, and large desktop widths.
 - Avoid unnecessary dependencies and layout-specific JavaScript.
 - Run the relevant formatter, typecheck, lint, tests, and build.
 - Inspect the rendered result after automated checks pass.
+
+## 9. Verification evidence
+
+Record:
+
+- Viewports and themes actually rendered.
+- Primary flows, input methods, and states actually exercised.
+- Automated commands run and their results.
+- Visual, interaction, accessibility, or content issues observed and corrected.
+- Remaining gaps, assumptions, and checks requiring real users or domain experts.
+
+Never write “verified,” “accessible,” “safe,” or “compliant” when only code inspection or automated checks support the claim.
 
 ## Prioritizing findings
 
@@ -68,4 +92,4 @@ Inspect at narrow mobile, wide mobile, tablet, laptop, and large desktop widths.
 | Medium | Creates inconsistency or friction but has a clear workaround |
 | Low | Polish improvement with limited user impact |
 
-For each finding, state the evidence and the smallest coherent correction. Group repeated symptoms under one system-level cause.
+For each finding, state the location, evidence, impact, and smallest coherent correction. Group repeated symptoms under one system-level cause.

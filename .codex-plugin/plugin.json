@@ -1,7 +1,7 @@
 {
   "name": "gridgeist",
-  "version": "1.0.1",
-  "description": "Design, redesign, and review distinctive web interfaces with a strong grid, precise typography, and product-specific visual systems.",
+  "version": "1.1.0",
+  "description": "Design, redesign, and review distinctive product-native web interfaces with clear structure, brand fidelity, and verified behavior.",
   "author": {
     "name": "Miler",
     "url": "https://github.com/ohmiler"
@@ -19,8 +19,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Gridgeist",
-    "shortDescription": "Structure interfaces with taste and spirit.",
-    "longDescription": "Gridgeist helps Codex create, redesign, and review responsive web interfaces using rigorous grids, precise typography, product evidence, and accessible interaction patterns.",
+    "shortDescription": "Build product-native interfaces with clear structure.",
+    "longDescription": "Gridgeist helps Codex create, redesign, and review responsive web interfaces by adapting structure, typography, imagery, interaction, and product evidence to the established brand.",
     "developerName": "Miler",
     "category": "Developer Tools",
     "capabilities": [
@@ -30,9 +30,9 @@
     ],
     "websiteURL": "https://ohmiler.github.io/gridgeist/",
     "defaultPrompt": [
-      "Use $gridgeist to design a distinctive responsive web interface.",
-      "Use $gridgeist to redesign this UI without breaking behavior.",
-      "Review this interface with $gridgeist before editing it."
+      "Use $gridgeist to design a distinctive product-native web interface.",
+      "Use $gridgeist to redesign this UI while preserving its brand and behavior.",
+      "Review this interface with $gridgeist and ground findings in rendered evidence."
     ],
     "brandColor": "#1547FF"
   }

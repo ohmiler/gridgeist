@@ -1,0 +1,27 @@
+name: Validate skill and release metadata
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Validate working tree metadata
+        run: python scripts/validate_release.py
+      - name: Validate tag identity
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: python scripts/validate_release.py --release-version "${GITHUB_REF_NAME#v}"
