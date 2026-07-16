@@ -4,7 +4,7 @@ solodeveling_schema: 1
 
 # EVIDENCE-0001: v1.1.0 preflight
 
-- **Candidate:** Local Gridgeist v1.1.0 working tree based on `31813b4936ac1e9070b1d329e11667330814155b`.
+- **Candidate:** Gridgeist v1.1.0 payload at release-candidate commit `316e0b1`.
 - **Date:** 2026-07-16 Asia/Bangkok.
 - **Claim:** The candidate is structurally valid, release metadata is aligned, and bilingual update documentation renders without detected overflow or console errors.
 

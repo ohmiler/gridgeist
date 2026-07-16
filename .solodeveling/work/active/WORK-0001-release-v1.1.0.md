@@ -6,7 +6,7 @@ solodeveling_schema: 1
 
 - **Status:** Verifying
 - **Class:** Standard, Audited release work
-- **Candidate:** Gridgeist plugin v1.1.0 derived from source baseline `31813b4936ac1e9070b1d329e11667330814155b` plus the reviewed local skill revision.
+- **Candidate:** Gridgeist plugin v1.1.0 payload at release-candidate commit `316e0b1`.
 - **Target:** Public GitHub repository, Git-backed Codex marketplace, GitHub Release, and Agent Skills-compatible Git installers.
 - **Operator:** Repository owner through Codex in the current workspace.
 - **Compatibility:** Preserve the `gridgeist` skill and plugin identifiers and existing Create, Redesign, and Review invocation patterns.
