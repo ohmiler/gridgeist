@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="คู่มือภาษาไทยสำหรับ Gridgeist — Agent Skill เพื่อสร้าง ปรับดีไซน์ และรีวิวหน้าเว็บอย่างเป็นระบบ" />
+    <meta name="description" content="Gridgeist ภาษาไทย — Agent Skill ที่ปรับโครงสร้างตามผลิตภัณฑ์และแบรนด์ เพื่อสร้าง ปรับดีไซน์ และรีวิวหน้าเว็บ" />
     <meta name="theme-color" content="#f2f0e9" />
     <title>Gridgeist ภาษาไทย — ออกแบบอย่างมีระบบและมีจิตวิญญาณ</title>
     <link rel="canonical" href="https://ohmiler.github.io/gridgeist/th/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Gridgeist" />
     <meta property="og:title" content="Gridgeist ภาษาไทย — ออกแบบอย่างมีระบบและมีจิตวิญญาณ" />
-    <meta property="og:description" content="คู่มือภาษาไทยสำหรับ Agent Skill ที่ช่วยสร้าง ปรับดีไซน์ และรีวิวหน้าเว็บอย่างเป็นระบบ" />
+    <meta property="og:description" content="Agent Skill ที่สร้าง Interface จากผู้ใช้ งานหลัก หลักฐานของผลิตภัณฑ์ และบุคลิกของแบรนด์" />
     <meta property="og:url" content="https://ohmiler.github.io/gridgeist/th/" />
     <meta property="og:image" content="https://ohmiler.github.io/gridgeist/og-image.png" />
     <meta property="og:image:width" content="1200" />
@@ -30,22 +30,23 @@
     <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
     <header class="site-header">
       <a class="wordmark" href="../" aria-label="หน้าแรก Gridgeist">GRIDGEIST<span aria-hidden="true">®</span></a>
-      <nav aria-label="เมนูหลัก"><a href="./docs/">DOCS</a><a href="#modes">รูปแบบงาน</a><a href="#prompt">เขียน Prompt</a><a href="../examples/">ตัวอย่าง</a><a href="#install">ติดตั้ง</a></nav>
+      <nav class="desktop-nav" aria-label="เมนูหลัก"><a href="./docs/">DOCS</a><a href="#modes">รูปแบบงาน</a><a href="#adaptation">การปรับใช้</a><a href="../examples/">ตัวอย่าง</a><a href="#install">ติดตั้ง</a></nav>
+      <details class="mobile-menu"><summary>เมนู</summary><nav aria-label="เมนูมือถือ"><a href="./docs/">DOCS</a><a href="#modes">รูปแบบงาน</a><a href="#adaptation">การปรับใช้</a><a href="../examples/">ตัวอย่าง</a><a href="#install">ติดตั้ง</a></nav></details>
       <div class="language-switch" aria-label="เลือกภาษา"><a href="../" lang="en">EN</a><span>/</span><strong>TH</strong></div>
     </header>
 
     <main id="main">
       <section class="hero thai-hero" id="top" aria-labelledby="hero-title">
         <div class="hero-grid" aria-hidden="true"><span class="axis axis-x"></span><span class="axis axis-y"></span><span class="coordinate">X 00 / Y 00</span></div>
-        <p class="eyebrow hero-kicker">คู่มือภาษาไทย / Agent Skill สำหรับงานเว็บ</p>
+        <p class="eyebrow hero-kicker">Agent Skill / โครงสร้างที่มาจากผลิตภัณฑ์</p>
         <h1 id="hero-title"><span>ออกแบบอย่าง</span><span>มีระบบ.</span></h1>
-        <div class="hero-footer"><p>Gridgeist ช่วยเปลี่ยนเจตนาของผลิตภัณฑ์ให้เป็นระบบภาพที่ชัดเจน โดยไม่ตกลงไปในหน้าตาแบบ Generic AI SaaS</p><a class="button button-dark" href="#start">เริ่มใช้งาน <span>↓</span></a></div>
-        <div class="hero-index" aria-hidden="true"><span>GG—TH</span><span>OPEN SOURCE</span><span>MIT LICENSE</span></div>
+        <div class="hero-footer"><p>Gridgeist เปลี่ยนผู้ใช้ งานหลัก หลักฐานของผลิตภัณฑ์ และเจตนาของแบรนด์ให้เป็นระบบภาพที่เป็นของผลิตภัณฑ์นั้นจริง ๆ</p><a class="button button-dark" href="#start">เริ่มใช้งาน <span>↓</span></a></div>
+        <div class="hero-index" aria-hidden="true"><span>GG—1.1 TH</span><span>16.07.26</span><span>OPEN SOURCE</span></div>
       </section>
 
       <section class="statement reveal" id="start" aria-labelledby="premise-title">
         <p class="section-label">01 / แนวคิดหลัก</p>
-        <div><h2 id="premise-title">การตกแต่ง<br />ไม่ใช่ระบบ.</h2><p>ให้กริด ตัวอักษร ระยะห่าง เส้นแบ่ง และหลักฐานจากผลิตภัณฑ์ทำหน้าที่สื่อสาร แทนการเพิ่มของตกแต่งที่ใช้ได้กับทุกเว็บ</p></div>
+        <div><h2 id="premise-title">กริดคือการตัดสินใจ<br />ไม่ใช่เครื่องแบบ.</h2><p>โครงสร้างอาจมองเห็น ช่วยงานอยู่เงียบ ๆ หรือหายไปจากสายตา ผู้ใช้ งาน เนื้อหา และแบรนด์เป็นผู้ตัดสิน ไม่ใช่สไตล์สำเร็จรูป</p></div>
       </section>
 
       <section class="thai-modes reveal" id="modes" aria-labelledby="modes-title">
@@ -57,41 +58,52 @@
         </ol>
       </section>
 
+      <section class="adaptation thai-adaptation reveal" id="adaptation" aria-labelledby="adaptation-title">
+        <header class="adaptation-intro"><p class="section-label section-label-light">03 / ระดับของโครงสร้าง</p><h2 id="adaptation-title">วิธีเดียวกัน<br />สัญญาณต่างกัน.</h2><p>ตัวอย่างเชิงโครงสร้าง ไม่ใช่งานลูกค้า แต่ละพื้นผิวเปลี่ยนความเข้มของกริดโดยยังใช้หลัก Evidence-first ชุดเดียวกัน</p></header>
+        <div class="specimen-grid">
+          <article class="specimen specimen-visible"><header><span>01 / มองเห็น</span><b>ระบบเทคนิค</b></header><div class="trace-mini" aria-hidden="true"><i></i><p><span>api.search</span><b>184 ms</b></p><p><span>db.lookup</span><b>42 ms</b></p><p><span>cache.hit</span><b>08 ms</b></p></div><p>ใช้แนวจัดวางชัดเจนเพื่อเผยความสัมพันธ์ของข้อมูล โค้ด และสถานะระบบ</p></article>
+          <article class="specimen specimen-quiet"><header><span>02 / เงียบ</span><b>เรื่องเล่าที่ใช้ภาพนำ</b></header><div class="editorial-mini" aria-hidden="true"><i></i><i></i><small>WORK 03 / PROCESS &amp; OUTCOME</small></div><p>แนวจัดวางที่ไม่แย่งสายตาเปิดพื้นที่ให้งานศิลป์ คำบรรยาย และลำดับเรื่อง</p></article>
+          <article class="specimen specimen-invisible"><header><span>03 / มองไม่เห็น</span><b>เครื่องมือที่ควบคุมโดยตรง</b></header><div class="canvas-mini" aria-hidden="true"><span></span><i></i><b>●</b><b>●</b><b>●</b></div><p>Canvas เป็นพระเอก ส่วนโครงสร้างอยู่ในการวางเครื่องมือและพฤติกรรมสัมผัส</p></article>
+          <article class="specimen specimen-state"><header><span>04 / สถานะนำ</span><b>ขั้นตอนธุรกรรม</b></header><div class="ledger-mini" aria-hidden="true"><p><b>184</b><span>พร้อม</span></p><p><b>16</b><span>ต้องแก้ไข</span></p><i></i></div><p>ตำแหน่งคำสั่งที่คงที่ สถานะชัดเจน และทางกู้คืนเป็นผู้สร้าง Hierarchy</p></article>
+        </div>
+      </section>
+
       <section class="prompt-guide reveal" id="prompt" aria-labelledby="prompt-title">
-        <div class="prompt-intro"><p class="section-label section-label-light">03 / เขียน Prompt ให้ได้ผล</p><h2 id="prompt-title">บอกสี่อย่าง<br />ก่อนเริ่ม.</h2><p>Context ที่ดีทำให้ Agent ตัดสินใจจากผลิตภัณฑ์ แทนการเดาจากสไตล์ยอดนิยม</p></div>
+        <div class="prompt-intro"><p class="section-label section-label-light">04 / เขียน Prompt ให้ได้ผล</p><h2 id="prompt-title">บอกสี่อย่าง<br />ก่อนเริ่ม.</h2><p>Context ที่ดีทำให้ Agent ตัดสินใจจากผลิตภัณฑ์ แทนการเดาจากสไตล์ยอดนิยม</p></div>
         <ol><li><span>01</span><b>ผลิตภัณฑ์และผู้ใช้</b><p>กำลังออกแบบอะไร และใครเป็นคนใช้งาน</p></li><li><span>02</span><b>งานที่ต้องการ</b><p>สร้างใหม่ ปรับดีไซน์ หรือรีวิวโดยไม่แก้โค้ด</p></li><li><span>03</span><b>สิ่งที่ต้องรักษา</b><p>ฟังก์ชัน Route เนื้อหา สี และบุคลิกของแบรนด์</p></li><li><span>04</span><b>สิ่งที่ต้องตรวจ</b><p>Desktop, Mobile, Keyboard, Accessibility และ Build</p></li></ol>
       </section>
 
       <section class="thai-prompts reveal" aria-labelledby="examples-title">
-        <header><p class="section-label">04 / ตัวอย่าง Prompt</p><h2 id="examples-title">คัดลอก<br />แล้วปรับใช้.</h2></header>
+        <header><p class="section-label">05 / ตัวอย่าง Prompt</p><h2 id="examples-title">คัดลอก<br />แล้วปรับใช้.</h2></header>
         <div class="prompt-list">
-          <article><div><span>CREATE</span><button class="thai-copy" data-copy-target="prompt-create">คัดลอก</button></div><pre id="prompt-create">ใช้ $gridgeist ออกแบบ Landing Page สำหรับแพลตฟอร์มเรียน SQL
+          <article><div><span>CREATE</span><button class="thai-copy" data-copy-target="prompt-create" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกข้อความ">คัดลอก</button></div><pre id="prompt-create">ใช้ $gridgeist ออกแบบ Landing Page สำหรับแพลตฟอร์มเรียน SQL
 ให้บทเรียน Query editor และผลลัพธ์เป็นส่วนสำคัญของงานภาพ
 หลีกเลี่ยงการ์ด SaaS แบบทั่วไป และตรวจทั้ง Desktop กับ Mobile</pre></article>
-          <article><div><span>REDESIGN</span><button class="thai-copy" data-copy-target="prompt-redesign">คัดลอก</button></div><pre id="prompt-redesign">ใช้ $gridgeist ปรับดีไซน์ Dashboard นี้ใหม่
+          <article><div><span>REDESIGN</span><button class="thai-copy" data-copy-target="prompt-redesign" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกข้อความ">คัดลอก</button></div><pre id="prompt-redesign">ใช้ $gridgeist ปรับดีไซน์ Dashboard นี้ใหม่
 รักษาฟังก์ชัน เส้นทาง เนื้อหา และสีแบรนด์เดิมทั้งหมด
 จัดลำดับข้อมูลตามความสำคัญ และอย่าแก้เพียงแค่ลดความโค้งของการ์ด</pre></article>
-          <article><div><span>REVIEW</span><button class="thai-copy" data-copy-target="prompt-review">คัดลอก</button></div><pre id="prompt-review">รีวิวหน้าเว็บนี้ด้วย $gridgeist โดยยังไม่ต้องแก้โค้ด
+          <article><div><span>REVIEW</span><button class="thai-copy" data-copy-target="prompt-review" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกข้อความ">คัดลอก</button></div><pre id="prompt-review">รีวิวหน้าเว็บนี้ด้วย $gridgeist โดยยังไม่ต้องแก้โค้ด
 สรุปคำตัดสินหนึ่งบรรทัด ตามด้วยปัญหาที่เรียงตามความสำคัญ
 หลักฐาน และทิศทางใหม่ที่สอดคล้องกัน</pre></article>
         </div>
       </section>
 
-      <section class="thai-practice reveal" aria-labelledby="practice-title"><p class="section-label">05 / หลักปฏิบัติ</p><h2 id="practice-title">ให้ Agent เห็น<br />ของจริง.</h2><div><p>เปิด Repository และหน้าเว็บที่ Render แล้ว</p><p>ระบุ Behavior ที่ห้ามเปลี่ยนเมื่อ Redesign</p><p>ใช้ข้อมูล โค้ด และ Workflow ของผลิตภัณฑ์จริง</p><p>ตรวจหลาย Viewport และ Interaction state</p></div></section>
+      <section class="thai-practice reveal" aria-labelledby="practice-title"><p class="section-label">06 / หลักปฏิบัติ</p><h2 id="practice-title">ให้ Agent เห็น<br />ของจริง.</h2><div><p>เปิด Repository และหน้าเว็บที่ Render แล้ว</p><p>ระบุ Behavior ที่ห้ามเปลี่ยนเมื่อ Redesign</p><p>ใช้ข้อมูล โค้ด และ Workflow ของผลิตภัณฑ์จริง</p><p>ตรวจหลาย Viewport และ Interaction state</p></div></section>
+
+      <section class="proof thai-proof reveal" aria-labelledby="proof-title"><p class="section-label">07 / หลักฐานการประเมิน</p><div class="proof-number">13</div><div class="proof-copy"><h2 id="proof-title">สิบสามสถานการณ์<br />สามสิบรอบใหม่.</h2><p>ชุดประเมินครอบคลุม Create, Redesign, Review, การปรับตามแบรนด์, State recovery, Accessibility, ความซื่อตรงของหลักฐาน และ Negative trigger</p><p class="proof-note"><b>30 / 30</b> รอบ Behavioral เป้าหมายผ่านทั้งภาษาไทยและอังกฤษ ส่วน Implementation fixture ไม่ได้รัน</p><a href="https://github.com/ohmiler/gridgeist/blob/main/evals/prompts.th.md">อ่านชุดประเมิน ↗</a></div></section>
 
       <section class="install reveal" id="install" aria-labelledby="install-title">
-        <p class="section-label section-label-light">06 / ติดตั้ง</p><h2 id="install-title">เพิ่มสายตา<br />ให้ Agent.</h2>
-        <div class="command-line"><code>git clone https://github.com/ohmiler/gridgeist.git</code><button type="button" class="copy-button" data-copy="git clone https://github.com/ohmiler/gridgeist.git">คัดลอก</button></div>
-        <div class="install-actions"><a class="button button-light" href="../examples/">ดูตัวอย่างจริง <span>↗</span></a><p>รองรับ Agent ที่ใช้ SKILL.md<br />เผยแพร่ภายใต้ MIT License</p></div>
+        <p class="section-label section-label-light">08 / ติดตั้งและอัปเดต</p><h2 id="install-title">ติดตั้งครั้งเดียว<br />อัปเดตอย่างตั้งใจ.</h2>
+        <div class="install-grid">
+          <article class="install-primary"><div><span>01 / CODEX PLUGIN</span><small>แนะนำ</small></div><p>เพิ่ม Marketplace ติดตั้ง Plugin จาก Release tag แล้วเริ่ม Codex session ใหม่</p><div class="command-line"><code id="install-codex-th">codex plugin marketplace add ohmiler/gridgeist
+codex plugin add gridgeist@gridgeist</code><button type="button" class="copy-button" data-copy-target="install-codex-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
+          <article><div><span>02 / AGENT SKILLS</span><small>ใช้ได้ทั่วไป</small></div><p>ติดตั้งแบบ Global สำหรับ Agent ที่รองรับ</p><div class="command-line command-line-small"><code id="install-skills-th">npx skills add ohmiler/gridgeist -g</code><button type="button" class="copy-button" data-copy-target="install-skills-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
+          <article><div><span>03 / UPDATE</span><small>สั่งเอง</small></div><p>Refresh Marketplace หรืออัปเดต Agent Skills โดยไม่มีการอัปเดตเบื้องหลัง</p><div class="command-line command-line-small"><code id="update-skill-th">codex plugin marketplace upgrade gridgeist
+npx skills update gridgeist -g -y</code><button type="button" class="copy-button" data-copy-target="update-skill-th" data-copied-label="คัดลอกแล้ว" data-fallback-label="เลือกคำสั่ง">คัดลอก</button></div></article>
+        </div>
+        <div class="install-actions"><a class="button button-light" href="./docs/#install">อ่านวิธีติดตั้ง <span>↗</span></a><p>Tagged releases<br />MIT License</p></div>
       </section>
     </main>
     <footer><a class="wordmark" href="../">GRIDGEIST®</a><p>ออกแบบอย่างมีระบบและมีจิตวิญญาณ</p><p>© 2026 MILER / MIT</p></footer>
-    <script>
-      document.querySelectorAll('.thai-copy').forEach((button) => button.addEventListener('click', async () => {
-        const text = document.getElementById(button.dataset.copyTarget).textContent;
-        try { await navigator.clipboard.writeText(text); button.textContent = 'คัดลอกแล้ว'; setTimeout(() => button.textContent = 'คัดลอก', 1600); }
-        catch { button.textContent = 'เลือกข้อความ'; }
-      }));
-    </script>
   </body>
 </html>

@@ -7,7 +7,10 @@ body { font-family: "Noto Sans Thai", var(--sans); }
 .thai-hero h1 span:last-child { color: var(--blue); }
 .thai-hero .hero-footer p { max-width: 650px; }
 .thai-modes { padding: 8rem var(--page-gutter); display: grid; grid-template-columns: 1fr 1.3fr; gap: 8vw; border-bottom: 1px solid var(--ink); }
-.thai-modes h2,.prompt-guide h2,.thai-prompts h2,.thai-practice h2 { margin: 1.5rem 0 0; font-size: clamp(3rem,6vw,6.5rem); line-height: .95; letter-spacing: -.065em; }
+.thai-modes h2,.prompt-guide h2,.thai-prompts h2,.thai-practice h2,.thai-proof h2 { margin: 1.5rem 0 0; font-size: clamp(3rem,6vw,6.5rem); line-height: 1.04; letter-spacing: -.055em; }
+.thai-adaptation h2 { line-height: 1.05; letter-spacing: -.05em; }
+.thai-adaptation .adaptation-intro > p:last-child,.thai-adaptation .specimen > p { line-height: 1.7; }
+.thai-adaptation .specimen header { letter-spacing: 0; }
 .thai-modes ol,.prompt-guide ol { margin: 0; padding: 0; list-style: none; border-top: 1px solid; }
 .thai-modes li { padding: 1.5rem 0; display: grid; grid-template-columns: 55px 1fr; border-bottom: 1px solid; }
 .thai-modes li > span,.prompt-guide li > span { font: .6rem var(--mono); }
@@ -33,9 +36,11 @@ body { font-family: "Noto Sans Thai", var(--sans); }
 .thai-practice > div { padding-top: 1rem; }
 .thai-practice > div p { margin: 0; padding: 1rem 0; border-bottom: 1px solid; }
 .install h2 { letter-spacing: -.07em; }
+.install-grid article > p { line-height: 1.7; }
+.thai-proof .proof-copy p { line-height: 1.7; }
 
 @media(max-width:800px){
-  .language-switch { grid-column: 2; grid-row: 1; }
+  .language-switch { grid-column: auto; grid-row: auto; }
   .language-switch a { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
   .thai-hero h1 { font-size: 19vw; }
   .thai-modes,.thai-prompts,.thai-practice { grid-template-columns: 1fr; padding: 5rem 1rem; gap: 4rem; }
@@ -43,4 +48,5 @@ body { font-family: "Noto Sans Thai", var(--sans); }
   .prompt-intro { min-height: 520px; padding: 5rem 0 2rem; }
   .prompt-guide li { padding: 1.5rem 1rem; }
   .prompt-list pre { font-size: .88rem; }
+  .thai-proof h2 { font-size: clamp(2.8rem,12vw,4.8rem); }
 }

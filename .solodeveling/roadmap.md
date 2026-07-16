@@ -6,7 +6,7 @@ solodeveling_schema: 1
 
 ## Active
 
-No active release work.
+None.
 
 ## Next
 
@@ -16,3 +16,4 @@ No active release work.
 ## Completed
 
 1. Released v1.1.0 with brand-adaptive guidance, bilingual update documentation, automated validation, behavioral evidence, and verified Codex/Agent Skills update paths.
+2. Refreshed and locally verified the bilingual main site to demonstrate the v1.1 product-native, brand-adaptive method.
