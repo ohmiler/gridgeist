@@ -27,14 +27,23 @@ Same content and operating data; a different design system. Gridgeist shifts the
 
 ## 60-second Quickstart
 
-1. Download this repository:
+1. Install Gridgeist through the primary channel for your agent.
 
-   ```shell
-   git clone https://github.com/ohmiler/gridgeist.git
+   For Codex, add the Git marketplace and install the plugin:
+
+   ```powershell
+   codex plugin marketplace add ohmiler/gridgeist
+   codex plugin add gridgeist@gridgeist
    ```
 
-2. Copy the `skills/gridgeist/` directory into your agent's skills directory. The directory location and skill-discovery behavior vary by agent, so check that product's skills documentation if needed.
-3. Start a new agent session in your web project and paste:
+   For Claude Code, Cursor, Gemini CLI, GitHub Copilot, OpenCode, and other compatible agents, use the universal installer:
+
+   ```powershell
+   npx skills add ohmiler/gridgeist -g
+   ```
+
+   **Manual fallback:** If neither installer is available, continue to [Manual installation](#manual-installation).
+2. Start a new agent session in your web project and paste:
 
    ```text
    Use the Gridgeist skill to review this interface without editing it yet. Give me a one-line verdict, prioritized findings with evidence, and one coherent redesign direction. Preserve the product's behavior and brand.
@@ -51,18 +60,9 @@ Agents that support explicit skill invocation can use `$gridgeist` in the prompt
 
 ## Installation
 
-### Codex
+### Codex plugin
 
-```powershell
-git clone https://github.com/ohmiler/gridgeist.git
-Copy-Item -Recurse .\gridgeist\skills\gridgeist "$HOME\.agents\skills\gridgeist"
-```
-
-Codex should detect the skill automatically. If it does not appear, restart Codex.
-
-### Plugin package
-
-This repository is also packaged as a Codex plugin through [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json). The plugin points to the same `skills/gridgeist/` directory, so direct skill installs and marketplace distribution share one source of truth.
+This repository is packaged as a Codex plugin through [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json). The plugin points to the same `skills/gridgeist/` directory used by the other channels, so all installations share one source of truth.
 
 Add the Gridgeist marketplace, then install the plugin:
 
@@ -89,7 +89,14 @@ npx skills add ohmiler/gridgeist -g -a claude-code
 
 ### Manual installation
 
-Copy the `skills/gridgeist/` directory to the skills directory used by your agent. The agent must support the Agent Skills `SKILL.md` convention. Discovery and invocation behavior can differ between products.
+Use manual copying only when the plugin and universal installer are unavailable:
+
+```powershell
+git clone https://github.com/ohmiler/gridgeist.git
+Copy-Item -Recurse .\gridgeist\skills\gridgeist "$HOME\.agents\skills\gridgeist"
+```
+
+For a different agent, copy `skills/gridgeist/` to that product's skills directory. The agent must support the Agent Skills `SKILL.md` convention. Discovery and invocation behavior can differ between products. Start a new agent session after copying the directory.
 
 ## Updating
 
@@ -170,8 +177,22 @@ Together, the four self-produced case studies cover data-heavy, content-heavy, i
 
 ## Validation
 
+Validate the installable skill structure:
+
 ```powershell
 python -X utf8 "$HOME\.codex\skills\.system\skill-creator\scripts\quick_validate.py" .\skills\gridgeist
+```
+
+Check release metadata and bilingual documentation without external dependencies:
+
+```powershell
+python -X utf8 .\scripts\validate_release.py
+```
+
+Exercise clean installation and updates through the live Codex marketplace and universal installer. This check requires Codex, Node.js, npm, Git, and network access; it uses temporary homes and does not modify your existing installations.
+
+```powershell
+python -X utf8 .\scripts\smoke_test_install.py
 ```
 
 Behavioral evaluation prompts are in [`evals/prompts.md`](evals/prompts.md).

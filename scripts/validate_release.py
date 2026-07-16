@@ -120,6 +120,29 @@ def validate_docs_and_evals() -> None:
     require(english == list(range(1, max(english) + 1)), "Eval scenario numbers must be contiguous")
 
 
+def validate_installation_paths() -> None:
+    for path in ("README.md", "README.th.md"):
+        content = read_text(path)
+        positions = [
+            content.find("codex plugin marketplace add ohmiler/gridgeist"),
+            content.find("npx skills add ohmiler/gridgeist -g"),
+            content.find("Copy-Item -Recurse"),
+        ]
+        require(all(position >= 0 for position in positions), f"{path} is missing a documented installation path")
+        require(positions == sorted(positions), f"{path} must order Codex, universal, then manual installation")
+
+    require("Manual fallback" in read_text("README.md"), "README.md Quickstart must label manual installation as fallback")
+
+    workflow = read_text(".github/workflows/validate.yml")
+    for fragment in (
+        "smoke-install:",
+        "npm install --global @openai/codex",
+        "python scripts/smoke_test_install.py",
+    ):
+        require(fragment in workflow, f"validate workflow is missing install smoke wiring: {fragment}")
+    require((ROOT / "scripts/smoke_test_install.py").is_file(), "install smoke test script is missing")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--release-version", help="Expected version when validating a v* Git tag")
@@ -129,6 +152,7 @@ def main() -> int:
         validate_skill()
         version = validate_plugin(args.release_version)
         validate_docs_and_evals()
+        validate_installation_paths()
     except (OSError, json.JSONDecodeError, ValidationError) as error:
         print(f"[FAIL] {error}", file=sys.stderr)
         return 1

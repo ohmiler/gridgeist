@@ -5,6 +5,17 @@ All notable changes to Gridgeist are documented here. This project follows
 
 ## [Unreleased]
 
+### Added
+
+- Added isolated live smoke tests for Codex plugin clean installation, marketplace
+  refresh, reinstall, and universal installer updates on release tags and manual CI
+  runs.
+
+### Changed
+
+- Reordered the English and Thai Quickstarts so the Codex plugin and universal
+  installer lead, with repository cloning and manual copying kept as fallback.
+
 ## [1.1.0] - 2026-07-16
 
 ### Added

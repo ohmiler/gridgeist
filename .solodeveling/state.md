@@ -4,9 +4,9 @@ solodeveling_schema: 1
 
 # State
 
-- **Goal:** Learn from the published Gridgeist v1.1 website and prioritize external product evidence.
-- **Progress:** The reported mobile Docs index and Copy layout issues are repaired, published, and verified on EN/TH public routes.
+- **Goal:** Keep GridGeist distribution simple, maintainable, and verified across supported agents.
+- **Progress:** Primary installation guidance is aligned in EN/TH, and isolated live install/update smoke tests now gate release tags and manual CI runs.
 - **Active work:** None.
 - **Blockers:** None.
-- **Current risks:** Real-user comprehension, cross-browser behavior beyond Chromium, and pixel-level visual review remain unmeasured.
-- **Next action:** Collect further external user/project evidence before another design change.
+- **Current risks:** Hosted smoke execution depends on GitHub/npm availability and has not yet been observed in GitHub Actions; external user comprehension remains unmeasured.
+- **Next action:** Observe the `smoke-install` job on the next tag or manual workflow dispatch, then continue collecting external user/project evidence.
