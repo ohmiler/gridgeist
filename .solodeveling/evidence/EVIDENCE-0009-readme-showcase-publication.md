@@ -29,3 +29,10 @@ solodeveling_schema: 1
 
 - No rollback trigger was observed; validation, deployment, candidate identity, and public content markers all matched.
 - Production observation verified delivery and expected content, not external user comprehension or a full production accessibility audit.
+
+## Cache-coherence follow-up
+
+- User screenshots showed the refreshed README image but a hybrid public route: new labels and markup combined with the old light After styling.
+- The deployed plain and query-string CSS responses both returned HTTP 200, 18,703 bytes, SHA-256 `B43807269A50F8EFAAAFFD3C8CA63D1525FD28D64273D1F65684C60365F5FA3F`, and the v1.1.0 refresh marker.
+- Response headers included `Cache-Control: max-age=600`; the HTML still referenced the unchanged `./showcase.css` URL. This isolates the mismatch to a returning browser's stale asset cache rather than a failed Pages deployment or missing CSS.
+- Local hotfix verification passed: a fresh Playwright session opened the ordinary `?view=after` route, loaded `showcase.css?v=b4380726`, rendered the same 1440 x 900 design as the README capture, and reported zero console errors/warnings. Hosted observation remains in progress.
