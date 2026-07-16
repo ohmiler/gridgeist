@@ -10,20 +10,20 @@ Gridgeist is an agent skill for creating, redesigning, and reviewing product-nat
 
 ## See the difference
 
-This illustrative Northline logistics comparison is rendered from two full HTML/CSS pages with the same product, copy, data, and viewport.
+This illustrative Northline logistics comparison is rendered from two full HTML/CSS pages with the same product, copy, sample operating data, and viewport. The After page and screenshot were refreshed against **Gridgeist v1.1.0**; Northline and all displayed data are fictional.
 
 <table>
   <tr>
     <th width='50%'>Without Gridgeist - generic SaaS</th>
-    <th width='50%'>With Gridgeist - product-native system</th>
+    <th width='50%'>With Gridgeist v1.1.0 - product-native system</th>
   </tr>
   <tr>
     <td><img src='docs/assets/northline-before.png' alt='Generic Northline logistics landing page with centered marketing copy, rounded controls, a chart, and interchangeable metric cards' width='100%' /></td>
-    <td><img src='docs/assets/northline-after.png' alt='Product-specific Northline logistics website organized around live freight routes, lane status, arrival times, and operational metrics' width='100%' /></td>
+    <td><img src='docs/assets/northline-after.png' alt='Gridgeist v1.1.0 Northline concept organized around a dominant live freight topology, sample lane status, arrival times, and an explicit exception state' width='100%' /></td>
   </tr>
 </table>
 
-Same content and operating data; a different design system. Gridgeist shifts the visual identity from generic cards to a live freight network built from product evidence. [Open the Before page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=before) or [open the After page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=after).
+Same content and sample operating data; a different design system. Gridgeist shifts the visual identity from generic cards to a live freight network built from product evidence, while labeling the concept honestly. Both README images are browser captures of the working pages. [Open the Before page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=before) or [open the After page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=after).
 
 ## 60-second Quickstart
 

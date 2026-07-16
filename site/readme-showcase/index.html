@@ -64,32 +64,46 @@
       </section>
     </main>
 
-    <main class='version version-after' aria-label='Northline with Gridgeist'>
+    <main id='top' class='version version-after' aria-label='Illustrative Northline concept redesigned with Gridgeist'>
       <header class='after-header'>
-        <a class='after-brand' href='#'>NORTHLINE<span>_</span></a>
-        <p>LIVE FREIGHT NETWORK / APAC</p>
+        <a class='after-brand' href='#top'>NORTHLINE<span>_</span></a>
+        <div class='after-context'>
+          <span>Freight visibility / APAC</span>
+          <small>Illustrative concept · sample data</small>
+        </div>
         <nav aria-label='Primary navigation'>
-          <a href='#'>Network</a>
-          <a href='#'>Lanes</a>
-          <a href='#'>Exceptions <b>03</b></a>
+          <a href='#network'>Network</a>
+          <a href='#lanes'>Lanes</a>
+          <a href='#exceptions'>Exceptions <b>03</b></a>
         </nav>
-        <a class='after-enter' href='#'>Enter operations <span>↗</span></a>
+        <a class='after-enter' href='#network'>Enter operations <span>↘</span></a>
       </header>
 
       <section class='after-hero'>
         <div class='after-copy'>
-          <p class='after-kicker'>Freight visibility / 24.07</p>
+          <div class='after-kicker'>
+            <span>Freight visibility / 24.07</span>
+            <b><i></i> Network online</b>
+          </div>
           <h1><span>EVERY LANE.</span><span>UNDER CONTROL.</span></h1>
           <div class='after-intro'>
             <p>Track every lane, exception, and handoff in one live operating picture.</p>
-            <a href='#'>View the network <span>↓</span></a>
+            <a href='#network'>View the network <span>→</span></a>
           </div>
+          <p class='after-note'>Northline concept / sample operating data</p>
         </div>
 
-        <div class='network-panel'>
-          <header><span>LIVE NETWORK / 06:42 ICT</span><b><i></i> 148 ACTIVE</b></header>
+        <section id='network' class='network-panel' aria-labelledby='network-title'>
+          <header>
+            <div><span>01 / Network</span><strong id='network-title'>Live lane topology</strong></div>
+            <p>06:42 ICT <b><i></i> 148 active</b></p>
+          </header>
           <div class='route-map' aria-label='Active freight routes'>
             <div class='map-grid' aria-hidden='true'></div>
+            <div class='map-legend' aria-hidden='true'>
+              <span><i></i> Current lane</span>
+              <span><i></i> Alternate</span>
+            </div>
             <svg viewBox='0 0 660 410' role='img' aria-label='Routes connecting Bangkok, Singapore, Ho Chi Minh City, and Hong Kong'>
               <path class='route route-one' d='M92 270 C215 245 266 318 374 252 S510 130 588 156' />
               <path class='route route-two' d='M92 270 C178 198 260 164 342 184 S494 236 588 156' />
@@ -106,19 +120,20 @@
             <span class='city city-sin'>SIN <b>Singapore</b></span>
             <span class='city city-hkg'>HKG <b>Hong Kong</b></span>
           </div>
-          <div class='route-list'>
-            <div><span>NL—2048</span><strong>BKK → SIN</strong><em>ON TIME</em><b>08:45</b></div>
-            <div><span>NL—1184</span><strong>SGN → HKG</strong><em class='attention'>CHECK</em><b>11:20</b></div>
-            <div><span>NL—0912</span><strong>BKK → SGN</strong><em>ON TIME</em><b>13:10</b></div>
+          <div id='lanes' class='route-list' aria-label='Sample active lanes'>
+            <div><span>NL—2048</span><strong>BKK → SIN</strong><em><i></i> On time</em><b>08:45</b></div>
+            <div class='is-attention'><span>NL—1184</span><strong>SGN → HKG</strong><em class='attention'><i></i> Check</em><b>11:20</b></div>
+            <div><span>NL—0912</span><strong>BKK → SGN</strong><em><i></i> On time</em><b>13:10</b></div>
           </div>
-        </div>
+        </section>
       </section>
 
-      <footer class='after-metrics'>
+      <footer id='exceptions' class='after-metrics'>
+        <p class='metrics-label'><span>02 / Operating picture</span><small>Sample data · 24.07</small></p>
         <div><span>Active shipments</span><strong>148</strong><small>+12 today</small></div>
         <div><span>On-time delivery</span><strong>96.4%</strong><small>+2.1 this week</small></div>
-        <div><span>Exceptions</span><strong>03</strong><small>Needs attention</small></div>
-        <p>Northline helps operations teams move freight with confidence.</p>
+        <div class='metric-exception'><span>Exceptions</span><strong>03</strong><small>Needs attention</small></div>
+        <p class='after-statement'>Northline helps operations teams move freight with confidence.</p>
       </footer>
     </main>
   </body>
