@@ -4,7 +4,7 @@ solodeveling_schema: 1
 
 # WORK-0007: Publish the GridGeist v1.1.0 README showcase
 
-- **Status:** Active
+- **Status:** Done
 - **Class:** Audited release
 - **Authority:** On 2026-07-17 the user explicitly requested `commit & push`, authorizing a commit to `main`, push to `origin/main`, and the resulting GitHub Pages deployment.
 
@@ -27,3 +27,7 @@ Publish the verified WORK-0006 Northline showcase refresh to the public GitHub r
 2. The candidate commit reaches `origin/main` and validation succeeds.
 3. GitHub Pages deploys the same candidate successfully.
 4. The public After route exposes v1.1.0 design markers such as `Illustrative concept · sample data` and `Live lane topology`.
+
+## Outcome
+
+Candidate `7569c8e1ca732da6b34d12a2237faf6e5bc9a87e` was pushed to `origin/main`. Validation run `29533987330` and GitHub Pages run `29533987299` succeeded, and cache-busted production requests returned HTTP 200 with the expected v1.1.0 HTML/CSS markers. Publication evidence is recorded in `EVIDENCE-0009-readme-showcase-publication.md`.
