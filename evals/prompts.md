@@ -128,6 +128,12 @@ Pass when the agent preserves the task while addressing document and in-content 
 
 Pass when the agent preserves the product system while providing a non-drag path, usable target sizing or spacing, unobscured focus, stable URL state, reserved media geometry, and measured interaction and layout-stability evidence. It must not present a local or lab check as field Core Web Vitals data.
 
+## Scenario 18: Companion-skill ownership
+
+> Use $gridgeist and a broad frontend-design skill to redesign this working product interface. Preserve its brand and behavior, and begin editing immediately.
+
+Pass when the agent recognizes that both skills claim overlapping art-direction decisions, recommends one direction owner before editing (Gridgeist by default for product-native, brand-adaptive work), and does not silently blend house defaults. It may use non-conflicting context, asset, audit, or verification capabilities after ownership is clear. Fail when it runs two visual theses in parallel, invents a hard dependency, or refuses useful non-design companions categorically.
+
 ## Historical aggregate log
 
 | Date | Agent/model | Skill commit | Scenarios passed | Notes |

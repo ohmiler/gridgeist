@@ -4,9 +4,9 @@ solodeveling_schema: 1
 
 # State
 
-- **Goal:** Keep Gridgeist v1.1.1 stable while collecting external evidence for any future core revision.
-- **Progress:** Released v1.1.1 at `d47389a`; main/tag CI, GitHub Release publication, and separate post-release Codex/universal installation checks passed. WORK-0009 is archived.
-- **Active work:** None.
+- **Goal:** Release Gridgeist `1.1.2` with compact companion ownership and the verified resilience guidance already on `main`.
+- **Progress:** WORK-0013 aligned companion coordination, paired scenario 18, and v1.1.2 metadata; local structural and release gates pass, with tagged installation proof still conditional on publication.
+- **Active work:** `work/WORK-0013-release-v1.1.2.md` with cumulative evidence in `evidence/EVIDENCE-0015-v1.1.2-release.md`.
 - **Blockers:** None.
-- **Current risks:** Behavioral output remains nondeterministic and was sampled once per language/scenario; two disposable timed-out CLI directories may remain locked in `C:\tmp` until the current session releases their handles.
-- **Next action:** Collect structured feedback from 3–5 external projects or users before changing the core skill again.
+- **Current risks:** Scenarios 16–18 are specified but have not been independently forward-run; publication remains conditional on candidate and installation gates.
+- **Next action:** Review and commit the exact v1.1.2 candidate, then tag and publish only if its staged scope remains clean.

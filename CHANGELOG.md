@@ -5,6 +5,25 @@ All notable changes to Gridgeist are documented here. This project follows
 
 ## [Unreleased]
 
+## [1.1.2] - 2026-07-18
+
+### Added
+
+- Added compact companion coordination so Gridgeist remains the default owner of
+  product and visual direction without requiring optional context, asset, audit, or
+  verification capabilities.
+- Added paired English and Thai evaluation scenarios for overlapping art-direction
+  skills, internationalization and user preferences, interaction alternatives, and
+  bounded performance evidence.
+
+### Changed
+
+- Strengthened the review checklist for container resilience, language direction,
+  forced colors, unobscured focus, non-drag alternatives, media stability, and
+  evidence-bounded performance review.
+- Documented optional companion workflows and role boundaries in the English and
+  Thai READMEs without making them installation dependencies.
+
 ## [1.1.1] - 2026-07-18
 
 ### Added
@@ -78,7 +97,8 @@ Gridgeist's first stable release.
 - English and Thai documentation and evaluation prompts.
 - Interactive examples and a responsive GitHub Pages website.
 
-[Unreleased]: https://github.com/ohmiler/gridgeist/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/ohmiler/gridgeist/compare/v1.1.2...HEAD
+[1.1.2]: https://github.com/ohmiler/gridgeist/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/ohmiler/gridgeist/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/ohmiler/gridgeist/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/ohmiler/gridgeist/compare/v1.0.0...v1.0.1

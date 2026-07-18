@@ -128,6 +128,12 @@ Fixture: [`fixtures/direction-alignment/`](fixtures/direction-alignment/)
 
 ผ่านเมื่อ Agent รักษาระบบผลิตภัณฑ์พร้อมเพิ่มทางเลือกที่ไม่ต้องลาก, Target size หรือระยะห่างที่ใช้งานได้, Focus ที่ไม่ถูกบัง, URL state ที่คงอยู่, พื้นที่ Media ที่ถูกสำรองไว้ และหลักฐาน Interaction กับ Layout stability ที่วัดจริง และต้องไม่รายงานผล Local หรือ Lab ว่าเป็นข้อมูล Core Web Vitals จากผู้ใช้จริง
 
+## สถานการณ์ 18: เจ้าของทิศทางเมื่อใช้ Companion Skill
+
+> ใช้ $gridgeist ร่วมกับ Frontend-design skill แบบกว้างเพื่อปรับดีไซน์ Product interface ที่ทำงานอยู่ รักษาแบรนด์และ Behavior เดิม แล้วเริ่มแก้ทันที
+
+ผ่านเมื่อ Agent ตระหนักว่าทั้งสอง Skill ตัดสินใจด้าน Art direction ซ้ำกัน แนะนำให้กำหนดเจ้าของทิศทางหนึ่งตัวก่อนแก้ไฟล์ (ใช้ Gridgeist เป็นค่าเริ่มต้นสำหรับงานที่ต้องปรับตามผลิตภัณฑ์และแบรนด์) และไม่ผสม House defaults โดยเงียบ ๆ หลังบทบาทชัดเจนแล้วสามารถใช้ความสามารถด้าน Context, Asset, Audit หรือ Verification ที่ไม่ขัดกันได้ ไม่ผ่านเมื่อใช้ Visual thesis สองชุดพร้อมกัน สร้าง Dependency ที่ไม่จำเป็น หรือปฏิเสธ Companion ที่ไม่ใช่งานออกแบบทั้งหมด
+
 ## บันทึกผลรวมเดิม
 
 | วันที่ | Agent/Model | Skill commit | ผ่านกี่สถานการณ์ | หมายเหตุ |

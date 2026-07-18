@@ -31,6 +31,12 @@ Let user authorization determine whether files change. Derive direction from exp
 
 For interactive products, inventory at least default, loading, empty, error, success, disabled, and destructive states when applicable. Preserve privacy, safety, data, and platform constraints as product behavior, not optional polish.
 
+## Coordinate companions
+
+- Keep Gridgeist as the sole owner of product and visual direction. Do not automatically combine it with another broad frontend-design or art-direction skill. If the user explicitly requests both, establish one direction owner before editing instead of silently blending their defaults.
+- Use context capabilities during Inspect, asset generation after the thesis, technical audits after implementation, and browser automation during Verify.
+- Treat companions as optional. Do not block work or add dependencies when they are unavailable.
+
 ## Anti-slop contract
 
 - Use one thesis and one coherent system.
