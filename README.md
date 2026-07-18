@@ -129,6 +129,13 @@ Run `git pull --ff-only` in an existing clone, then reinstall from `skills/gridg
 
 ## Example prompts
 
+Invoke Gridgeist directly with `$gridgeist` and include four essentials:
+
+1. The product and its audience.
+2. The mode: create, redesign, or review.
+3. What must be preserved, such as behavior, brand color, or content.
+4. What must be verified, such as desktop, mobile, keyboard, and accessibility.
+
 ```text
 Use $gridgeist to redesign this Next.js course landing page. Preserve all behavior and the blue brand color, but replace the generic SaaS cards with an editorial grid and verify desktop and mobile layouts.
 ```
@@ -140,6 +147,66 @@ Review this dashboard with $gridgeist. Give me a one-line verdict, prioritized f
 ```text
 Use $gridgeist to create a technical documentation homepage where real API examples and navigation structure carry the visual identity.
 ```
+
+### Brief for a closer match
+
+For a more precise result, provide these details when they are relevant:
+
+- **Product and audience** — what the product does and who uses it.
+- **Primary task** — the most important thing the user must accomplish.
+- **Direction** — the intended character, such as warm editorial, precise
+  technical, or playful tactile.
+- **Authentic material** — product UI, data, prose, imagery, artwork, code, or a
+  workflow that should carry visual weight.
+- **Preserved constraints** — brand signals, content, routes, behavior, components,
+  privacy, or platform requirements that must not change.
+- **Exclusions** — visual language or behavior that would be wrong for the product.
+- **Flows and states** — the important default, loading, empty, error, success,
+  disabled, and destructive paths.
+- **Verification** — representative viewports, keyboard, touch, focus, overflow,
+  reduced motion, and primary flows to exercise.
+
+When the direction is already clear, state it and let Gridgeist proceed without
+another aesthetic questionnaire. When several materially different directions are
+still credible, ask Gridgeist to inspect first, offer two or three grounded options
+with trade-offs and a recommendation, and wait for alignment before editing.
+
+Copy and adapt this template:
+
+```text
+Use $gridgeist to [create / redesign / review] [page or product surface].
+
+Product and audience:
+[What it does and who uses it]
+
+Primary task:
+[The most important user outcome]
+
+Direction:
+[A confirmed direction, or: Inspect first, propose two or three grounded
+directions with trade-offs and a recommendation, and do not edit until I choose.]
+
+Authentic material that should lead:
+[Product UI / data / prose / imagery / artwork / code / workflow]
+
+Preserve:
+[Brand, content, routes, behavior, components, and constraints]
+
+Avoid:
+[Visual language or behavior that would be wrong]
+
+Important flows and states:
+[Primary flow and applicable default/loading/empty/error/success/disabled states]
+
+Verify:
+[Viewports, keyboard, touch, focus, overflow, reduced motion, and primary flow]
+
+Inspect the repository and rendered interface before taking action.
+```
+
+Describe outcomes and genuine constraints rather than prescribing a CSS recipe.
+Unless they are established brand requirements, leave font sizes, spacing, radii,
+shadows, and column counts for Gridgeist to derive as one coherent system.
 
 Gridgeist also allows implicit invocation when the agent recognizes a matching web-interface task.
 
