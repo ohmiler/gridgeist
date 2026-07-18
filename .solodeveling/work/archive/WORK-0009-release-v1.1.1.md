@@ -4,11 +4,14 @@ solodeveling_schema: 1
 
 # WORK-0009: Release Gridgeist v1.1.1
 
-- **Status:** Active
+- **Status:** Done
 - **Class:** Standard, Audited release work
 - **Opened:** 2026-07-18
 - **Operator:** Codex, acting on the repository owner’s instruction
 - **Authority:** The user explicitly authorized continuing the proposed v1.1.1 release sequence, including version alignment, validation, commit/tag, push, GitHub Release publication, and post-release installation checks.
+- **Released:** 2026-07-18
+- **Tag:** `v1.1.1` at `d47389ac98fcd28ed8b6e1303c77634840b70ee3`
+- **Release:** https://github.com/ohmiler/gridgeist/releases/tag/v1.1.1
 
 ## Goal
 
@@ -51,3 +54,18 @@ including the already-landed installation and documentation improvements since
 4. Tag and push the exact candidate, then observe CI.
 5. Publish the GitHub Release and verify a fresh tagged marketplace installation.
 6. Reconcile evidence and project memory, then archive this work.
+
+## Delivered
+
+- Published the conditional direction-alignment gate without adding persistent
+  product/design questionnaires or blocking explicit, Review, or narrow-repair work.
+- Aligned plugin, marketplace, changelog, bilingual Docs, and evaluation artifacts
+  at patch version `1.1.1`.
+- Passed local release gates, main and tag CI, tagged Codex/universal install smoke,
+  and a separate post-release public installation check.
+- Preserved the unrelated untracked `.agents/skills/` bundle outside the release.
+
+## Evidence
+
+- `.solodeveling/evidence/EVIDENCE-0010-direction-alignment.md`
+- `.solodeveling/evidence/EVIDENCE-0011-v1.1.1-release.md`

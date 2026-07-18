@@ -12,7 +12,7 @@ None.
 
 ### GridGeist validation cycle
 
-1. Freeze the v1.1.0 core guidance. Change the skill only for a severe finding or a pattern reproduced in at least two independent projects; do not add more style categories or presets without evidence.
+1. Freeze the v1.1.1 core guidance. Change the skill only for a severe finding or a pattern reproduced in at least two independent projects; do not add more style categories or presets without evidence.
 2. Build three small executable fixtures that stress contrasting adaptation paths:
    - a warm, image-led portfolio with artwork, captions, and narrative pacing;
    - a playful, touch-first drawing app with canvas, history, destructive recovery, privacy constraints, and local export;
@@ -25,11 +25,12 @@ None.
 
 ### Success condition
 
-GridGeist is ready for another core revision only when executable or external evidence identifies a repeatable gap. Otherwise keep v1.1.0 stable and publish the validation evidence without changing the skill.
+GridGeist is ready for another core revision only when executable or external evidence identifies a repeatable gap. Otherwise keep v1.1.1 stable and publish the validation evidence without changing the skill.
 
 ## Completed
 
-1. Released v1.1.0 with brand-adaptive guidance, bilingual update documentation, automated validation, behavioral evidence, and verified Codex/Agent Skills update paths.
-2. Refreshed and locally verified the bilingual main site to demonstrate the v1.1 product-native, brand-adaptive method.
-3. Redesigned, published, and post-deploy verified the bilingual Docs as a reading-first v1.1 field manual.
-4. Repaired and production-verified the mobile Docs index and installation Copy layout.
+1. Released v1.1.1 with a conditional direction-alignment gate, paired bilingual controls, executable fixture evidence, and verified public installation paths.
+2. Released v1.1.0 with brand-adaptive guidance, bilingual update documentation, automated validation, behavioral evidence, and verified Codex/Agent Skills update paths.
+3. Refreshed and locally verified the bilingual main site to demonstrate the v1.1 product-native, brand-adaptive method.
+4. Redesigned, published, and post-deploy verified the bilingual Docs as a reading-first v1.1 field manual.
+5. Repaired and production-verified the mobile Docs index and installation Copy layout.

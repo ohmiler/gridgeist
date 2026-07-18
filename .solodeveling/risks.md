@@ -6,7 +6,7 @@ solodeveling_schema: 1
 
 | Risk | Impact | Mitigation | Status |
 |---|---|---|---|
-| Marketplace tracks unreleased `main` | Users may install unstable or cache-colliding content | Pin plugin source to the release tag and bump manifest version | Open |
+| Marketplace release identity drifts from the published tag | Users may install unstable or cache-colliding content | Pin plugin source to the release tag, align the manifest version, and validate tagged installation | Controlled at v1.1.1 |
 | Behavioral evals do not yet execute implementation fixtures | Strong reasoning may not generalize to rendered, interactive output | Run independent executable fixtures with browser, interaction, state, and project evidence | Open |
 | External user comprehension is unmeasured | Instructions may be clear to the authoring agent but confusing or overbearing in other projects | Collect structured feedback from 3–5 external projects or users before revising the core skill | Open |
 | Manual-copy installs have no update metadata | Users may remain on stale skill versions | Make plugin and `npx skills` primary; document manual replacement as fallback | Open |

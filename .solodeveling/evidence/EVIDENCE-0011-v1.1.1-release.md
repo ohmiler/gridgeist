@@ -6,14 +6,15 @@ solodeveling_schema: 1
 
 - **Work item:** `WORK-0009-release-v1.1.1`
 - **Opened:** 2026-07-18
-- **Decision:** Ready with one bounded pre-publication gap: tagged remote install
-  verification must run after the `v1.1.1` tag exists.
+- **Decision:** Released. Candidate validation, tag CI, GitHub publication, and
+  post-release installation checks passed.
 
 ## Candidate
 
 - Version: `1.1.1`
-- Source revision: pending release commit
-- Artifact digest: pending release commit
+- Source revision: `d47389ac98fcd28ed8b6e1303c77634840b70ee3`
+- Git tree: `26fde3f017dc0aed514706c3c0e73aeddc744e28`
+- Skill SHA-256: `3e6efb82129a82edf504d6a7ef5a24afa2a11c35badc2b78a2f3d9938ed1545e`
 - Target: public Git-backed Codex marketplace and GitHub Release
 - Last known-good: `v1.1.0`
 
@@ -52,8 +53,36 @@ regressions, executable fixture checks, raw outputs, and limitations.
 
 ## Publication and observation
 
-Pending.
+- Pushed `main` from `6fe2d98` to release commit `d47389a` and pushed annotated
+  tag `v1.1.1`; the remote was fetched immediately beforehand and was a clean
+  fast-forward with no pre-existing local or remote `v1.1.1` tag.
+- Main validation passed:
+  https://github.com/ohmiler/gridgeist/actions/runs/29635907170
+- Tag validation and live clean-install smoke passed, including tag identity, Codex
+  plugin clean install/refresh/reinstall, and universal installer install/update:
+  https://github.com/ohmiler/gridgeist/actions/runs/29635907206
+- Published a public, non-draft, non-prerelease GitHub Release at 2026-07-18
+  14:33 Asia/Bangkok:
+  https://github.com/ohmiler/gridgeist/releases/tag/v1.1.1
+- A separate post-release `python scripts/smoke_test_install.py --timeout 180` run
+  passed from the public `ohmiler/gridgeist` source in disposable homes. Codex
+  reported `gridgeist@gridgeist` installed and enabled at version `1.1.1`, sourced
+  from `https://github.com/ohmiler/gridgeist.git` ref `v1.1.1`; marketplace refresh
+  and reinstall returned no errors. The universal installer then completed a clean
+  install and reported the skill up to date on update.
+- The post-release Codex CLI emitted non-blocking warnings that it would not create
+  PATH helper aliases under a temporary directory. Plugin discovery, version,
+  enablement, source identity, refresh, reinstall, and both installer assertions
+  still passed.
 
 ## Limitations
 
-Pending final reconciliation.
+- The direction-decision behavior remains nondeterministic and was sampled once per
+  language/scenario, with one focused English rerun after the threshold repair.
+- The release claims the conditional pre-edit collaboration behavior and the scoped
+  executable fixture checks in EVIDENCE-0010. It does not claim general usability
+  research, accessibility conformance, performance, or validation across 3–5
+  external projects.
+- Two disposable pre-release CLI directories may remain locked in `C:\tmp` until
+  their Windows handles are released; they contain only fictional fixture copies and
+  are unrelated to the published artifact.
