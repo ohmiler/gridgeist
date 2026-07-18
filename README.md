@@ -143,6 +143,34 @@ Use $gridgeist to create a technical documentation homepage where real API examp
 
 Gridgeist also allows implicit invocation when the agent recognizes a matching web-interface task.
 
+## Working with companion skills
+
+Gridgeist works best as the sole owner of product and visual direction, with optional companion skills supplying context, technical review, or rendered evidence. The lightest recommended workflow for most projects is:
+
+```text
+Gridgeist -> Playwright
+```
+
+Gridgeist defines the interface thesis, hierarchy, system, and implementation direction. Playwright then checks the rendered result across representative viewports and interactions; it can also provide repeatable [visual comparisons](https://playwright.dev/docs/test-snapshots).
+
+| Situation | Recommended workflow | Division of responsibility |
+| --- | --- | --- |
+| Most web projects | `Gridgeist -> Playwright` | Design and implementation, then rendered verification |
+| Figma is the source of truth | `Figma -> Gridgeist -> Playwright` | Extract components, variables, and layout context; adapt them to the product and codebase; verify the result. See the [Figma MCP server](https://developers.figma.com/docs/figma-mcp-server/). |
+| React or Next.js | `Gridgeist -> Vercel React Best Practices -> Playwright` | Own the interface direction; review framework performance; verify behavior. See [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills). |
+| Pre-release quality audit | `Gridgeist -> Web Quality Audit -> Playwright` | Review hierarchy and brand fit; audit accessibility, performance, SEO, and web quality; confirm the live result. See [Web Quality Skills](https://github.com/addyosmani/web-quality-skills). |
+| Original imagery is required | `Gridgeist -> image generation -> Gridgeist -> Playwright` | Establish the thesis before generating assets, compose with the selected assets, then verify the interface. |
+
+Treat these as optional workflows, not dependencies. Add only the companion that answers a real need, and keep another broad frontend-design or art-direction skill out of the same design phase; competing visual priors can weaken a coherent result. Companion skill names and availability vary between agents.
+
+Example:
+
+```text
+Use $gridgeist to redesign this interface while preserving its behavior and brand.
+After implementation, use Playwright to verify representative desktop and mobile
+viewports, keyboard interaction, overflow, and the primary user flow.
+```
+
 ## Repository layout
 
 ```text

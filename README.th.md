@@ -162,6 +162,34 @@ npx skills update gridgeist -g -y
 หลักฐาน และทิศทางใหม่ที่สอดคล้องกัน
 ```
 
+## ใช้ร่วมกับ Skill อื่น
+
+Gridgeist ทำงานได้ดีที่สุดเมื่อเป็นผู้กำหนดทิศทางผลิตภัณฑ์และงานภาพเพียง Skill เดียว ส่วน Skill อื่นควรเข้ามาเสริมเฉพาะการส่ง Context การตรวจเชิงเทคนิค หรือการยืนยันผลจากหน้าเว็บที่ Render แล้ว สำหรับโปรเจกต์ส่วนใหญ่ แนะนำ workflow ที่เบาที่สุดดังนี้:
+
+```text
+Gridgeist -> Playwright
+```
+
+Gridgeist กำหนด Interface thesis, ลำดับชั้น, ระบบภาพ และทิศทางการ Implement จากนั้น Playwright ตรวจผลที่ Render จริงในขนาดหน้าจอและ Interaction ที่สำคัญ รวมถึงทำ [Visual comparison](https://playwright.dev/docs/test-snapshots) แบบทำซ้ำได้
+
+| ลักษณะงาน | Workflow ที่แนะนำ | การแบ่งหน้าที่ |
+| --- | --- | --- |
+| โปรเจกต์เว็บทั่วไป | `Gridgeist -> Playwright` | ออกแบบและ Implement แล้วตรวจผลที่ Render จริง |
+| ใช้ Figma เป็น Source of truth | `Figma -> Gridgeist -> Playwright` | ดึง Component, Variable และ Layout context; ปรับให้เข้ากับผลิตภัณฑ์และ Codebase; แล้วตรวจผล ดูรายละเอียดที่ [Figma MCP server](https://developers.figma.com/docs/figma-mcp-server/) |
+| React หรือ Next.js | `Gridgeist -> Vercel React Best Practices -> Playwright` | กำหนดทิศทาง Interface; ตรวจ Performance ตาม Framework; แล้วยืนยัน Behavior ดู [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills) |
+| ตรวจคุณภาพก่อน Release | `Gridgeist -> Web Quality Audit -> Playwright` | ตรวจลำดับชั้นและความเข้ากับแบรนด์; Audit ด้าน Accessibility, Performance, SEO และ Web quality; แล้วยืนยันหน้าเว็บจริง ดู [Web Quality Skills](https://github.com/addyosmani/web-quality-skills) |
+| ต้องสร้างภาพต้นฉบับใหม่ | `Gridgeist -> สร้างภาพ -> Gridgeist -> Playwright` | กำหนด Thesis ก่อนสร้าง Asset; นำภาพที่เลือกมาจัดองค์ประกอบ; แล้วตรวจ Interface |
+
+ทั้งหมดนี้เป็น workflow เสริม ไม่ใช่ Dependency ให้เพิ่มเฉพาะ Skill ที่ตอบโจทย์จริง และไม่ควรใช้ Frontend-design หรือ Art-direction skill แบบกว้างอีกตัวในช่วงออกแบบเดียวกัน เพราะทิศทางภาพที่แข่งขันกันอาจทำให้ผลลัพธ์ไม่เป็นระบบ ชื่อและความพร้อมใช้งานของ Skill เสริมอาจต่างกันในแต่ละ Agent
+
+ตัวอย่าง:
+
+```text
+ใช้ $gridgeist ปรับดีไซน์ Interface นี้โดยรักษาพฤติกรรมและแบรนด์เดิม
+หลัง Implement ให้ใช้ Playwright ตรวจ Desktop และ Mobile viewport ที่สำคัญ
+การใช้งานด้วย Keyboard, Overflow และ Primary user flow
+```
+
 ## ทำอย่างไรให้ผลลัพธ์ดีขึ้น
 
 - ให้ Agent ดู Repository และหน้าเว็บที่ Render แล้ว ไม่ใช่แค่คำอธิบาย
