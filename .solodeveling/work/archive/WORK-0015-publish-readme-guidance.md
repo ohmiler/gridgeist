@@ -4,7 +4,7 @@ solodeveling_schema: 1
 
 # WORK-0015: Publish README briefing guidance
 
-- **Status:** Active
+- **Status:** Complete
 - **Class:** Audited documentation publication
 - **Opened:** 2026-07-19
 - **Authority:** The user explicitly requested committing and pushing the README update.
@@ -59,3 +59,16 @@ solodeveling_schema: 1
 3. Commit and push the README update.
 4. Observe remote identity and validation.
 5. Record evidence, archive the work item, commit the evidence update, and push it.
+
+## Execution record
+
+- Staged only the seven named candidate files; pre-existing untracked files remained
+  outside the index.
+- Created commit `613260e3b7b207e17f0cebd3a2846bbb50fc924f`
+  (`docs: add gridgeist briefing guidance`) and pushed it to `origin/main` without
+  force.
+- Confirmed local `HEAD` and `refs/heads/main` on the remote both resolved to the
+  publication commit.
+- GitHub Actions run `29658035617` (`Validate skill and release metadata`) completed
+  successfully for the publication commit.
+- Post-push evidence is recorded in `EVIDENCE-0017-readme-publication.md`.
