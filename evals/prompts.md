@@ -116,6 +116,18 @@ Fixture: [`fixtures/direction-alignment/`](fixtures/direction-alignment/)
 
 Pass when the agent identifies the direction as user-confirmed, states an evidence-backed thesis, and proceeds without redundant aesthetic questions. An implementation pass additionally requires preserved filtering, dialog, reservation, focus return, responsive behavior, and explicit verification evidence from a disposable fixture copy.
 
+## Scenario 16: Internationalization and user preferences
+
+> Use $gridgeist to redesign a bilingual public-service appointment flow for English and Arabic. Long translations break navigation, dates and numbers are hard-coded, the RTL layout uses physical left/right positioning, and selected states disappear in forced-colors mode. Preserve the workflow and verify both language directions without claiming compliance.
+
+Pass when the agent preserves the task while addressing document and in-content language and direction, logical order and properties, locale-aware formatting, translation expansion, keyboard focus, and non-color state cues in forced colors. It must separate observed checks from untested usability or compliance claims.
+
+## Scenario 17: Interaction and performance integrity
+
+> Use $gridgeist to refine this media-rich project board. Cards can only be dragged, compact controls are difficult to target, a sticky toolbar obscures keyboard focus, hero images shift the layout as they load, and filtering feels slow. Preserve URL state and the existing brand, verify representative widths, and report only performance evidence actually measured.
+
+Pass when the agent preserves the product system while providing a non-drag path, usable target sizing or spacing, unobscured focus, stable URL state, reserved media geometry, and measured interaction and layout-stability evidence. It must not present a local or lab check as field Core Web Vitals data.
+
 ## Historical aggregate log
 
 | Date | Agent/model | Skill commit | Scenarios passed | Notes |

@@ -116,6 +116,18 @@ Fixture: [`fixtures/direction-alignment/`](fixtures/direction-alignment/)
 
 ผ่านเมื่อ Agent ระบุว่าทิศทางได้รับการยืนยันจากผู้ใช้ เขียน Thesis ที่อิงหลักฐาน และดำเนินการโดยไม่ถามเรื่องความสวยงามซ้ำ การผ่านด้าน Implementation ต้องรักษา Filter, Dialog, Reservation, การคืน Focus, Responsive behavior และมีหลักฐาน Verification ชัดเจนจากสำเนา Fixture ที่แยกสำหรับแต่ละ Run
 
+## สถานการณ์ 16: Internationalization และ User preferences
+
+> ใช้ $gridgeist ปรับดีไซน์ Flow นัดหมายบริการสาธารณะที่รองรับภาษาอังกฤษและอาหรับ ข้อความแปลที่ยาวทำให้ Navigation แตก วันที่และตัวเลขถูกเขียนตายตัว Layout แบบ RTL ใช้ตำแหน่ง Left/Right โดยตรง และสถานะที่เลือกหายไปใน Forced-colors mode รักษา Workflow เดิม ตรวจทั้งสองทิศทางภาษา และห้ามอ้าง Compliance โดยไม่มีหลักฐาน
+
+ผ่านเมื่อ Agent รักษางานหลักพร้อมแก้ Document และ In-content language/direction, Logical order และ Properties, การจัดรูปแบบตาม Locale, การขยายตัวของคำแปล, Keyboard focus และ State cue ที่ไม่พึ่งสีใน Forced colors และต้องแยกสิ่งที่ตรวจจริงออกจากข้ออ้างด้าน Usability หรือ Compliance ที่ยังไม่ได้ทดสอบ
+
+## สถานการณ์ 17: ความซื่อตรงของ Interaction และ Performance
+
+> ใช้ $gridgeist ปรับ Project board ที่มีสื่อจำนวนมาก โดยปัจจุบันย้าย Card ได้ด้วยการลากเท่านั้น Control ขนาดเล็กกดได้ยาก Sticky toolbar บัง Keyboard focus, Hero image ทำให้ Layout ขยับระหว่างโหลด และการ Filter ตอบสนองช้า รักษา URL state และแบรนด์เดิม ตรวจ Viewport ที่เป็นตัวแทน และรายงานเฉพาะหลักฐาน Performance ที่วัดจริง
+
+ผ่านเมื่อ Agent รักษาระบบผลิตภัณฑ์พร้อมเพิ่มทางเลือกที่ไม่ต้องลาก, Target size หรือระยะห่างที่ใช้งานได้, Focus ที่ไม่ถูกบัง, URL state ที่คงอยู่, พื้นที่ Media ที่ถูกสำรองไว้ และหลักฐาน Interaction กับ Layout stability ที่วัดจริง และต้องไม่รายงานผล Local หรือ Lab ว่าเป็นข้อมูล Core Web Vitals จากผู้ใช้จริง
+
 ## บันทึกผลรวมเดิม
 
 | วันที่ | Agent/Model | Skill commit | ผ่านกี่สถานการณ์ | หมายเหตุ |

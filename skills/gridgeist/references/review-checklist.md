@@ -42,7 +42,8 @@ Inspect project-defined widths or, when absent, approximately 360, 768, 1280, an
 - Do navigation and controls remain usable by touch and keyboard?
 - Are grids and narratives recomposed instead of squeezed or blindly stacked?
 - Are code, tables, artwork, canvas, and media handled without unintended overflow?
-- Do long labels, localization, zoom, and dynamic content remain resilient?
+- Do long translated labels, language expansion, zoom, dynamic content, document and in-content language/direction, logical order and properties, and locale-aware dates and numbers remain resilient across LTR and RTL?
+- Do reusable components adapt to narrow and wide containers when viewport-only breakpoints are insufficient? Use container queries only when they fit project conventions and browser support.
 
 ## 6. Interaction states and recovery
 
@@ -56,7 +57,8 @@ Inspect project-defined widths or, when absent, approximately 360, 768, 1280, an
 ## 7. Accessibility and constraints
 
 - Use semantic landmarks, headings, buttons, links, labels, and lists.
-- Verify keyboard order, visible focus, accessible names, contrast, and non-color state cues.
+- Verify keyboard order, visible and unobscured focus, accessible names, contrast, and non-color state cues around sticky regions, overlays, and scroll containers.
+- Check applicable target-size and spacing requirements, provide a single-pointer alternative for nonessential dragging, and ensure boundaries and state cues survive forced-colors or user-defined high-contrast palettes.
 - Provide useful alternative text or mark decorative visuals appropriately.
 - Respect reduced motion without removing essential feedback.
 - Preserve privacy, safety, data, and platform constraints.
@@ -68,6 +70,7 @@ Inspect project-defined widths or, when absent, approximately 360, 768, 1280, an
 - Reuse real tokens rather than duplicating magic values.
 - Keep components focused and avoid premature abstraction.
 - Avoid unnecessary dependencies and layout-specific JavaScript.
+- Reserve media geometry and inspect font, image, and dynamic-content loading for unintended layout shift; when performance is in scope, measure relevant LCP, INP, and CLS evidence and distinguish local or lab observations from field results.
 - Run the relevant formatter, typecheck, lint, tests, and build.
 - Inspect the rendered result after automated checks pass.
 
