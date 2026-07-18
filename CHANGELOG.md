@@ -5,16 +5,22 @@ All notable changes to Gridgeist are documented here. This project follows
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-07-18
+
 ### Added
 
 - Added isolated live smoke tests for Codex plugin clean installation, marketplace
   refresh, reinstall, and universal installer updates on release tags and manual CI
   runs.
+- Added a bilingual direction-decision fixture, paired ambiguous/explicit scenarios,
+  and preserved raw regression outputs for the new collaboration boundary.
 
 ### Changed
 
 - Reordered the English and Thai Quickstarts so the Codex plugin and universal
   installer lead, with repository cloning and manual copying kept as fallback.
+- Added a conditional direction-alignment gate for broad, underspecified Create and
+  Redesign work without slowing explicit directions, Reviews, or narrow repairs.
 
 ## [1.1.0] - 2026-07-16
 
@@ -72,7 +78,8 @@ Gridgeist's first stable release.
 - English and Thai documentation and evaluation prompts.
 - Interactive examples and a responsive GitHub Pages website.
 
-[Unreleased]: https://github.com/ohmiler/gridgeist/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/ohmiler/gridgeist/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/ohmiler/gridgeist/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/ohmiler/gridgeist/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/ohmiler/gridgeist/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/ohmiler/gridgeist/compare/v0.1.0...v1.0.0

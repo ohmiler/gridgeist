@@ -17,11 +17,12 @@ Craft distinctive, product-native interfaces from audience, content, behavior, a
 | Change an existing interface with permission to edit | Redesign | Preserved behavior, brand signals, and state inventory |
 | Diagnose without changing files | Review | Prioritized findings grounded in rendered evidence |
 
-Let user authorization determine whether files change. Derive direction from an established brand; present options only when brand signals conflict materially or the user requests exploration.
+Let user authorization determine whether files change. Derive direction from explicit user intent or an established brand; use the alignment gate below only when material ambiguity remains.
 
 ## Workflow
 
 1. **Inspect** — Understand the audience, primary tasks, brand signals, content, product evidence, routes, components, tokens, and rendered desktop/mobile UI. Inventory important interaction states and constraints. Do not invent customers, metrics, outcomes, research, or compliance.
+   - **Align direction before editing** — Classify the direction as **user-confirmed**, **brand-derived**, or **provisional**. Treat a coherent user direction as confirmed even when it leaves implementation choices open; variations within the same thesis are not material ambiguity. When a broad Create or Redesign still supports materially different theses that would change core brand expression, hierarchy, imagery, color, or motion, offer two or three evidence-grounded directions with trade-offs and a recommendation, then ask the user to choose or authorize the recommendation. Proceed without redundant questions when intent or coherent brand evidence is clear. Do not block Review or narrow repairs; label an unconfirmed Review replacement direction provisional.
 2. **Set a thesis** — Write one governing sentence combining audience, primary task, structural logic, brand expression, and a product-native motif. Read [design-language.md](references/design-language.md) before choosing the direction, especially for image-led, warm, playful, or otherwise nontechnical brands.
 3. **Define the system** — Establish container and tracks, type roles, spacing rhythm, semantic color, shape and surface roles, image behavior, motion, and responsive transformations. Decide whether the grid should be visible, quiet, or invisible. Prefer reusable tokens over one-off values.
 4. **Compose** — Build hierarchy before detail. Make one area dominant, align related content, vary sections within shared logic, and let the most authentic material—product UI, data, prose, imagery, artwork, code, or the primary tool—carry visual weight.

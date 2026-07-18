@@ -4,9 +4,9 @@ solodeveling_schema: 1
 
 # State
 
-- **Goal:** Keep GridGeist's public examples aligned with the released skill and grounded in rendered product evidence.
-- **Progress:** Published cache-coherence hotfix `b534a64`; validation and Pages succeeded, public HTML selects the verified content-versioned CSS, and README EN/TH links use a fresh revision key.
-- **Active work:** None.
+- **Goal:** Release the verified conditional direction-alignment behavior as Gridgeist v1.1.1 with tagged-install and post-publication evidence.
+- **Progress:** WORK-0008 passed and was archived. The user authorized the v1.1.1 release sequence; WORK-0009 established the candidate, acceptance, recovery, and observation boundary.
+- **Active work:** `WORK-0009-release-v1.1.1.md` — Active.
 - **Blockers:** None.
-- **Current risks:** Future showcase asset changes must update their content-version query; external user comprehension remains unmeasured.
-- **Next action:** Collect external feedback on whether the refreshed comparison communicates product-native design more clearly.
+- **Current risks:** Behavioral output remains nondeterministic and was sampled once per language/scenario; two disposable timed-out CLI directories may remain locked in `C:\tmp` until the current session releases their handles.
+- **Next action:** Align v1.1.1 release metadata, run preflight, and bind the candidate to one reviewed commit before tagging.

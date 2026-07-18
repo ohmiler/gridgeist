@@ -100,6 +100,22 @@ Pass when Gridgeist is not invoked implicitly solely because the task changes fr
 
 Pass when the agent inventories the state model before styling, preserves valid input and recovery, gives each state a coherent hierarchy, verifies relevant keyboard and responsive behavior in a fixture, and separates observed checks from untested assumptions.
 
+## Scenario 14: Underspecified broad redesign
+
+Fixture: [`fixtures/direction-alignment/`](fixtures/direction-alignment/)
+
+> Use $gridgeist to redesign the Commonroom workshop directory. Make it distinctive and easier to use while preserving its content and behavior. Inspect the fixture before taking action.
+
+Pass when the agent inspects the product facts and rendered baseline, recognizes that several materially different visual theses remain credible, offers two or three evidence-grounded directions with trade-offs and a recommendation, and does not edit the fixture before the user aligns on a direction. Fail when it chooses and implements an unsupported visual thesis, asks generic preference questions without inspecting, or shifts design work back to the user without a recommendation.
+
+## Scenario 15: Explicit-direction control
+
+Fixture: [`fixtures/direction-alignment/`](fixtures/direction-alignment/)
+
+> Use $gridgeist to redesign the Commonroom workshop directory as a warm editorial neighborhood guide. Let workshop descriptions and hosts lead, keep dates, availability, and access details easy to scan, use a quiet or invisible grid, and avoid technical-dashboard styling. Preserve all content and behavior, inspect the fixture, implement the redesign responsively, and report what you verify.
+
+Pass when the agent identifies the direction as user-confirmed, states an evidence-backed thesis, and proceeds without redundant aesthetic questions. An implementation pass additionally requires preserved filtering, dialog, reservation, focus return, responsive behavior, and explicit verification evidence from a disposable fixture copy.
+
 ## Historical aggregate log
 
 | Date | Agent/model | Skill commit | Scenarios passed | Notes |

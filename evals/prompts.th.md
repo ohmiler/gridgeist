@@ -100,6 +100,22 @@
 
 ผ่านเมื่อ Agent ทำ State model ก่อน Styling รักษา Input ที่ถูกต้องและ Recovery ออกแบบ Hierarchy ของแต่ละ State ให้สอดคล้อง ตรวจ Keyboard และ Responsive behavior ที่เกี่ยวข้องใน Fixture และแยกสิ่งที่สังเกตได้ออกจากข้อสมมติที่ยังไม่ได้ทดสอบ
 
+## สถานการณ์ 14: Redesign กว้างที่ยังไม่ระบุทิศทาง
+
+Fixture: [`fixtures/direction-alignment/`](fixtures/direction-alignment/)
+
+> ใช้ $gridgeist ปรับดีไซน์ Directory เวิร์กช็อป Commonroom ใหม่ ให้โดดเด่นและใช้ง่ายขึ้น โดยรักษาเนื้อหาและ Behavior เดิม สำรวจ Fixture ก่อนดำเนินการ
+
+ผ่านเมื่อ Agent สำรวจข้อเท็จจริงของผลิตภัณฑ์และ Baseline ที่ Render แล้ว ตระหนักว่ายังมี Visual thesis ที่แตกต่างกันอย่างมีนัยสำคัญหลายแบบ เสนอทิศทาง 2–3 แบบที่อิงหลักฐานพร้อม Trade-off และคำแนะนำ และไม่แก้ Fixture ก่อนผู้ใช้ยืนยันทิศทาง ไม่ผ่านเมื่อเลือกและ Implement Visual thesis ที่ไม่มีหลักฐานรองรับ ถาม Preference แบบกว้างโดยไม่สำรวจ หรือโยนภาระการออกแบบกลับให้ผู้ใช้โดยไม่มีคำแนะนำ
+
+## สถานการณ์ 15: ตัวควบคุมที่ระบุทิศทางชัดเจน
+
+Fixture: [`fixtures/direction-alignment/`](fixtures/direction-alignment/)
+
+> ใช้ $gridgeist ปรับดีไซน์ Directory เวิร์กช็อป Commonroom ใหม่ให้เป็นคู่มือชุมชนแบบ Editorial ที่อบอุ่น ให้คำอธิบายเวิร์กช็อปและผู้สอนเป็นตัวนำ แต่ยังสแกนวันที่ จำนวนที่ว่าง และข้อมูลการเข้าถึงได้ง่าย ใช้ Grid แบบเงียบหรือมองไม่เห็น และหลีกเลี่ยงสไตล์ Technical dashboard รักษาเนื้อหาและ Behavior ทั้งหมด สำรวจ Fixture, Implement แบบ Responsive และรายงานสิ่งที่ตรวจจริง
+
+ผ่านเมื่อ Agent ระบุว่าทิศทางได้รับการยืนยันจากผู้ใช้ เขียน Thesis ที่อิงหลักฐาน และดำเนินการโดยไม่ถามเรื่องความสวยงามซ้ำ การผ่านด้าน Implementation ต้องรักษา Filter, Dialog, Reservation, การคืน Focus, Responsive behavior และมีหลักฐาน Verification ชัดเจนจากสำเนา Fixture ที่แยกสำหรับแต่ละ Run
+
 ## บันทึกผลรวมเดิม
 
 | วันที่ | Agent/Model | Skill commit | ผ่านกี่สถานการณ์ | หมายเหตุ |

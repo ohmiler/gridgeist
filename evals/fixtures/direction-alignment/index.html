@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Commonroom fictional neighborhood workshop directory fixture" />
+    <link rel="icon" href="data:," />
+    <title>Commonroom — neighborhood workshops</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#main">Commonroom</a>
+      <p>Fictional product fixture</p>
+    </header>
+
+    <main id="main">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Workshops near you</p>
+        <h1 id="page-title">Learn something useful with people nearby.</h1>
+        <p>Compare upcoming sessions, check practical details, and reserve a place.</p>
+      </section>
+
+      <section class="controls" aria-labelledby="filter-title">
+        <h2 id="filter-title">Find a workshop</h2>
+        <div class="filter-row">
+          <label>
+            Topic
+            <select id="topic-filter">
+              <option value="all">All topics</option>
+              <option value="repair">Repair</option>
+              <option value="food">Food</option>
+              <option value="garden">Garden</option>
+            </select>
+          </label>
+          <label class="check-label">
+            <input id="availability-filter" type="checkbox" />
+            Places available
+          </label>
+        </div>
+        <p id="result-count" role="status" aria-live="polite">3 workshops</p>
+      </section>
+
+      <section aria-labelledby="workshop-title">
+        <h2 id="workshop-title">Upcoming workshops</h2>
+        <div class="workshop-list">
+          <article class="workshop" data-topic="repair" data-available="true">
+            <div>
+              <p class="workshop-meta">Repair · 4 places</p>
+              <h3>Fix a wobbly chair</h3>
+              <p>With Mina Patel · Tue 21 July, 18:30</p>
+              <p>North Hall · Step-free entrance · Free</p>
+            </div>
+            <button class="details-button" type="button" data-workshop="chair">View details</button>
+          </article>
+
+          <article class="workshop" data-topic="food" data-available="false">
+            <div>
+              <p class="workshop-meta">Food · Fully booked</p>
+              <h3>Weeknight dumplings</h3>
+              <p>With Asha Lin · Thu 23 July, 19:00</p>
+              <p>Kitchen Room · Lift access · £8</p>
+            </div>
+            <button class="details-button" type="button" data-workshop="dumplings">View details</button>
+          </article>
+
+          <article class="workshop" data-topic="garden" data-available="true">
+            <div>
+              <p class="workshop-meta">Garden · 7 places</p>
+              <h3>Balcony herbs from cuttings</h3>
+              <p>With Leo Grant · Sat 25 July, 10:30</p>
+              <p>Courtyard · Outdoor level access · £4</p>
+            </div>
+            <button class="details-button" type="button" data-workshop="herbs">View details</button>
+          </article>
+        </div>
+        <p id="empty-message" hidden>No workshops match these filters.</p>
+      </section>
+    </main>
+
+    <dialog id="workshop-dialog" aria-labelledby="dialog-title">
+      <form method="dialog">
+        <button class="dialog-close" value="cancel" aria-label="Close workshop details">×</button>
+        <p id="dialog-topic" class="workshop-meta"></p>
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-host"></p>
+        <p id="dialog-time"></p>
+        <p id="dialog-place"></p>
+        <p id="dialog-description"></p>
+        <button id="reserve-button" type="button">Reserve one place</button>
+      </form>
+    </dialog>
+
+    <p id="reservation-status" class="reservation-status" role="status" aria-live="polite"></p>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, sans-serif;
+  color: #202124;
+  background: #f6f6f4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+button,
+select {
+  min-height: 44px;
+}
+
+button {
+  border: 1px solid #202124;
+  border-radius: 4px;
+  padding: 0.65rem 0.9rem;
+  color: #fff;
+  background: #202124;
+  cursor: pointer;
+}
+
+button:focus-visible,
+select:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 3px solid #2457d6;
+  outline-offset: 3px;
+}
+
+.site-header,
+main {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+  border-bottom: 1px solid #c9c9c5;
+}
+
+.site-header p {
+  margin: 0;
+  color: #62625e;
+  font-size: 0.875rem;
+}
+
+.brand {
+  color: inherit;
+  font-weight: 700;
+}
+
+main {
+  padding-block: 3rem 5rem;
+}
+
+.intro {
+  max-width: 46rem;
+  margin-bottom: 3rem;
+}
+
+.intro h1 {
+  margin: 0.4rem 0 1rem;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 1;
+}
+
+.eyebrow,
+.workshop-meta {
+  color: #62625e;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.controls {
+  margin-bottom: 2.5rem;
+  padding: 1rem;
+  border: 1px solid #c9c9c5;
+  background: #fff;
+}
+
+.controls h2 {
+  margin-top: 0;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  align-items: end;
+}
+
+.filter-row label:not(.check-label) {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.check-label {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.workshop-list {
+  border-top: 1px solid #c9c9c5;
+}
+
+.workshop {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid #c9c9c5;
+}
+
+.workshop h3,
+.workshop p {
+  margin: 0.35rem 0;
+}
+
+dialog {
+  width: min(100% - 2rem, 36rem);
+  border: 1px solid #202124;
+  padding: 0;
+}
+
+dialog::backdrop {
+  background: rgb(32 33 36 / 55%);
+}
+
+dialog form {
+  position: relative;
+  padding: 2rem;
+}
+
+.dialog-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  min-width: 44px;
+}
+
+#reserve-button[disabled] {
+  color: #62625e;
+  border-color: #c9c9c5;
+  background: #e4e4e1;
+  cursor: not-allowed;
+}
+
+.reservation-status {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  max-width: min(24rem, calc(100% - 2rem));
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  background: #202124;
+  pointer-events: none;
+}
+
+.reservation-status:empty {
+  display: none;
+}
+
+@media (max-width: 38rem) {
+  .site-header {
+    align-items: flex-start;
+  }
+
+  .workshop {
+    grid-template-columns: 1fr;
+  }
+
+  .workshop button {
+    width: 100%;
+  }
+}
