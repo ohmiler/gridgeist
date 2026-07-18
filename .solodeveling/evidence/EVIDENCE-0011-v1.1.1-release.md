@@ -61,6 +61,8 @@ regressions, executable fixture checks, raw outputs, and limitations.
 - Tag validation and live clean-install smoke passed, including tag identity, Codex
   plugin clean install/refresh/reinstall, and universal installer install/update:
   https://github.com/ohmiler/gridgeist/actions/runs/29635907206
+- The release commit's GitHub Pages deployment passed:
+  https://github.com/ohmiler/gridgeist/actions/runs/29635907172
 - Published a public, non-draft, non-prerelease GitHub Release at 2026-07-18
   14:33 Asia/Bangkok:
   https://github.com/ohmiler/gridgeist/releases/tag/v1.1.1
@@ -74,6 +76,10 @@ regressions, executable fixture checks, raw outputs, and limitations.
   PATH helper aliases under a temporary directory. Plugin discovery, version,
   enablement, source identity, refresh, reinstall, and both installer assertions
   still passed.
+- Cache-busted requests to the public English and Thai Docs both returned HTTP 200;
+  each contained version `1.1.1` and its localized direction-alignment guidance.
+- The post-release evidence closure commit `f2c4deb` passed repository validation:
+  https://github.com/ohmiler/gridgeist/actions/runs/29636053827
 
 ## Limitations
 
