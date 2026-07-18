@@ -4,11 +4,14 @@ solodeveling_schema: 1
 
 # WORK-0013: Release Gridgeist v1.1.2
 
-- **Status:** Verifying
+- **Status:** Done
 - **Class:** Standard, Audited release work
 - **Opened:** 2026-07-18
 - **Operator:** Codex, acting on the repository owner's instruction
 - **Authority:** The user explicitly authorized the proposed v1.1.2 implementation and release, including skill and evaluation changes, version alignment, validation, commit, tag, push, GitHub Release publication, and post-release checks.
+- **Released:** 2026-07-18
+- **Tag:** `v1.1.2` at `43664adf7a2db727655dcbfef8d7f4572c29ed47`
+- **Release:** https://github.com/ohmiler/gridgeist/releases/tag/v1.1.2
 
 ## Goal
 
@@ -49,3 +52,21 @@ coordination rule that prevents silent blending of competing art-direction skill
 4. Commit and tag the candidate, push main/tag, and observe CI.
 5. Publish the GitHub Release and run fresh installation verification.
 6. Reconcile evidence and state, archive this work, and push the closure record.
+
+## Delivered
+
+- Added a 3-rule, capability-based companion boundary while keeping Gridgeist the
+  default owner of product and visual direction and adding no dependency.
+- Added equivalent English and Thai scenario 18 alongside the inherited resilience
+  scenarios 16–17.
+- Aligned plugin version, marketplace tag, changelog, and English/Thai Docs labels at
+  `1.1.2` without changing the production site design or behavior.
+- Passed local validators, main/tag CI, tagged and separate post-release installation
+  smoke, public Docs checks, and GitHub Release publication.
+- Preserved unrelated dogfood/prototype runs and local `.agents/skills/` outside the
+  release and closure commits.
+
+## Evidence
+
+- `.solodeveling/evidence/EVIDENCE-0014-resilience-guidance.md`
+- `.solodeveling/evidence/EVIDENCE-0015-v1.1.2-release.md`
