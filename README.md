@@ -10,20 +10,35 @@ Gridgeist is an agent skill for creating, redesigning, and reviewing product-nat
 
 ## See the difference
 
-This illustrative Northline logistics comparison is rendered from two full HTML/CSS pages with the same product, copy, sample operating data, and viewport. The After page and screenshot were refreshed against **Gridgeist v1.1.0**; Northline and all displayed data are fictional.
+This illustrative Northline logistics comparison is rendered from two full HTML/CSS pages with the same product, copy, sample operating data, and viewport. The After page and screenshot were rebuilt with the **Gridgeist v1.2.0** system workflow; Northline and all displayed data are fictional.
 
 <table>
   <tr>
     <th width='50%'>Without Gridgeist - generic SaaS</th>
-    <th width='50%'>With Gridgeist v1.1.0 - product-native system</th>
+    <th width='50%'>With Gridgeist v1.2.0 - product-native system</th>
   </tr>
   <tr>
     <td><img src='docs/assets/northline-before.png' alt='Generic Northline logistics landing page with centered marketing copy, rounded controls, a chart, and interchangeable metric cards' width='100%' /></td>
-    <td><img src='docs/assets/northline-after.png' alt='Gridgeist v1.1.0 Northline concept organized around a dominant live freight topology, sample lane status, arrival times, and an explicit exception state' width='100%' /></td>
+    <td><img src='docs/assets/northline-after.png' alt='Gridgeist v1.2.0 Northline concept organized as one operational system with live freight topology, semantic lane states, arrival times, and an explicit priority exception' width='100%' /></td>
   </tr>
 </table>
 
-Same content and sample operating data; a different design system. Gridgeist shifts the visual identity from generic cards to a live freight network built from product evidence, while labeling the concept honestly. Both README images are browser captures of the working pages. [Open the Before page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=before) or [open the After page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=after&rev=b4380726).
+Same content and sample operating data; a different design system. Gridgeist turns the topology, route table, exception, actions, and metrics into one connected operational surface built from product evidence, while labeling the concept honestly. Both README images are browser captures of the working pages. [Open the Before page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=before) or [open the v1.2.0 After page](https://ohmiler.github.io/gridgeist/readme-showcase/?view=after&rev=ab77ceb6).
+
+## What v1.2.0 changes
+
+Gridgeist now treats visual decisions as one system, not a sequence of isolated styling choices.
+
+| Area | v1.2.0 behavior |
+| --- | --- |
+| System contract | Defines color, typography, layout, spacing, shape, components, states, media, and motion as one compact direction before implementation. |
+| Semantic roles | Connects foundation tokens to semantic roles and component decisions, so contrast and state relationships remain intentional. |
+| Component grammar | Gives related controls and content shared anatomy, variants, density, states, and content-stress rules instead of styling each instance separately. |
+| Direction safety | When the visual thesis is still broad, offers distinct directions and waits for alignment before committing tokens or editing the interface. |
+| Skill coordination | Names one direction owner when multiple UI skills are active, preventing competing visual systems. |
+| Verification | Checks representative widths, overflow, focus, interaction states, themes, and reduced motion—and limits claims to observed evidence. |
+
+In practice, the result is more coherent, less generic, and easier to extend without losing the product's identity. The v1.2.0 release was exercised through three English and three Thai system-contract scenarios, independent responsive browser checks, and repaired guardrail tests.
 
 ## 60-second Quickstart
 

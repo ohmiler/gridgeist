@@ -6,6 +6,7 @@
     <meta name='robots' content='noindex' />
     <title>Northline Before and After</title>
     <link rel='stylesheet' href='./showcase.css?v=b4380726' />
+    <link rel='stylesheet' href='./showcase-v120.css?v=ab77ceb6' />
     <script src='./showcase.js' defer></script>
   </head>
   <body>
@@ -69,20 +70,20 @@
         <a class='after-brand' href='#top'>NORTHLINE<span>_</span></a>
         <div class='after-context'>
           <span>Freight visibility / APAC</span>
-          <small>Illustrative concept · sample data</small>
+          <small>Gridgeist v1.2.0 concept · sample data</small>
         </div>
         <nav aria-label='Primary navigation'>
-          <a href='#network'>Network</a>
+          <a href='#network' aria-current='page'>Network</a>
           <a href='#lanes'>Lanes</a>
           <a href='#exceptions'>Exceptions <b>03</b></a>
         </nav>
-        <a class='after-enter' href='#network'>Enter operations <span>↘</span></a>
+        <a class='after-enter' href='#network'>Open live network <span>↘</span></a>
       </header>
 
       <section class='after-hero'>
         <div class='after-copy'>
           <div class='after-kicker'>
-            <span>Freight visibility / 24.07</span>
+            <span>Control surface / 24.07</span>
             <b><i></i> Network online</b>
           </div>
           <h1><span>EVERY LANE.</span><span>UNDER CONTROL.</span></h1>
@@ -90,7 +91,7 @@
             <p>Track every lane, exception, and handoff in one live operating picture.</p>
             <a href='#network'>View the network <span>→</span></a>
           </div>
-          <p class='after-note'>Northline concept / sample operating data</p>
+          <p class='after-note'>Northline concept / Gridgeist v1.2.0 / sample operating data</p>
         </div>
 
         <section id='network' class='network-panel' aria-labelledby='network-title'>
@@ -119,17 +120,28 @@
             <span class='city city-sgn'>SGN <b>Ho Chi Minh</b></span>
             <span class='city city-sin'>SIN <b>Singapore</b></span>
             <span class='city city-hkg'>HKG <b>Hong Kong</b></span>
+            <aside class='map-alert' aria-label='Priority exception on lane NL—1184'>
+              <span>Priority exception / NL—1184</span>
+              <strong>SGN → HKG</strong>
+              <small>Check handoff · ETA 11:20</small>
+            </aside>
           </div>
-          <div id='lanes' class='route-list' aria-label='Sample active lanes'>
-            <div><span>NL—2048</span><strong>BKK → SIN</strong><em><i></i> On time</em><b>08:45</b></div>
-            <div class='is-attention'><span>NL—1184</span><strong>SGN → HKG</strong><em class='attention'><i></i> Check</em><b>11:20</b></div>
-            <div><span>NL—0912</span><strong>BKK → SGN</strong><em><i></i> On time</em><b>13:10</b></div>
+          <div id='lanes' class='route-table-shell'>
+            <table class='route-table'>
+              <caption>Sample active lanes</caption>
+              <thead><tr><th scope='col'>Lane</th><th scope='col'>Route</th><th scope='col'>State</th><th scope='col'>ETA</th></tr></thead>
+              <tbody>
+                <tr><td>NL—2048</td><th scope='row'>BKK → SIN</th><td><span class='lane-state is-on-time'><i></i> On time</span></td><td>08:45</td></tr>
+                <tr class='is-attention'><td>NL—1184</td><th scope='row'>SGN → HKG</th><td><span class='lane-state is-check'><i></i> Check</span></td><td>11:20</td></tr>
+                <tr><td>NL—0912</td><th scope='row'>BKK → SGN</th><td><span class='lane-state is-on-time'><i></i> On time</span></td><td>13:10</td></tr>
+              </tbody>
+            </table>
           </div>
         </section>
       </section>
 
       <footer id='exceptions' class='after-metrics'>
-        <p class='metrics-label'><span>02 / Operating picture</span><small>Sample data · 24.07</small></p>
+        <p class='metrics-label'><span>02 / System status</span><small>Sample data · 24.07</small></p>
         <div><span>Active shipments</span><strong>148</strong><small>+12 today</small></div>
         <div><span>On-time delivery</span><strong>96.4%</strong><small>+2.1 this week</small></div>
         <div class='metric-exception'><span>Exceptions</span><strong>03</strong><small>Needs attention</small></div>
