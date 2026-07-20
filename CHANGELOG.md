@@ -5,6 +5,8 @@ All notable changes to Gridgeist are documented here. This project follows
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-07-20
+
 ### Added
 
 - Added a conditional system-contract reference covering semantic color,
@@ -118,7 +120,8 @@ Gridgeist's first stable release.
 - English and Thai documentation and evaluation prompts.
 - Interactive examples and a responsive GitHub Pages website.
 
-[Unreleased]: https://github.com/ohmiler/gridgeist/compare/v1.1.2...HEAD
+[Unreleased]: https://github.com/ohmiler/gridgeist/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/ohmiler/gridgeist/compare/v1.1.2...v1.2.0
 [1.1.2]: https://github.com/ohmiler/gridgeist/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/ohmiler/gridgeist/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/ohmiler/gridgeist/compare/v1.0.1...v1.1.0
