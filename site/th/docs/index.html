@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="คู่มือการติดตั้ง เลือกรูปแบบงาน เขียน Prompt และตรวจผลลัพธ์จาก Gridgeist" />
+    <meta name="description" content="คู่มือ Gridgeist v1.2 สำหรับติดตั้ง กำหนดทิศทาง สร้าง System contract และตรวจ Interface จากหลักฐาน" />
     <meta name="theme-color" content="#f2f0e9" />
-    <link rel="icon" href="../../favicon.ico" />
     <title>คู่มือ — Gridgeist</title>
     <link rel="canonical" href="https://ohmiler.github.io/gridgeist/th/docs/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Gridgeist" />
     <meta property="og:title" content="คู่มือ Gridgeist — จากเจตนาของผลิตภัณฑ์สู่ระบบ Interface" />
-    <meta property="og:description" content="การติดตั้ง รูปแบบงาน ตัวอย่าง Prompt ขั้นตอนทำงาน และการตรวจผลลัพธ์จาก Gridgeist" />
+    <meta property="og:description" content="การติดตั้ง Direction alignment, System contract, Component grammar, ขั้นตอนทำงาน และการตรวจผลลัพธ์ของ Gridgeist v1.2" />
     <meta property="og:url" content="https://ohmiler.github.io/gridgeist/th/docs/" />
     <meta property="og:image" content="https://ohmiler.github.io/gridgeist/og-image.png" />
     <meta property="og:locale" content="th_TH" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../../favicon.ico" sizes="any" />
     <link rel="stylesheet" href="../../styles.css" />
     <link rel="stylesheet" href="../../docs/docs.css" />
     <link rel="stylesheet" href="../thai.css" />
@@ -37,7 +37,7 @@
 
     <main id="main">
       <section class="docs-hero" aria-labelledby="docs-title">
-        <p class="eyebrow">คู่มือภาคสนาม / v1.1</p>
+        <p class="eyebrow">คู่มือภาคสนาม / v1.2</p>
         <div class="docs-hero-mark" aria-hidden="true"><span>GG—DOCS</span><span>อ่าน / ตัดสินใจ / ตรวจสอบ</span></div>
         <h1 id="docs-title">จากสัญญาณ<br /><span>สู่ระบบ.</span></h1>
         <div class="docs-hero-intro">
@@ -50,7 +50,7 @@
         <aside class="docs-sidebar" aria-label="สารบัญคู่มือ">
           <p>เนื้อหาในหน้านี้</p>
           <nav>
-            <a href="#quickstart"><span>01</span> เริ่มต้นใช้งาน</a><a href="#install"><span>02</span> ติดตั้ง + อัปเดต</a><a href="#modes"><span>03</span> เลือกรูปแบบงาน</a><a href="#adaptation"><span>04</span> ปรับระบบ</a><a href="#brief"><span>05</span> เขียน Brief</a><a href="#workflow"><span>06</span> ขั้นตอนทำงาน</a><a href="#verify"><span>07</span> ตรวจผลลัพธ์</a><a href="#limits"><span>08</span> ข้อจำกัด</a>
+            <a href="#quickstart"><span>01</span> เริ่มต้นใช้งาน</a><a href="#install"><span>02</span> ติดตั้ง + อัปเดต</a><a href="#modes"><span>03</span> เลือกรูปแบบงาน</a><a href="#adaptation"><span>04</span> ปรับระบบ</a><a href="#contract"><span>05</span> กำหนด Contract</a><a href="#brief"><span>06</span> เขียน Brief</a><a href="#workflow"><span>07</span> ขั้นตอนทำงาน</a><a href="#verify"><span>08</span> ตรวจผลลัพธ์</a><a href="#limits"><span>09</span> ข้อจำกัด</a>
           </nav>
         </aside>
 
@@ -103,8 +103,19 @@ npx skills update gridgeist -g -y</code></pre><button type="button" data-copy-ta
             <p class="adaptation-test"><span>ทดสอบความเป็นแบรนด์</span>ถ้าเอาเส้น Mono label และกริดที่มองเห็นออก ผลลัพธ์ยังต้องเป็นของผลิตภัณฑ์นั้น</p>
           </section>
 
+          <section id="contract" class="docs-contract" aria-labelledby="contract-title">
+            <div class="contract-intro"><div><p class="section-label">05 / กำหนด Contract</p><h2 id="contract-title">เชื่อมระบบ<br />ก่อนเก็บรายละเอียด.</h2></div><p>ใช้ Contract ที่เล็กที่สุดแต่ครอบคลุมงาน และตรวจ Implementation กับหลักฐานของแบรนด์เดิมก่อนเปลี่ยนค่า</p></div>
+            <div class="contract-flow" aria-label="ลำดับ Token ของ Gridgeist"><div><span>01 / Foundation</span><strong>สี · ตัวอักษร · Rhythm</strong></div><div><span>02 / Semantic</span><strong>Canvas · Text · State</strong></div><div><span>03 / Component</span><strong>โครง · Variant · Behavior</strong></div></div>
+            <div class="contract-grid">
+              <article class="contract-card"><span>สี + Theme</span><strong>จับคู่บทบาท.</strong><p>เชื่อม Foreground/Background, Border, Action, Focus, Success, Warning และ Destructive</p></article>
+              <article class="contract-card"><span>Type + Spacing</span><strong>ตั้งชื่อตามหน้าที่.</strong><p>กำหนดเฉพาะ Display, Heading, Body, Label, Metadata และ Spacing ที่พื้นผิวต้องใช้</p></article>
+              <article class="contract-card"><span>Components</span><strong>ทดสอบ Grammar.</strong><p>ครอบคลุม Variant, State, ภาษา, Dynamic content, Overflow และ Container แคบ</p></article>
+              <article class="contract-card is-state"><span>Motion + หลักฐาน</span><strong>ผูกคำกล่าวอ้าง.</strong><p>ใช้ Motion เพื่อ Feedback หรือ Causality รองรับ Reduced motion และรายงานเฉพาะสิ่งที่ตรวจจริง</p><div class="contract-state"><i>Focus</i><i>Error</i><i>Reduced</i></div></article>
+            </div>
+          </section>
+
           <section id="brief" aria-labelledby="brief-title">
-            <p class="section-label">05 / เขียน Brief</p><h2 id="brief-title">ข้อมูลสี่อย่าง<br />ลดความคลุมเครือ.</h2>
+            <p class="section-label">06 / เขียน Brief</p><h2 id="brief-title">ข้อมูลสี่อย่าง<br />ลดความคลุมเครือ.</h2>
             <ol class="brief-list">
               <li><span>01</span><div><h3>ผลิตภัณฑ์ + ผู้ใช้</h3><p>กำลังออกแบบอะไร และใครเป็นคนใช้งาน?</p></div></li>
               <li><span>02</span><div><h3>รูปแบบงาน + ผลลัพธ์</h3><p>Create, Redesign หรือ Review และเมื่อเสร็จแล้วอะไรควรเป็นจริง?</p></div></li>
@@ -121,11 +132,11 @@ npx skills update gridgeist -g -y</code></pre><button type="button" data-copy-ta
           </section>
 
           <section id="workflow" aria-labelledby="workflow-title">
-            <p class="section-label">06 / ขั้นตอนทำงาน</p><h2 id="workflow-title">สำรวจก่อน<br />จัดองค์ประกอบ.</h2>
+            <p class="section-label">07 / ขั้นตอนทำงาน</p><h2 id="workflow-title">สำรวจก่อน<br />จัดองค์ประกอบ.</h2>
             <ol class="workflow-list">
               <li><b>01</b><span>Inspect</span><p>ทำความเข้าใจผลิตภัณฑ์ ผู้ใช้ Route, Component, Token และ UI ที่ Render แล้ว หากยังมีทิศทางระดับ Thesis ที่สมเหตุผลหลายแบบ ให้แนะนำ 2–3 ทางเลือกและยืนยันหนึ่งทางก่อนแก้ไฟล์</p></li>
               <li><b>02</b><span>Set a thesis</span><p>เขียนหนึ่งประโยคที่กำกับลำดับ โครงสร้าง การแสดงออก และหลักฐานจากผลิตภัณฑ์</p></li>
-              <li><b>03</b><span>Define the system</span><p>กำหนด Container, Column, Spacing, Type role, สี เส้น และการเปลี่ยน Layout ตามหน้าจอ</p></li>
+              <li><b>03</b><span>Define the system</span><p>เชื่อม Foundation values กับ Semantic roles และ Component anatomy, Variant, State, Content stress, Motion และ Responsive transformation</p></li>
               <li><b>04</b><span>Compose</span><p>สร้างลำดับก่อนรายละเอียด ให้ Code, Data, Workflow หรือภาพจริงทำหน้าที่สื่อสาร</p></li>
               <li><b>05</b><span>Implement</span><p>ทำตาม Convention ของ Repository, Semantic HTML, Keyboard behavior และ Primitive เดิม</p></li>
               <li><b>06</b><span>Verify</span><p>Render หลายขนาด ทดลอง State และ Input แก้ปัญหาที่พบ และรายงานสิ่งที่ยังไม่ได้ตรวจ</p></li>
@@ -133,20 +144,20 @@ npx skills update gridgeist -g -y</code></pre><button type="button" data-copy-ta
           </section>
 
           <section id="verify" aria-labelledby="verify-title">
-            <p class="section-label">07 / ตรวจผลลัพธ์</p><h2 id="verify-title">ใช้หลักฐาน<br />ก่อนตัดสิน.</h2>
+            <p class="section-label">08 / ตรวจผลลัพธ์</p><h2 id="verify-title">ใช้หลักฐาน<br />ก่อนตัดสิน.</h2>
             <div class="check-grid"><div><span>A</span><h3>ความชัดเจน</h3><p>ผลิตภัณฑ์ ผู้ใช้ งานหลัก และสิ่งที่ต้องทำต่อเข้าใจได้ทันที</p></div><div><span>B</span><h3>ลำดับ</h3><p>แต่ละ Viewport มีจุดเด่นหลักหนึ่งจุดและลำดับการอ่านที่ชัดเจน</p></div><div><span>C</span><h3>การตอบสนอง</h3><p>Mobile ถูกจัดใหม่ตามความสำคัญ และ Code กับ Table ไม่ล้นจอ</p></div><div><span>D</span><h3>สถานะ</h3><p>ตรวจ Default, Loading, Empty, Error, Success, Disabled และ Destructive เมื่อเกี่ยวข้อง</p></div><div><span>E</span><h3>การเข้าถึง</h3><p>สังเกต Landmark, Focus, ชื่อ, Contrast, Motion และ Keyboard path</p></div><div><span>F</span><h3>ความซื่อตรง</h3><p>ระบุคำสั่ง Viewport, Flow, ข้อจำกัด และหลักฐานที่ตรวจจริง</p></div></div>
-            <div class="evidence-strip"><b>30 / 30</b><p><span>รอบ BEHAVIORAL เป้าหมายของ v1.1</span>ผ่านทั้งภาษาไทยและอังกฤษ ส่วน Implementation fixture ไม่ได้รัน</p></div>
+            <div class="evidence-strip"><b>6 / 6</b><p><span>รอบ SYSTEM-CONTRACT ใหม่ของ v1.2</span>Implementation ของ Scenario 19 ผ่านทั้งภาษาไทยและอังกฤษ พร้อมการตรวจ Responsive ด้วย Browser แบบอิสระ Guardrail ได้รับการซ่อมแล้ว ส่วนหลักฐานจากผู้ใช้จริงยังเป็นงานต่อไป</p></div>
           </section>
 
           <section id="limits" aria-labelledby="limits-title">
-            <p class="section-label">08 / ข้อจำกัด</p><h2 id="limits-title">เป็นวิธีคิด.<br />ไม่ใช่ Preset.</h2>
+            <p class="section-label">09 / ข้อจำกัด</p><h2 id="limits-title">เป็นวิธีคิด.<br />ไม่ใช่ Preset.</h2>
             <ul class="limits-list"><li>ค่าเริ่มต้นด้าน Grid, Type และสีเป็นเพียงจุดเริ่ม ไม่ใช่กฎตายตัว</li><li>คุณภาพผลลัพธ์ขึ้นอยู่กับ Context ของผลิตภัณฑ์ที่ Agent ได้รับ</li><li>Automated checks ไม่สามารถแทนการตรวจหน้าเว็บที่ Render จริงได้</li><li>ผลลัพธ์จากโมเดลอาจเปลี่ยน ควรทดสอบซ้ำเมื่อเปลี่ยน Agent หรือแก้ Skill</li></ul>
             <div class="docs-next"><p>พร้อมดูวิธีนี้ในงานจริงหรือยัง?</p><a href="../../examples/">ดูกรณีศึกษาทั้งหมด <span aria-hidden="true">↗</span></a></div>
           </section>
         </article>
 
         <aside class="docs-rail" aria-label="ข้อมูลอ้างอิงย่อ">
-          <p>ข้อมูลอ้างอิงย่อ</p><dl><div><dt>โครงสร้าง</dt><dd>มองเห็น → มองไม่เห็น</dd></div><div><dt>การแสดงออก</dt><dd>มาจากแบรนด์</dd></div><div><dt>หลักฐาน</dt><dd>Product-native</dd></div><div><dt>สถานะ</dt><dd>ครบ / กู้คืนได้</dd></div><div><dt>การเคลื่อนไหว</dt><dd>ตามหน้าที่ / ลดได้</dd></div></dl>
+          <p>ข้อมูลอ้างอิงย่อ</p><dl><div><dt>โครงสร้าง</dt><dd>มองเห็น → มองไม่เห็น</dd></div><div><dt>การแสดงออก</dt><dd>มาจากแบรนด์</dd></div><div><dt>Token</dt><dd>Foundation → Component</dd></div><div><dt>หลักฐาน</dt><dd>Product-native</dd></div><div><dt>สถานะ</dt><dd>ครบ / กู้คืนได้</dd></div><div><dt>การเคลื่อนไหว</dt><dd>ตามหน้าที่ / ลดได้</dd></div></dl>
           <a href="https://github.com/ohmiler/gridgeist/blob/main/skills/gridgeist/SKILL.md">อ่าน SKILL.md ↗</a>
         </aside>
       </div>

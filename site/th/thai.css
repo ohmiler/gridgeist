@@ -30,7 +30,8 @@ body { font-family: "Noto Sans Thai", var(--sans); }
 .prompt-list article > div { padding: 1rem 0; display: flex; justify-content: space-between; align-items: center; }
 .prompt-list article span,.thai-copy { font: .62rem var(--mono); }
 .thai-copy { padding: .55rem .8rem; border: 1px solid; background: transparent; cursor: pointer; }
-.thai-copy:hover { background: var(--blue); color: white; }
+.thai-copy:hover,.thai-copy.copied { background: var(--color-action); color: var(--color-action-foreground); }
+.thai-copy.copied { box-shadow: inset 4px 0 var(--color-focus); }
 .prompt-list pre { max-width: var(--container-copy); margin: 0 0 1.5rem; white-space: pre-wrap; font: 400 .95rem/1.8 "Noto Sans Thai",sans-serif; }
 .thai-practice { padding: 7rem var(--page-gutter); display: grid; grid-template-columns: .6fr 1.2fr 1fr; align-items: start; border-top: 1px solid; }
 .thai-practice > div { padding-top: 1rem; }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1200, initial-scale=1" />
     <title>Gridgeist social card</title>
+    <link rel="icon" href="../favicon.ico" sizes="any" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@700;800;900&display=swap");
       * { box-sizing: border-box; }
@@ -24,14 +25,18 @@
       footer { height: 86px; padding: 18px 32px; display: flex; justify-content: space-between; align-items: end; border-top: 1px solid #11120f; position: relative; z-index: 2; }
       footer p { width: 535px; margin: 0; font-size: 20px; line-height: 1.18; font-weight: 700; letter-spacing: -.035em; }
       footer span { font: 500 11px "DM Mono",monospace; text-align: right; line-height: 1.7; }
+      .contract { position: absolute; left: 32px; right: 32px; bottom: 98px; z-index: 3; display: grid; grid-template-columns: repeat(3,1fr); border: 1px solid #11120f; background: #f2f0e9; }
+      .contract span { min-height: 38px; padding: 0 12px; display: flex; align-items: center; border-right: 1px solid #11120f; font: 500 10px "DM Mono",monospace; letter-spacing: .05em; text-transform: uppercase; }
+      .contract span:last-child { border-right: 0; background: #1547ff; color: white; }
       .coordinate { position: absolute; left: 914px; top: 326px; color: #1547ff; font: 11px "DM Mono",monospace; z-index: 3; }
     </style>
   </head>
   <body>
     <div class="grid" aria-hidden="true"><i class="axis-x"></i><i class="axis-y"></i></div>
     <span class="coordinate">X 09 / Y 03</span>
-    <header><span class="brand">GRIDGEIST<sup>®</sup></span><span>AGENT SKILL / OPEN SOURCE</span><span>GG—01</span></header>
+    <header><span class="brand">GRIDGEIST<sup>®</sup></span><span>AGENT SKILL / OPEN SOURCE</span><span>GG—1.2</span></header>
     <main><p class="kicker">Web interface direction / Create · Redesign · Review</p><h1><span>Structure</span><span>with spirit.</span></h1></main>
-    <footer><p>Distinctive interfaces built from product intent, precise type, and a grid that means something.</p><span>GITHUB.COM/OHMILER/GRIDGEIST<br />MIT LICENSE / 2026</span></footer>
+    <div class="contract" aria-hidden="true"><span>Foundation / raw values</span><span>Semantic / product roles</span><span>Component / behavior</span></div>
+    <footer><p>Product-native systems built from direction, shared component grammar, and observed evidence.</p><span>V1.2.0 / GITHUB.COM/OHMILER/GRIDGEIST<br />MIT LICENSE / 2026</span></footer>
   </body>
 </html>

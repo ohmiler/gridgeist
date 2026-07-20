@@ -357,7 +357,7 @@ html[data-view='after'] .version-before { display: none; }
   *,*::before,*::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
 
-/* Gridgeist v1.1.0 After refresh: product evidence leads, the baseline stays untouched. */
+/* Gridgeist v1.2.0 After refresh: product evidence leads, the baseline stays untouched. */
 html { scroll-behavior: smooth; }
 .version-after { background: var(--paper); }
 .version-after :is(a[href],button):focus-visible {

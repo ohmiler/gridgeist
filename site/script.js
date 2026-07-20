@@ -54,6 +54,7 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach((section) => observer.observe(section));
 
 document.querySelectorAll('[data-copy], [data-copy-target]').forEach((button) => {
+  button.setAttribute('aria-live', 'polite');
   button.addEventListener('click', async () => {
     const target = button.dataset.copyTarget ? document.getElementById(button.dataset.copyTarget) : null;
     const text = target?.textContent.trim() || button.dataset.copy || '';
@@ -74,4 +75,12 @@ document.querySelectorAll('[data-copy], [data-copy-target]').forEach((button) =>
 
 document.querySelectorAll('.mobile-menu a').forEach((link) => {
   link.addEventListener('click', () => link.closest('details')?.removeAttribute('open'));
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return;
+  document.querySelectorAll('.mobile-menu[open]').forEach((menu) => {
+    menu.removeAttribute('open');
+    menu.querySelector('summary')?.focus();
+  });
 });

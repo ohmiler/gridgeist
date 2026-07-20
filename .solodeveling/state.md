@@ -4,9 +4,9 @@ solodeveling_schema: 1
 
 # State
 
-- **Goal:** Keep the released Gridgeist v1.2.0 package, documentation, and public examples aligned.
-- **Progress:** The v1.2.0 README/showcase refresh is published on `main`; validation and Pages workflows passed for release head `b43972d`, and the production After page was browser-verified at mobile and desktop widths.
-- **Active work:** None. `WORK-0020-publish-readme-v1.2.0-showcase` is complete with release evidence in `evidence/EVIDENCE-0022-publish-readme-v1.2.0-showcase.md`.
+- **Goal:** Migrate every public Gridgeist web surface to one honest, implementation-native v1.2.0 system while preserving its route behavior and brand character.
+- **Progress:** The complete public site now uses the v1.2 system contract across bilingual home/docs, examples, the historical Tracefield case study, the Northline showcase, and the canonical OG image. Responsive, interaction, visual, image, release, skill, syntax, and scope checks passed locally.
+- **Active work:** None. `WORK-0021-site-wide-v1.2.0-migration` is completed with evidence in `evidence/EVIDENCE-0023-site-wide-v1.2.0-migration.md`.
 - **Blockers:** None.
 - **Current risks:** Fresh-agent behavior remains nondeterministic; the full-access Windows harness is not OS-hermetic; Scenario 13 was a boundary smoke rather than a full post-repair implementation; two empty `C:\tmp` directories remain locked until Windows releases their handles.
-- **Next action:** Monitor normal user feedback; treat the pre-existing root favicon 404 as optional maintenance rather than a release blocker.
+- **Next action:** Await separate user authority before any push, publication, or production smoke check.

@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Install Gridgeist, choose a mode, write a useful brief, and verify the resulting interface." />
+    <meta name="description" content="Install Gridgeist v1.2, align a direction, define a system contract, and verify a product-native interface." />
     <meta name="theme-color" content="#f2f0e9" />
-    <link rel="icon" href="../favicon.ico" />
     <title>Docs — Gridgeist</title>
     <link rel="canonical" href="https://ohmiler.github.io/gridgeist/docs/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Gridgeist" />
     <meta property="og:title" content="Gridgeist Docs — From product intent to interface system" />
-    <meta property="og:description" content="Installation, operating modes, prompt patterns, workflow, and verification for Gridgeist." />
+    <meta property="og:description" content="Installation, direction alignment, system contracts, component grammar, workflow, and verification for Gridgeist v1.2." />
     <meta property="og:url" content="https://ohmiler.github.io/gridgeist/docs/" />
     <meta property="og:image" content="https://ohmiler.github.io/gridgeist/og-image.png" />
     <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../favicon.ico" sizes="any" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="./docs.css" />
     <script src="../script.js" defer></script>
@@ -33,7 +33,7 @@
 
     <main id="main">
       <section class="docs-hero" aria-labelledby="docs-title">
-        <p class="eyebrow">Field manual / v1.1</p>
+        <p class="eyebrow">Field manual / v1.2</p>
         <div class="docs-hero-mark" aria-hidden="true"><span>GG—DOCS</span><span>READ / DECIDE / VERIFY</span></div>
         <h1 id="docs-title">FROM SIGNAL<br /><span>TO SYSTEM.</span></h1>
         <div class="docs-hero-intro">
@@ -46,7 +46,7 @@
         <aside class="docs-sidebar" aria-label="Documentation sections">
           <p>ON THIS PAGE</p>
           <nav>
-            <a href="#quickstart"><span>01</span> Quickstart</a><a href="#install"><span>02</span> Install + update</a><a href="#modes"><span>03</span> Choose a mode</a><a href="#adaptation"><span>04</span> Adapt the system</a><a href="#brief"><span>05</span> Write the brief</a><a href="#workflow"><span>06</span> Workflow</a><a href="#verify"><span>07</span> Verify</a><a href="#limits"><span>08</span> Limits</a>
+            <a href="#quickstart"><span>01</span> Quickstart</a><a href="#install"><span>02</span> Install + update</a><a href="#modes"><span>03</span> Choose a mode</a><a href="#adaptation"><span>04</span> Adapt the system</a><a href="#contract"><span>05</span> Define the contract</a><a href="#brief"><span>06</span> Write the brief</a><a href="#workflow"><span>07</span> Workflow</a><a href="#verify"><span>08</span> Verify</a><a href="#limits"><span>09</span> Limits</a>
           </nav>
         </aside>
 
@@ -99,8 +99,19 @@ npx skills update gridgeist -g -y</code></pre><button type="button" data-copy-ta
             <p class="adaptation-test"><span>RECOGNIZABILITY TEST</span>If the borders, mono labels, and visible grid disappear, the result should still belong to the product.</p>
           </section>
 
+          <section id="contract" class="docs-contract" aria-labelledby="contract-title">
+            <div class="contract-intro"><div><p class="section-label">05 / Define the contract</p><h2 id="contract-title">Connect the system<br />before polishing it.</h2></div><p>Use the smallest complete contract for the work. Reconcile existing implementation and brand evidence before changing values.</p></div>
+            <div class="contract-flow" aria-label="Gridgeist token flow"><div><span>01 / Foundation</span><strong>Palette · type · rhythm</strong></div><div><span>02 / Semantic</span><strong>Canvas · text · state</strong></div><div><span>03 / Component</span><strong>Anatomy · variant · behavior</strong></div></div>
+            <div class="contract-grid">
+              <article class="contract-card"><span>Color + themes</span><strong>Pair roles.</strong><p>Map foreground/background, border, action, focus, success, warning, and destructive relationships.</p></article>
+              <article class="contract-card"><span>Type + spacing</span><strong>Name jobs.</strong><p>Define only the display, heading, body, label, metadata, and spacing roles the surface needs.</p></article>
+              <article class="contract-card"><span>Components</span><strong>Stress the grammar.</strong><p>Cover variants, states, localization, dynamic content, overflow, and narrow containers.</p></article>
+              <article class="contract-card is-state"><span>Motion + evidence</span><strong>Bind the claim.</strong><p>Use motion for feedback or causality, provide reduced motion, and report only what was observed.</p><div class="contract-state"><i>Focus</i><i>Error</i><i>Reduced</i></div></article>
+            </div>
+          </section>
+
           <section id="brief" aria-labelledby="brief-title">
-            <p class="section-label">05 / Write the brief</p><h2 id="brief-title">Four inputs remove<br />most ambiguity.</h2>
+            <p class="section-label">06 / Write the brief</p><h2 id="brief-title">Four inputs remove<br />most ambiguity.</h2>
             <ol class="brief-list">
               <li><span>01</span><div><h3>Product + audience</h3><p>What is being designed, and who needs to use it?</p></div></li>
               <li><span>02</span><div><h3>Mode + outcome</h3><p>Create, redesign, or review—and what should be true when the work is done?</p></div></li>
@@ -117,11 +128,11 @@ and one coherent replacement direction.</code></pre></details>
           </section>
 
           <section id="workflow" aria-labelledby="workflow-title">
-            <p class="section-label">06 / Workflow</p><h2 id="workflow-title">Inspect before composing.</h2>
+            <p class="section-label">07 / Workflow</p><h2 id="workflow-title">Inspect before composing.</h2>
             <ol class="workflow-list">
               <li><b>01</b><span>Inspect</span><p>Understand the product, audience, routes, components, tokens, and rendered UI. If several thesis-level directions remain credible, recommend two or three and confirm one before editing.</p></li>
               <li><b>02</b><span>Set a thesis</span><p>Write one sentence that governs hierarchy, structure, expression, and product evidence.</p></li>
-              <li><b>03</b><span>Define the system</span><p>Set the container, columns, spacing, type roles, colors, borders, and responsive transformations.</p></li>
+              <li><b>03</b><span>Define the system</span><p>Connect foundation values to semantic roles and shared component anatomy, variants, states, content stress, motion, and responsive transformations.</p></li>
               <li><b>04</b><span>Compose</span><p>Build hierarchy before detail. Let real code, data, workflows, or imagery carry visual weight.</p></li>
               <li><b>05</b><span>Implement</span><p>Follow repository conventions, semantic HTML, keyboard behavior, and existing primitives.</p></li>
               <li><b>06</b><span>Verify</span><p>Render representative widths, exercise states and inputs, fix observed issues, and report remaining gaps.</p></li>
@@ -129,20 +140,20 @@ and one coherent replacement direction.</code></pre></details>
           </section>
 
           <section id="verify" aria-labelledby="verify-title">
-            <p class="section-label">07 / Verification</p><h2 id="verify-title">Evidence before<br />the verdict.</h2>
+            <p class="section-label">08 / Verification</p><h2 id="verify-title">Evidence before<br />the verdict.</h2>
             <div class="check-grid"><div><span>A</span><h3>Clarity</h3><p>Product, audience, primary task, and next action are obvious.</p></div><div><span>B</span><h3>Hierarchy</h3><p>Each viewport has one dominant element and a readable order.</p></div><div><span>C</span><h3>Response</h3><p>Mobile is recomposed around priority; code and tables do not overflow.</p></div><div><span>D</span><h3>States</h3><p>Default, loading, empty, error, success, disabled, and destructive states are considered when applicable.</p></div><div><span>E</span><h3>Access</h3><p>Landmarks, focus, names, contrast, motion, and keyboard paths are observed.</p></div><div><span>F</span><h3>Integrity</h3><p>Claims name the commands, viewports, flows, limits, and evidence actually observed.</p></div></div>
-            <div class="evidence-strip"><b>30 / 30</b><p><span>TARGETED v1.1 BEHAVIORAL RUNS</span>Passed in English and Thai. Implementation fixtures were not run.</p></div>
+            <div class="evidence-strip"><b>6 / 6</b><p><span>FRESH v1.2 SYSTEM-CONTRACT RUNS</span>Scenario 19 implementations passed in English and Thai with independent responsive browser checks. Guardrails were repaired; real-user evidence remains open.</p></div>
           </section>
 
           <section id="limits" aria-labelledby="limits-title">
-            <p class="section-label">08 / Limits</p><h2 id="limits-title">A method,<br />not a preset.</h2>
+            <p class="section-label">09 / Limits</p><h2 id="limits-title">A method,<br />not a preset.</h2>
             <ul class="limits-list"><li>Grid, type, and color defaults are starting points—not fixed rules.</li><li>Output quality depends on the product context available to the agent.</li><li>Automated checks do not replace inspecting the rendered interface.</li><li>Model output can vary; re-test when the agent or skill changes.</li></ul>
             <div class="docs-next"><p>READY TO SEE THE METHOD IN PRACTICE?</p><a href="../examples/">Explore the field studies <span aria-hidden="true">↗</span></a></div>
           </section>
         </article>
 
         <aside class="docs-rail" aria-label="Quick reference">
-          <p>QUICK REFERENCE</p><dl><div><dt>STRUCTURE</dt><dd>Visible → invisible</dd></div><div><dt>EXPRESSION</dt><dd>Brand-derived</dd></div><div><dt>EVIDENCE</dt><dd>Product-native</dd></div><div><dt>STATE</dt><dd>Complete / recoverable</dd></div><div><dt>MOTION</dt><dd>Functional / reduced</dd></div></dl>
+          <p>QUICK REFERENCE</p><dl><div><dt>STRUCTURE</dt><dd>Visible → invisible</dd></div><div><dt>EXPRESSION</dt><dd>Brand-derived</dd></div><div><dt>TOKENS</dt><dd>Foundation → component</dd></div><div><dt>EVIDENCE</dt><dd>Product-native</dd></div><div><dt>STATE</dt><dd>Complete / recoverable</dd></div><div><dt>MOTION</dt><dd>Functional / reduced</dd></div></dl>
           <a href="https://github.com/ohmiler/gridgeist/blob/main/skills/gridgeist/SKILL.md">Read SKILL.md ↗</a>
         </aside>
       </div>
