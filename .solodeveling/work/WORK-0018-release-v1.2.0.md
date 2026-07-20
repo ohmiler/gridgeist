@@ -2,30 +2,34 @@
 solodeveling_schema: 1
 ---
 
-# WORK-0018: Prepare Gridgeist v1.2.0
+# WORK-0018: Release Gridgeist v1.2.0
 
-- **Status:** Ready
+- **Status:** Active
 - **Class:** Standard, audited release preparation
 - **Opened:** 2026-07-20
 - **Operator:** Codex, acting on the repository owner's instruction
-- **Authority:** The user authorized version alignment, local validation, evidence,
-  and a release-preparation commit. Push, tag creation, GitHub Release publication,
-  and other production-changing actions are not authorized.
+- **Authority:** The user first authorized version alignment, local validation,
+  evidence, and a release-preparation commit, then explicitly instructed Codex to
+  proceed with the proposed publication on 2026-07-20. This covers remote preflight,
+  pushing `main`, annotated tag creation and push, GitHub Release publication,
+  production Docs observation, tagged installation checks, and release closure.
 
 ## Goal
 
-Prepare the verified system-contract and alignment behavior as a reviewable
-Gridgeist v1.2.0 release candidate without publishing it.
+Publish the verified system-contract and alignment behavior as Gridgeist v1.2.0 and
+observe the public delivery paths through their release gates.
 
 ## Release boundary
 
 - **Version:** `1.2.0`
 - **Behavior base:** `a17064f0b0077aa88274b1d078d765bd711b0407`
 - **Preparation base:** `168a1870344cc2911ed063b9d05ce77e8acecc62`
-- **Source:** current `main` plus release metadata and release records; the final
-  preparation revision and tree will be recorded after commit.
-- **Artifact:** A local release-preparation commit. The future public artifact would
-  be annotated tag `v1.2.0`, but creating it is outside current authority.
+- **Preparation revision:** `c91c5aaa23155da2a8034adc0e1b57bcc1225557`
+- **Preparation tree:** `9a6f8bcf1f874313c3c6f259e35205cd58cb0c73`
+- **Source:** current `main` plus this publication-authority record; the tagged
+  release revision and tree will be recorded after commit.
+- **Artifact:** Annotated tag `v1.2.0` and a public GitHub Release backed by the
+  repository plugin source.
 - **Target:** Public Git-backed Codex marketplace, universal installer, GitHub
   Release, and version labels on the Docs site after separate publication authority.
 - **Compatibility:** Backward-compatible with `1.x`; no dependency, schema,
@@ -46,8 +50,9 @@ Gridgeist v1.2.0 release candidate without publishing it.
 5. The prepared candidate is bound to its behavior and preparation bases plus the
    installable skill Git tree. The resulting local commit is reported at handoff and
    must be recorded before publication.
-6. No push, tag, GitHub Release, marketplace publication, or production Docs action
-   occurs without a separate explicit authorization.
+6. `main` and annotated tag `v1.2.0` are pushed, main/tag CI succeeds, a public
+   GitHub Release is published, public English/Thai Docs identify `1.2.0`, and fresh
+   tagged Codex plugin and universal-installer checks pass.
 
 ## Risks and recovery
 
@@ -71,6 +76,10 @@ Gridgeist v1.2.0 release candidate without publishing it.
 2. Run local candidate validation and inspect the exact staged scope.
 3. Record candidate identity, checks, limitations, and publication boundary.
 4. Create a local release-preparation commit and stop before external effects.
+5. Reconfirm remote identity and publish `main` plus annotated tag `v1.2.0`.
+6. Observe main/tag CI, publish the GitHub Release, and verify public Docs and tagged
+   installation paths.
+7. Reconcile evidence and state, archive the work, and push the closure record.
 
 ## Preparation result
 

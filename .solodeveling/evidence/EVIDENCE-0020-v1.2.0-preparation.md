@@ -2,12 +2,12 @@
 solodeveling_schema: 1
 ---
 
-# EVIDENCE-0020: v1.2.0 release preparation
+# EVIDENCE-0020: v1.2.0 release
 
 - **Work item:** `WORK-0018-release-v1.2.0`
 - **Opened:** 2026-07-20
-- **Decision:** Ready for a local release-preparation commit. Publication is not
-  authorized; tagged delivery remains unverified.
+- **Decision:** Ready for publication with tagged delivery still unverified. The
+  user explicitly authorized publication on 2026-07-20; execution is in progress.
 
 ## Current acceptance matrix
 
@@ -20,7 +20,7 @@ solodeveling_schema: 1
 | Universal installer boundary | Local-path installation found and copied the exact candidate skill, but intentionally did not create Git source-lock metadata; the full tagged Git install/update check remains a publication gate. | Partial; deferred |
 | Exact candidate identity | Behavior base `a17064f0b0077aa88274b1d078d765bd711b0407`; preparation base `168a1870344cc2911ed063b9d05ce77e8acecc62`; installable skill Git tree `c30e6c2a359e7d94b9b56adaf14eb124efb519f9`. | Pass |
 | Scope isolation | Exact-path staging contains only manifest, marketplace, state, WORK, EVIDENCE, changelog, and English/Thai Docs files. Pre-existing unrelated untracked files remain excluded. | Pass |
-| Publication boundary | User authorized local preparation and commit only; push, tag, GitHub Release, marketplace publication, and production Docs remain unauthorized. | Pass |
+| Publication authority | After the local preparation handoff, the user explicitly instructed Codex to proceed with the proposed v1.2.0 publication. Authority covers push, annotated tag, GitHub Release, production Docs observation, tagged installation checks, and closure. | Pass |
 
 ## Inherited evidence
 
@@ -66,3 +66,8 @@ behavior candidate `a17064f0b0077aa88274b1d078d765bd711b0407`.
 - Universal-installer Git source metadata and update behavior remain unverified for
   `v1.2.0` until the public tag exists; this is a publication gate, not evidence of a
   candidate-content failure.
+
+## Publication observation
+
+Publication, CI, public Docs, GitHub Release, and tagged installation results are
+pending and will be recorded only after they are observed.

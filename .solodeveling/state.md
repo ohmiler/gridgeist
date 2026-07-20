@@ -4,9 +4,9 @@ solodeveling_schema: 1
 
 # State
 
-- **Goal:** Prepare Gridgeist v1.2.0 locally from the verified system-contract and alignment behavior without publishing it.
-- **Progress:** v1.2.0 metadata and bilingual Docs are aligned; static validators and a synthetic Git-backed Codex clean-install/refresh/reinstall smoke passed at `1.2.0`. The universal installer copied the local candidate, while tagged source-lock/update verification remains a publication gate.
-- **Active work:** `WORK-0018-release-v1.2.0` is ready with cumulative evidence in `evidence/EVIDENCE-0020-v1.2.0-preparation.md`.
-- **Blockers:** None for the local preparation commit. Push, tag creation, GitHub Release publication, marketplace publication, production Docs actions, and tagged universal-install verification remain unauthorized.
+- **Goal:** Publish and observe Gridgeist v1.2.0 from the verified system-contract and alignment release candidate.
+- **Progress:** Preparation revision `c91c5aa` passed static validators and synthetic Codex installation gates. Remote preflight found `origin/main` behind by five expected commits, no local/remote `v1.2.0` tag, no existing GitHub Release, and valid repository/workflow authority.
+- **Active work:** `WORK-0018-release-v1.2.0` is active with cumulative evidence in `evidence/EVIDENCE-0020-v1.2.0-preparation.md`.
+- **Blockers:** None. The user explicitly authorized push, annotated tag, GitHub Release publication, production observation, tagged installation checks, and closure on 2026-07-20.
 - **Current risks:** Fresh-agent behavior remains nondeterministic; the full-access Windows harness is not OS-hermetic; Scenario 13 was a boundary smoke rather than a full post-repair implementation; two empty `C:\tmp` directories remain locked until Windows releases their handles.
-- **Next action:** Create the local v1.2.0 release-preparation commit, report its revision, and wait for separate publication authority before fetch/push/tag/release/production observation.
+- **Next action:** Commit the publication-authority record, create annotated tag `v1.2.0`, push `main` and the tag, then observe CI before publishing the GitHub Release.
