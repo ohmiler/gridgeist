@@ -4,7 +4,7 @@ solodeveling_schema: 1
 
 # WORK-0020: Publish the README v1.2.0 showcase refresh
 
-- **Status:** Active
+- **Status:** Completed
 - **Class:** Standard release
 - **Opened:** 2026-07-20
 - **Operator:** Codex, acting on the repository owner's instruction
