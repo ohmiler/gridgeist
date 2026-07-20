@@ -1,0 +1,147 @@
+﻿[
+    {
+        "path":  "billing.html",
+        "sha256":  "f8f987a62ffec2645180a80f8832dfcd59b99888e72695df1473c9b877a0fef9",
+        "bytes":  3948
+    },
+    {
+        "path":  "DESIGN.md",
+        "sha256":  "4b873a2d582d715753e8efd080f1df0788651a04a2feb92a313112c344c8bdb6",
+        "bytes":  589
+    },
+    {
+        "path":  "index.html",
+        "sha256":  "f172c174c119e7470f0dc97f5af57b8eed7cdf13a49d3b80aa8ffb52409ebc6c",
+        "bytes":  2687
+    },
+    {
+        "path":  "README.md",
+        "sha256":  "5f7900e7f4c89d1d0f3d853db9c38bcb06b7d8fecbff731ead95e59b767cd430",
+        "bytes":  1332
+    },
+    {
+        "path":  "script.js",
+        "sha256":  "28d4bb1dd7ff3641ad8180a32f855929d5ce872cfd0ffa81cc68f50e3b39cffa",
+        "bytes":  2293
+    },
+    {
+        "path":  "styles.css",
+        "sha256":  "0e0c4db506cba797d62b78df3d5db77d65cac43b835605692b72bb4b68997246",
+        "bytes":  10210
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\SKILL.md",
+        "sha256":  "df0c5c5cfd9ae73581c6374656b515f74e89574af543ada7492772fb2dd93dca",
+        "bytes":  10236
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\agents\\openai.yaml",
+        "sha256":  "eaf59c33654331caff59f83c3963c3ff7d831d8e4976bbf032406526a8c9c60f",
+        "bytes":  429
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\assets\\gridgeist-small.svg",
+        "sha256":  "6c39b666b034b54041423f5a79717b503c92d98a1a0f9c0dbcb7c846092011a3",
+        "bytes":  800
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\assets\\gridgeist.png",
+        "sha256":  "1e2bc6d6672faab48eeff1dbac6f1ed662d67cf569e6cf042776b504769ddd8e",
+        "bytes":  41217
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\assets\\gridgeist.svg",
+        "sha256":  "4d92687b76a150b3998975282f661d68c95971d9902634ccae326af06fbf9a80",
+        "bytes":  1229
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\references\\design-language.md",
+        "sha256":  "f37e69017f5f9050eac707908a2d906c1a5c54e60831b74db5876e8fce9a218e",
+        "bytes":  5479
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\references\\review-checklist.md",
+        "sha256":  "c0b0dfec67e865f3070eb639c4f3e9a1931d3b5f0dda4fe4e1fa822c8aa7995d",
+        "bytes":  7101
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\references\\system-contract.md",
+        "sha256":  "604f6c89361153397e89b0dbe75616a25e04c698a1f0146dcf6513f4186d59fe",
+        "bytes":  6098
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-57-33-854Z.yml",
+        "sha256":  "23db67b42f6d8c93bbe33f175125c3d7f8f630a944177d8043d0155daa04619d",
+        "bytes":  1752
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-57-42-687Z.png",
+        "sha256":  "a12f4ec2fff3a762d41f614480d05150f768591b372c9df8bb1c3503377ef8aa",
+        "bytes":  53209
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-57-56-634Z.yml",
+        "sha256":  "0c7a7f4b5099143b225ec92e25ac554d513a4a2c3eda50184fe75374034ae48c",
+        "bytes":  2729
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-58-05-069Z.yml",
+        "sha256":  "3e55ade473fd3d0a7b4911dfeebebe50b89ff107a93e06683942ec38d32f2657",
+        "bytes":  2142
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-58-06-765Z.yml",
+        "sha256":  "d94130351033b04f40dded8458cb0417435fba76055f9f5d05532eb863417ac6",
+        "bytes":  2177
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-58-08-448Z.yml",
+        "sha256":  "419dc099353da0548a63124b7e9c166d42850d8b858ebc5926fd04ab6f10e25e",
+        "bytes":  2201
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-58-10-131Z.yml",
+        "sha256":  "b8520dc53f63dafefba18d113c037e4b95e33e7efa2e8ec59ef598789f7a73f0",
+        "bytes":  2213
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-58-12-429Z.png",
+        "sha256":  "20ea54f8fecc6bf711d016bece80536e1c8ff337fa71c271fa25b5501a31d159",
+        "bytes":  44832
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-58-29-003Z.png",
+        "sha256":  "56b96c428da825bea0cc444f4d8d30e4ab5fb22bd2d1499668cc8e573f1cbd13",
+        "bytes":  26855
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-58-42-180Z.yml",
+        "sha256":  "5eb18c44ba81243f8743ee0173cb73b5b094769268ac58db10072c1e7f449421",
+        "bytes":  1763
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-58-50-404Z.yml",
+        "sha256":  "3d0a62c157d12bcb9b793851e0bac7824f66ea0e241369e27788b96c33279329",
+        "bytes":  1753
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-58-52-306Z.yml",
+        "sha256":  "1e2db9e252c05e5b1895c4847ea8f4cc2d14a8437d03946f2bd03f20243bf11a",
+        "bytes":  1777
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-58-57-154Z.png",
+        "sha256":  "803562da398da6a13004f15258d8ced4ec56275128f21f3e700581e03fe71aa4",
+        "bytes":  24546
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-59-16-705Z.png",
+        "sha256":  "b3de63773b1253fc1acad426bd90040907e271f03255701009b47512625368a9",
+        "bytes":  30441
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T12-59-19-147Z.png",
+        "sha256":  "2248a3ca2545a542c4f664fbe5bc760e22524f7191e5d18dd8431060828b9225",
+        "bytes":  58056
+    }
+]

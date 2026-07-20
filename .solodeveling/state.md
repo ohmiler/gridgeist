@@ -4,9 +4,9 @@ solodeveling_schema: 1
 
 # State
 
-- **Goal:** Maintain released Gridgeist `1.1.2` while preparing an evidence-bounded system-contract capability expansion.
-- **Progress:** Implemented and structurally verified the proportional system contract, component grammar, review coverage, bilingual guidance, and runnable Scenario 19 fixture.
-- **Active work:** None. `work/archive/WORK-0016-design-system-contract.md` is complete with cumulative evidence in `evidence/EVIDENCE-0018-design-system-contract.md`.
-- **Blockers:** None.
-- **Current risks:** Scenarios 16–19 have not been independently forward-run; model behavior remains nondeterministic, DESIGN.md interoperability must remain optional, and no external-project, real-user, accessibility-compliance, or redesign-quality improvement is claimed.
-- **Next action:** Run paired English and Thai fresh-agent Scenario 19 evaluations from disposable fixture copies before planning a minor release.
+- **Goal:** Prepare Gridgeist system-contract and alignment behavior for a future minor release without publishing it.
+- **Progress:** Final candidate `a17064f` passed six clean bilingual Scenario 19 runs, independent Playwright route rendering, and repaired direction-alignment and companion-ownership guardrails in English and Thai.
+- **Active work:** None. `WORK-0017-system-contract-behavioral-eval` is complete with cumulative evidence in `evidence/EVIDENCE-0019-system-contract-behavioral-eval.md`.
+- **Blockers:** None for planning. Production/release actions remain unauthorized.
+- **Current risks:** Fresh-agent behavior remains nondeterministic; the full-access Windows harness is not OS-hermetic; Scenario 13 was a boundary smoke rather than a full post-repair implementation; two empty `C:\tmp` directories remain locked until Windows releases their handles.
+- **Next action:** If authorized, shape and plan the minor release from candidate `a17064f`; otherwise keep the local checkpoints unpushed.

@@ -1,0 +1,162 @@
+﻿[
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T13-16-05-577Z.yml",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "ea246baada7ff0a761107bebab5599da2c66027e6e61498aeddf337a85606735",
+        "before_bytes":  null,
+        "after_bytes":  1644
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T13-19-57-236Z.yml",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "f99c1496d3cfba584ec10cbd3b26526cb6f3d0bc501af2976cc1fb593ad13c4f",
+        "before_bytes":  null,
+        "after_bytes":  1678
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T13-20-27-722Z.yml",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "ff136c815291fe6062db106ce172a07461e89353e0536ab1cf7a3232b9b13cfb",
+        "before_bytes":  null,
+        "after_bytes":  1702
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T13-20-31-373Z.yml",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "4933b196616738a32a551de7aab728927c7a69dba900116138ffe54cb8c92784",
+        "before_bytes":  null,
+        "after_bytes":  2729
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T13-20-40-798Z.yml",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "803a5e5028f4a9a2517387c3f72f9663c7660506b7187bb6ed9d82269ca521d8",
+        "before_bytes":  null,
+        "after_bytes":  2142
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T13-20-43-797Z.yml",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "6b16b688f68bc33e93f5c7a43b0532f463fe3d882d0a00304842e96e940d8714",
+        "before_bytes":  null,
+        "after_bytes":  2177
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T13-20-46-679Z.yml",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "9eb7b37e7012a5af3375a9aa96883e6ac6074510571140f123ed59da59cf854b",
+        "before_bytes":  null,
+        "after_bytes":  2201
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T13-20-49-527Z.yml",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "8ecb3412b72ccb27e5079895319352e8f52372994ef69cfc86070afc1e53fddc",
+        "before_bytes":  null,
+        "after_bytes":  2213
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T13-21-16-643Z.yml",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "d497363fe4d15c9ee4911f7ce6587d22cad03f145c6fe8a3739706ca45466896",
+        "before_bytes":  null,
+        "after_bytes":  1763
+    },
+    {
+        "path":  ".playwright-cli\\page-2026-07-20T13-21-54-261Z.yml",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "3419aa623666045be4a5b178674d5d033004c43c47e962604abc80697110246e",
+        "before_bytes":  null,
+        "after_bytes":  2611
+    },
+    {
+        "path":  "billing.html",
+        "status":  "modified",
+        "before_sha256":  "0388b7963c44ba59a7c4f2ae73d9380462720b64336de6eed6f78dde228a12cd",
+        "after_sha256":  "2453a61d9c270ca3e51877b43b8ff96a82f7ff854dfcc5d2b5cdcf21e7a13df8",
+        "before_bytes":  3804,
+        "after_bytes":  4038
+    },
+    {
+        "path":  "output\\playwright\\baseline-profile-1280.png",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "387a405af1ddde20b141d3185fe56fb4aac2755d74c9193fafe8db355f0b786c",
+        "before_bytes":  null,
+        "after_bytes":  53029
+    },
+    {
+        "path":  "output\\playwright\\billing-dark-360.png",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "a573fb7561f1ab219f6227c09e3b3b0afe0fd588bd1195b5021a529ba69857a0",
+        "before_bytes":  null,
+        "after_bytes":  27520
+    },
+    {
+        "path":  "output\\playwright\\billing-dark-360-fixed.png",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "7f15f6847ad0b1eadc6edbac23147b942efe4f154d0f19ae593d5fc4656ec27f",
+        "before_bytes":  null,
+        "after_bytes":  45444
+    },
+    {
+        "path":  "output\\playwright\\billing-dark-360-full.png",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "93612f94743f64dce334845a821a57a820949e6a80f8677c9251b0592310213b",
+        "before_bytes":  null,
+        "after_bytes":  37826
+    },
+    {
+        "path":  "output\\playwright\\profile-dark-1600.png",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "9504cfd68c066ec07d984d81ae36e2921a405ef13ddb84fece8ee49ef3bfbc4d",
+        "before_bytes":  null,
+        "after_bytes":  56356
+    },
+    {
+        "path":  "output\\playwright\\profile-dark-768.png",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "6a2b2f8093313c5c53ed5724737858e2f47ebbff54bec017c67c313dc07f0340",
+        "before_bytes":  null,
+        "after_bytes":  40884
+    },
+    {
+        "path":  "output\\playwright\\profile-light-1280.png",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "723b468494fc013b06eac5a9dc5ee9abfef5dfc549951c8cf6a77cd01d8a401c",
+        "before_bytes":  null,
+        "after_bytes":  54287
+    },
+    {
+        "path":  "output\\playwright\\server.pid",
+        "status":  "added",
+        "before_sha256":  null,
+        "after_sha256":  "1c993b66da661ba15e63ea1bc18b7fd66968caa1b9f144932bfb17a08aec71b5",
+        "before_bytes":  null,
+        "after_bytes":  7
+    },
+    {
+        "path":  "styles.css",
+        "status":  "modified",
+        "before_sha256":  "86e11da5b5c12d15b5812912f45b5f6fbd65a83f34c00ae5a8ed3e233fc238a9",
+        "after_sha256":  "ac88c83e9d0fb8203bcba055fd3f9df355c5924ee836e8b31ddb077476e47740",
+        "before_bytes":  6630,
+        "after_bytes":  11639
+    }
+]

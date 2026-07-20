@@ -1,0 +1,72 @@
+﻿[
+    {
+        "path":  "billing.html",
+        "sha256":  "9961f215b4d06fa86f6c4b354c8faea8244882b6cf608146f95f91ccd68b7071",
+        "bytes":  3926
+    },
+    {
+        "path":  "DESIGN.md",
+        "sha256":  "4b873a2d582d715753e8efd080f1df0788651a04a2feb92a313112c344c8bdb6",
+        "bytes":  589
+    },
+    {
+        "path":  "index.html",
+        "sha256":  "e671b4a7947d034d7a40c872255c9d4d1264624fcc668b50584ec6f69754a727",
+        "bytes":  2637
+    },
+    {
+        "path":  "README.md",
+        "sha256":  "5f7900e7f4c89d1d0f3d853db9c38bcb06b7d8fecbff731ead95e59b767cd430",
+        "bytes":  1332
+    },
+    {
+        "path":  "script.js",
+        "sha256":  "28d4bb1dd7ff3641ad8180a32f855929d5ce872cfd0ffa81cc68f50e3b39cffa",
+        "bytes":  2293
+    },
+    {
+        "path":  "styles.css",
+        "sha256":  "1cff13166cd113b9a4505f6048f3843bbcfa2dfb8ffd99611907ca7c10768d08",
+        "bytes":  9218
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\SKILL.md",
+        "sha256":  "df0c5c5cfd9ae73581c6374656b515f74e89574af543ada7492772fb2dd93dca",
+        "bytes":  10236
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\agents\\openai.yaml",
+        "sha256":  "eaf59c33654331caff59f83c3963c3ff7d831d8e4976bbf032406526a8c9c60f",
+        "bytes":  429
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\assets\\gridgeist-small.svg",
+        "sha256":  "6c39b666b034b54041423f5a79717b503c92d98a1a0f9c0dbcb7c846092011a3",
+        "bytes":  800
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\assets\\gridgeist.png",
+        "sha256":  "1e2bc6d6672faab48eeff1dbac6f1ed662d67cf569e6cf042776b504769ddd8e",
+        "bytes":  41217
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\assets\\gridgeist.svg",
+        "sha256":  "4d92687b76a150b3998975282f661d68c95971d9902634ccae326af06fbf9a80",
+        "bytes":  1229
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\references\\design-language.md",
+        "sha256":  "f37e69017f5f9050eac707908a2d906c1a5c54e60831b74db5876e8fce9a218e",
+        "bytes":  5479
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\references\\review-checklist.md",
+        "sha256":  "c0b0dfec67e865f3070eb639c4f3e9a1931d3b5f0dda4fe4e1fa822c8aa7995d",
+        "bytes":  7101
+    },
+    {
+        "path":  ".agents\\skills\\gridgeist\\references\\system-contract.md",
+        "sha256":  "604f6c89361153397e89b0dbe75616a25e04c698a1f0146dcf6513f4186d59fe",
+        "bytes":  6098
+    }
+]

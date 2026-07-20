@@ -1,0 +1,26 @@
+﻿[
+    {
+        "path":  "billing.html",
+        "status":  "modified",
+        "before_sha256":  "0388b7963c44ba59a7c4f2ae73d9380462720b64336de6eed6f78dde228a12cd",
+        "after_sha256":  "9961f215b4d06fa86f6c4b354c8faea8244882b6cf608146f95f91ccd68b7071",
+        "before_bytes":  3804,
+        "after_bytes":  3926
+    },
+    {
+        "path":  "index.html",
+        "status":  "modified",
+        "before_sha256":  "5ecca7e519ef6af173fcf3769a22314c1e71fc6b5f111557549740fee142cb21",
+        "after_sha256":  "e671b4a7947d034d7a40c872255c9d4d1264624fcc668b50584ec6f69754a727",
+        "before_bytes":  2600,
+        "after_bytes":  2637
+    },
+    {
+        "path":  "styles.css",
+        "status":  "modified",
+        "before_sha256":  "86e11da5b5c12d15b5812912f45b5f6fbd65a83f34c00ae5a8ed3e233fc238a9",
+        "after_sha256":  "1cff13166cd113b9a4505f6048f3843bbcfa2dfb8ffd99611907ca7c10768d08",
+        "before_bytes":  6630,
+        "after_bytes":  9218
+    }
+]
