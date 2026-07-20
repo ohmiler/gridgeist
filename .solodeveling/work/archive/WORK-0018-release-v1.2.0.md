@@ -4,8 +4,8 @@ solodeveling_schema: 1
 
 # WORK-0018: Release Gridgeist v1.2.0
 
-- **Status:** Active
-- **Class:** Standard, audited release preparation
+- **Status:** Done
+- **Class:** Standard, audited release work
 - **Opened:** 2026-07-20
 - **Operator:** Codex, acting on the repository owner's instruction
 - **Authority:** The user first authorized version alignment, local validation,
@@ -13,6 +13,9 @@ solodeveling_schema: 1
   proceed with the proposed publication on 2026-07-20. This covers remote preflight,
   pushing `main`, annotated tag creation and push, GitHub Release publication,
   production Docs observation, tagged installation checks, and release closure.
+- **Released:** 2026-07-20
+- **Tag:** `v1.2.0` at `d7700d0f961e862d3aca4f51ef4e512b4254d8d4`
+- **Release:** https://github.com/ohmiler/gridgeist/releases/tag/v1.2.0
 
 ## Goal
 
@@ -26,12 +29,13 @@ observe the public delivery paths through their release gates.
 - **Preparation base:** `168a1870344cc2911ed063b9d05ce77e8acecc62`
 - **Preparation revision:** `c91c5aaa23155da2a8034adc0e1b57bcc1225557`
 - **Preparation tree:** `9a6f8bcf1f874313c3c6f259e35205cd58cb0c73`
-- **Source:** current `main` plus this publication-authority record; the tagged
-  release revision and tree will be recorded after commit.
+- **Release revision:** `d7700d0f961e862d3aca4f51ef4e512b4254d8d4`
+- **Release tree:** `3e472d7a035c4d671bc943e566face56f3929a04`
+- **Annotated tag object:** `004e7db39b5a9bb9df903b5fe3f630703d75d4f5`
 - **Artifact:** Annotated tag `v1.2.0` and a public GitHub Release backed by the
   repository plugin source.
 - **Target:** Public Git-backed Codex marketplace, universal installer, GitHub
-  Release, and version labels on the Docs site after separate publication authority.
+  Release, and version labels on the Docs site.
 - **Compatibility:** Backward-compatible with `1.x`; no dependency, schema,
   migration, production-data, API, secret, or runtime-configuration change.
 
@@ -64,11 +68,10 @@ observe the public delivery paths through their release gates.
   unexpected staged scope, or loss of bilingual/version parity.
 - **Recovery before publication:** Correct or revert the local preparation commit;
   `v1.1.2` remains the public marketplace ref and no tag is moved.
-- **Future publication recovery:** Stop before publication on failed preflight. After
-  publication, prefer a forward patch or temporarily repoint the marketplace to
-  `v1.1.2`; never move an existing release tag.
-- **Observation window:** Local preparation checks now; main/tag CI, public release,
-  Docs, and fresh tagged installation remain future publication gates.
+- **Post-publication recovery:** Prefer a forward patch or temporarily repoint the
+  marketplace to `v1.1.2`; never move the existing release tag.
+- **Observation window:** Completed through main/tag CI, GitHub Release publication,
+  public English/Thai Docs, and an independent tagged installation/update check.
 
 ## Plan
 
@@ -95,7 +98,22 @@ observe the public delivery paths through their release gates.
 - No push, tag, GitHub Release, marketplace publication, or production Docs action
   occurred.
 
+## Release result
+
+- Atomically pushed `main` and annotated tag `v1.2.0`; remote tag identity matches
+  the local annotated tag object and points to release revision `d7700d0`.
+- Main validation, tag validation with installation smoke, and GitHub Pages
+  deployment passed for the release revision.
+- Published a public, non-draft, non-prerelease GitHub Release at
+  https://github.com/ohmiler/gridgeist/releases/tag/v1.2.0.
+- Cache-busted public English and Thai Docs returned HTTP 200 and displayed `1.2.0`.
+- A separate public-source smoke passed Codex plugin clean install, discovery,
+  marketplace refresh, reinstall, and enablement at `1.2.0`, plus universal installer
+  clean install and update from `ohmiler/gridgeist`.
+- Unrelated local dogfood, prototype, and workspace skill files remained untracked
+  and outside every release commit.
+
 ## Evidence
 
 - `.solodeveling/evidence/EVIDENCE-0019-system-contract-behavioral-eval.md`
-- `.solodeveling/evidence/EVIDENCE-0020-v1.2.0-preparation.md`
+- `.solodeveling/evidence/EVIDENCE-0020-v1.2.0-release.md`

@@ -6,8 +6,18 @@ solodeveling_schema: 1
 
 - **Work item:** `WORK-0018-release-v1.2.0`
 - **Opened:** 2026-07-20
-- **Decision:** Ready for publication with tagged delivery still unverified. The
-  user explicitly authorized publication on 2026-07-20; execution is in progress.
+- **Decision:** Released. Candidate validation, main/tag CI, GitHub publication,
+  public Docs, and independent post-release installation checks passed.
+
+## Release identity
+
+- Version: `1.2.0`
+- Release revision: `d7700d0f961e862d3aca4f51ef4e512b4254d8d4`
+- Release tree: `3e472d7a035c4d671bc943e566face56f3929a04`
+- Annotated tag object: `004e7db39b5a9bb9df903b5fe3f630703d75d4f5`
+- Installable skill Git tree: `c30e6c2a359e7d94b9b56adaf14eb124efb519f9`
+- Last known-good before release: `v1.1.2`
+- Release: https://github.com/ohmiler/gridgeist/releases/tag/v1.2.0
 
 ## Current acceptance matrix
 
@@ -17,10 +27,10 @@ solodeveling_schema: 1
 | Version and distribution metadata | Plugin manifest, marketplace ref, changelog section/comparison links, and English/Thai Docs labels identify `1.2.0`; repository release validator passed. | Pass |
 | Static local candidate gates | Plugin Creator validator, skill quick validator, release validator with `--release-version 1.2.0`, both fixture syntax checks, and `git diff --check` passed. | Pass |
 | Codex pre-publication install | A temporary loopback HTTP Git marketplace containing the exact candidate passed clean install, discovery, enablement, refresh, reinstall, and version checks at `1.2.0`. | Pass |
-| Universal installer boundary | Local-path installation found and copied the exact candidate skill, but intentionally did not create Git source-lock metadata; the full tagged Git install/update check remains a publication gate. | Partial; deferred |
+| Universal installer delivery | Tag CI and a separate public-source run installed `gridgeist` from `ohmiler/gridgeist`, created source metadata, and reported the global skill up to date on update. | Pass |
 | Exact candidate identity | Behavior base `a17064f0b0077aa88274b1d078d765bd711b0407`; preparation base `168a1870344cc2911ed063b9d05ce77e8acecc62`; installable skill Git tree `c30e6c2a359e7d94b9b56adaf14eb124efb519f9`. | Pass |
 | Scope isolation | Exact-path staging contains only manifest, marketplace, state, WORK, EVIDENCE, changelog, and English/Thai Docs files. Pre-existing unrelated untracked files remain excluded. | Pass |
-| Publication authority | After the local preparation handoff, the user explicitly instructed Codex to proceed with the proposed v1.2.0 publication. Authority covers push, annotated tag, GitHub Release, production Docs observation, tagged installation checks, and closure. | Pass |
+| Publication and observation | `main` and annotated tag `v1.2.0` were atomically pushed; main/tag CI, Pages, public GitHub Release, English/Thai Docs, Codex plugin, and universal installer checks passed. | Pass |
 
 ## Inherited evidence
 
@@ -55,19 +65,35 @@ behavior candidate `a17064f0b0077aa88274b1d078d765bd711b0407`.
   `C:/tmp/gridgeist-remote-smoke-*` directory dated 2026-07-14 was inspected but not
   modified because it predates and is outside this work.
 
+## Publication observation
+
+- Atomically pushed `main` from `8f4b885` to release revision `d7700d0` together
+  with annotated tag `v1.2.0`. A post-push fetch found local/remote divergence `0 0`.
+- Main validation passed:
+  https://github.com/ohmiler/gridgeist/actions/runs/29751299052
+- Tag validation and tagged installation smoke passed:
+  https://github.com/ohmiler/gridgeist/actions/runs/29751297428
+- GitHub Pages deployment passed:
+  https://github.com/ohmiler/gridgeist/actions/runs/29751298764
+- Published `Gridgeist v1.2.0` as a public, non-draft, non-prerelease GitHub Release
+  at `2026-07-20T14:36:32Z`:
+  https://github.com/ohmiler/gridgeist/releases/tag/v1.2.0
+- Cache-busted English and Thai Docs requests returned HTTP 200, with 14,955 and
+  22,284 response bytes respectively, and both displayed version `1.2.0`.
+- Independent `python -X utf8 scripts/smoke_test_install.py --timeout 180` passed
+  from public `ohmiler/gridgeist`. Codex installed and enabled
+  `gridgeist@gridgeist` at `1.2.0` from Git ref `v1.2.0`, refreshed the marketplace,
+  and reinstalled without errors. The universal installer completed a clean copy,
+  recorded the public source, and reported the global skill up to date on update.
+- Temporary-home warnings said Codex would not create helper PATH aliases under a
+  temporary directory. Plugin discovery, version, source, enablement, refresh,
+  reinstall, and universal installer assertions still passed.
+
 ## Limitations
 
-- Public delivery, main/tag CI, GitHub Release state, production Docs, and tagged
-  clean installation cannot be claimed until separately authorized and observed.
 - Fresh-agent behavior remains nondeterministic, and the behavioral evaluation's
   Windows full-access harness was not OS-hermetic.
 - Scenario 13 remains a boundary smoke rather than a full post-repair implementation
   regression.
-- Universal-installer Git source metadata and update behavior remain unverified for
-  `v1.2.0` until the public tag exists; this is a publication gate, not evidence of a
-  candidate-content failure.
-
-## Publication observation
-
-Publication, CI, public Docs, GitHub Release, and tagged installation results are
-pending and will be recorded only after they are observed.
+- This release does not claim WCAG conformance, real-user usability, field Core Web
+  Vitals, or universal behavior across untested external projects.
