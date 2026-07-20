@@ -9,8 +9,9 @@ broader contract.
 
 Inspect the sources that actually exist:
 
-- explicit user constraints and the selected direction;
-- established brand assets and content;
+- explicit user constraints and the selected or aligned direction;
+- established visual implementation, brand assets, and documented brand rules;
+- product content, tasks, data, and other authentic evidence;
 - rendered desktop and mobile behavior;
 - CSS variables, theme configuration, utility conventions, and design tokens;
 - component libraries, local primitives, variants, and state implementations;
@@ -20,6 +21,12 @@ Treat disagreement as a finding. Do not silently let an aspirational document
 override working product behavior, or let accidental implementation drift erase an
 intentional brand rule. Mark meaningful signals as preserve, evolve, or replace and
 state the product reason for a replacement.
+
+Source reconciliation does not authorize a visual thesis. Content and product facts
+may determine hierarchy, density, and authentic material, but do not by themselves
+make a broad replacement direction brand-derived. Complete the alignment gate before
+defining replacement tokens or component rules when materially different theses
+remain credible.
 
 ## Define the smallest complete contract
 

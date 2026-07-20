@@ -13,6 +13,10 @@ Use this checklist after implementation or for a review-only request. Report onl
 ## 2. Brand fidelity and direction
 
 - Does the interface preserve recognizable voice, imagery, geometry, palette, and interaction character?
+- Was a brand-derived direction supported by converging visual implementation,
+  assets, or documented conventions rather than product content alone?
+- If a broad replacement direction was provisional, did implementation wait for
+  the user to choose or authorize the recommendation?
 - Does the visual thesis fit the audience and task rather than merely looking fashionable?
 - Is the grid visible, quiet, or invisible for a clear reason?
 - Would the product remain recognizable after removing generic technical chrome?

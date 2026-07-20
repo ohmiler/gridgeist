@@ -18,6 +18,11 @@ All notable changes to Gridgeist are documented here. This project follows
 - Strengthened the core workflow and review checklist to reconcile existing
   design-system sources, define reusable component rules, and review color/theming
   and component coherence separately.
+- Clarified that product content alone cannot make an underspecified broad redesign
+  brand-derived, and prohibited system definition or implementation edits while its
+  direction remains provisional.
+- Made overlapping broad visual-skill ownership an explicit pre-thesis gate instead
+  of allowing the companion to be silently ignored or blended.
 - Documented optional DESIGN.md intake and output in the English and Thai usage
   guidance without making it a dependency.
 
