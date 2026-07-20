@@ -1,4 +1,4 @@
-# Run metadata
+﻿# Run metadata
 
 - Date: 2026-07-20
 - Final candidate: `a17064f0b0077aa88274b1d078d765bd711b0407`
@@ -44,6 +44,9 @@ skills outside the target. Its response and manifests remain preserved for audit
 - `hashes/`: per-run baseline, post-run, and change manifests
 - `renders/`: primary-agent 360 px Profile screenshots
 - `guardrails/`: selected raw pre-repair and post-repair smoke responses
+
+Markdown trailing hard-break spaces were normalized after capture; wording and line
+order are unchanged.
 
 ## Limitations
 

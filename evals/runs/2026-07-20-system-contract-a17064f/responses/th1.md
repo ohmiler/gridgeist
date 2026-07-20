@@ -1,4 +1,4 @@
-ปรับ Account workspace เรียบร้อยแล้ว โดยแก้เฉพาะ [styles.css](C:/tmp/gridgeist-s19-eval-a17064f-20260720/th1/styles.css)
+﻿ปรับ Account workspace เรียบร้อยแล้ว โดยแก้เฉพาะ [styles.css](C:/tmp/gridgeist-s19-eval-a17064f-20260720/th1/styles.css)
 
 - วาง semantic tokens สำหรับสี Theme, spacing, radius, surface, border และ focus
 - รวมรูปแบบ Button, Input, Status badge และ Card ที่ซ้ำกัน

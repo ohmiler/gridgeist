@@ -1,4 +1,4 @@
-Implemented the account workspace redesign.
+﻿Implemented the account workspace redesign.
 
 - Established a semantic token system and shared component grammar in [styles.css](C:/tmp/gridgeist-s19-eval-a17064f-20260720/en3/styles.css).
 - Unified buttons, inputs, status indicators, spacing, borders, surfaces, and light/dark themes.

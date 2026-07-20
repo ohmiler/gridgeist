@@ -1,4 +1,4 @@
-# Scenario 14 writable failure before repair
+﻿# Scenario 14 writable failure before repair
 
 - Candidate: `9786edc4edb5d9a60e530210a49eeb8c4c410e7e`
 - Runner/model: Codex CLI 0.144.6 / `gpt-5.6-sol`

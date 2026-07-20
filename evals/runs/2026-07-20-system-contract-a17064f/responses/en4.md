@@ -1,4 +1,4 @@
-## Direction
+﻿## Direction
 
 A calm, precise account ledger: quiet grid structure, strong account identity, aligned operational facts, and explicit state feedback. Existing routes, content, themes, and behavior were preserved.
 

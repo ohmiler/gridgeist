@@ -1,4 +1,4 @@
-ปรับ Account workspace เรียบร้อยแล้ว โดยแก้เฉพาะ [styles.css](C:/tmp/gridgeist-s19-eval-a17064f-20260720/th3/styles.css)
+﻿ปรับ Account workspace เรียบร้อยแล้ว โดยแก้เฉพาะ [styles.css](C:/tmp/gridgeist-s19-eval-a17064f-20260720/th3/styles.css)
 
 - สร้าง foundation และ semantic tokens สำหรับสี ระยะห่าง radius surface และ interaction states
 - รวม grammar ของ Card, Button, Input และ Status badge ให้สอดคล้องกัน

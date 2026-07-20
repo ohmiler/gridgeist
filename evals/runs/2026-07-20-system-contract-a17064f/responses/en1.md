@@ -1,4 +1,4 @@
-## Direction
+﻿## Direction
 
 A restrained, ledger-like account workspace using a quiet grid, compact status markers, and clear transactional hierarchy. Existing routes, content, themes, and behaviors remain intact.
 

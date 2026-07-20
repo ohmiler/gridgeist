@@ -1,4 +1,4 @@
-## Direction
+﻿## Direction
 
 A restrained account console organized around a quiet ledger grid, with status and billing history carrying the hierarchy. Existing routes, content, themes, and behaviors remain intact.
 
