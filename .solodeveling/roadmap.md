@@ -10,27 +10,49 @@ None.
 
 ## Next
 
-### GridGeist validation cycle
+### Gridgeist v1.2 cross-domain consistency benchmark
 
-1. Freeze the v1.1.1 core guidance. Change the skill only for a severe finding or a pattern reproduced in at least two independent projects; do not add more style categories or presets without evidence.
-2. Build three small executable fixtures that stress contrasting adaptation paths:
-   - a warm, image-led portfolio with artwork, captions, and narrative pacing;
-   - a playful, touch-first drawing app with canvas, history, destructive recovery, privacy constraints, and local export;
-   - a stateful import or transactional flow covering loading, empty, invalid, partial-success, interrupted, retry, disabled, and success states.
-3. For each fixture, run independent forward tests without leaking expected design answers. Require an implemented result, representative 360 / 768 / 1280 / 1600 px renders, keyboard and focus checks, reduced-motion behavior, state/recovery exercise, console and project checks, screenshots, and explicit remaining gaps.
-4. Exercise at least two supported agents or model contexts and both English and Thai prompts before treating a behavior as general. Preserve raw prompts, outputs, diffs, screenshots, and run metadata.
-5. Collect evidence from 3–5 external projects or users. Track trigger correctness, brand retention, whether product evidence leads, agent interventions, confusing instructions, implementation defects, and whether the final verification claim matches what was observed.
-6. Expand negative-trigger coverage with narrow frontend work that should not invoke a redesign: CSS defect repair, event-handler correction, and a small component addition under an established UI.
-7. Review the accumulated findings before planning another skill release. Prefer fixture, evaluator, documentation, or delivery fixes when the core reasoning is not the root cause.
+1. Keep the released v1.2 skill unchanged while measuring it. Do not add more
+   guidance merely because independent runs use different compositions.
+2. Use three small executable fixtures with deliberately different design needs:
+   - a technical dashboard or operational workspace;
+   - an editorial, content-heavy directory or publication;
+   - an image-led or playful product.
+3. Run each fixture four times from isolated clean copies: two English prompts and
+   two Thai prompts, for twelve counted runs total. Keep the model, configuration,
+   prompt intent, and fixture baseline stable.
+4. Score two properties separately:
+   - **within-product consistency:** one thesis, coherent tokens, shared component
+     anatomy, state behavior, responsive priority, and preserved behavior;
+   - **cross-product adaptability:** each result belongs to its product and brand
+     rather than repeating one visible Gridgeist house style.
+5. Require Foundation -> Semantic -> Component layering when justified, applicable
+   component states, content-stress behavior, preserved routes/content/interactions,
+   360 / 768 / 1280 / 1600 px verification, keyboard/focus and reduced-motion
+   checks, zero unintended overflow or console errors, and honest artifact and
+   dependency boundaries.
+6. Preserve raw prompts, responses, diffs, screenshots, run metadata, browser
+   results, and a per-dimension score. Treat a spread greater than one rubric level
+   on behavior preservation, system cohesion, responsive composition, or state
+   coverage as a consistency finding; allow visual composition to vary.
+7. Change the skill only for a severe failure or a pattern reproduced in at least
+   two counted runs. If the skill changes, rerun the failed fixture plus Scenarios
+   12, 14, 15, 18, and 19 before considering v1.2.1.
 
 ### Success condition
 
-GridGeist is ready for another core revision only when executable or external evidence identifies a repeatable gap. Otherwise keep v1.1.1 stable and publish the validation evidence without changing the skill.
+Gridgeist is ready for v1.2.1 planning only when the twelve-run benchmark identifies
+a repeatable gap that belongs in the skill rather than the fixture, evaluator, model,
+or delivery harness. Otherwise keep v1.2 stable and publish only the evidence.
 
 ## Completed
 
-1. Released v1.1.1 with a conditional direction-alignment gate, paired bilingual controls, executable fixture evidence, and verified public installation paths.
-2. Released v1.1.0 with brand-adaptive guidance, bilingual update documentation, automated validation, behavioral evidence, and verified Codex/Agent Skills update paths.
-3. Refreshed and locally verified the bilingual main site to demonstrate the v1.1 product-native, brand-adaptive method.
-4. Redesigned, published, and post-deploy verified the bilingual Docs as a reading-first v1.1 field manual.
-5. Repaired and production-verified the mobile Docs index and installation Copy layout.
+1. Released v1.2.0 with a compact system contract, Foundation / Semantic /
+   Component layering, component and state grammar, direction-alignment hard stop,
+   bilingual Scenario 19 evidence, and the production v1.2 public site.
+2. Released v1.1.1 with a conditional direction-alignment gate, paired bilingual
+   controls, executable fixture evidence, and verified public installation paths.
+3. Released v1.1.0 with brand-adaptive guidance, bilingual update documentation,
+   automated validation, behavioral evidence, and verified Codex / Agent Skills
+   update paths.
+4. Refreshed and production-verified the bilingual main site and Docs.
