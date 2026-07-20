@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <meta name='description' content='Ledger Account fictional design-system coherence fixture' />
+    <link rel='icon' href='data:,' />
+    <title>Ledger Account — profile</title>
+    <link rel='stylesheet' href='styles.css' />
+    <script src='script.js' defer></script>
+  </head>
+  <body>
+    <header class='topbar'>
+      <a class='wordmark' href='index.html'>Ledger Account</a>
+      <nav aria-label='Account'>
+        <a aria-current='page' href='index.html'>Profile</a>
+        <a href='billing.html'>Billing</a>
+      </nav>
+      <button class='theme-button' type='button' data-theme-toggle aria-pressed='false'>Dark theme</button>
+    </header>
+
+    <main class='page-shell overview-shell'>
+      <section class='page-heading' aria-labelledby='profile-title'>
+        <p class='kicker'>Fictional account fixture</p>
+        <h1 id='profile-title'>Profile and workspace</h1>
+        <p>Manage the name shown to collaborators and review workspace status.</p>
+      </section>
+
+      <section class='metric-grid' aria-label='Workspace status'>
+        <article class='metric-card'>
+          <p>Plan</p>
+          <strong>Studio</strong>
+          <span class='blue-status'>Active</span>
+        </article>
+        <article class='summary-card'>
+          <p>Members</p>
+          <strong>4 of 8</strong>
+          <span class='gray-status'>4 seats open</span>
+        </article>
+        <article class='usage-card'>
+          <p>Storage</p>
+          <strong>38 GB</strong>
+          <span class='warning-status'>76% used</span>
+        </article>
+      </section>
+
+      <section class='profile-panel' aria-labelledby='details-title'>
+        <div>
+          <p class='section-label'>Public details</p>
+          <h2 id='details-title'>Workspace profile</h2>
+          <p>This name appears on shared reports and invitations.</p>
+        </div>
+        <form data-profile-form>
+          <label for='workspace-name'>Workspace name</label>
+          <input id='workspace-name' name='workspaceName' value='Northstar Studio' required />
+          <label for='workspace-note'>Short description</label>
+          <textarea id='workspace-note' name='workspaceNote' rows='4'>Independent product design practice.</textarea>
+          <button class='save-button' type='submit'>Save profile</button>
+          <p class='form-status' data-profile-status role='status' aria-live='polite'></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

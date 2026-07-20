@@ -5,6 +5,22 @@ All notable changes to Gridgeist are documented here. This project follows
 
 ## [Unreleased]
 
+### Added
+
+- Added a conditional system-contract reference covering semantic color,
+  typography, layout, spacing, component grammar, states, media, motion, and
+  proportional DESIGN.md interoperability.
+- Added paired English and Thai behavioral evaluation coverage for design-system
+  coherence and persistent-artifact boundaries.
+
+### Changed
+
+- Strengthened the core workflow and review checklist to reconcile existing
+  design-system sources, define reusable component rules, and review color/theming
+  and component coherence separately.
+- Documented optional DESIGN.md intake and output in the English and Thai usage
+  guidance without making it a dependency.
+
 ## [1.1.2] - 2026-07-18
 
 ### Added

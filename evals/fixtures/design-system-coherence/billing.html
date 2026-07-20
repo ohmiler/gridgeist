@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <meta name='description' content='Ledger Account fictional billing fixture' />
+    <link rel='icon' href='data:,' />
+    <title>Ledger Account — billing</title>
+    <link rel='stylesheet' href='styles.css' />
+    <script src='script.js' defer></script>
+  </head>
+  <body>
+    <header class='topbar billing-topbar'>
+      <a class='wordmark' href='index.html'>Ledger Account</a>
+      <nav aria-label='Account'>
+        <a href='index.html'>Profile</a>
+        <a aria-current='page' href='billing.html'>Billing</a>
+      </nav>
+      <button class='theme-button' type='button' data-theme-toggle aria-pressed='false'>Dark theme</button>
+    </header>
+
+    <main class='page-shell billing-shell'>
+      <section class='billing-heading' aria-labelledby='billing-title'>
+        <p class='kicker'>Fictional account fixture</p>
+        <h1 id='billing-title'>Plan and invoices</h1>
+        <p>Review the current plan and prepare sample invoice records locally.</p>
+      </section>
+
+      <section class='plan-card' aria-labelledby='plan-title'>
+        <div>
+          <p class='section-label'>Current plan</p>
+          <h2 id='plan-title'>Studio</h2>
+          <p>Eight members, 50 GB storage, billed monthly.</p>
+        </div>
+        <p class='price'><strong>$24</strong> / month</p>
+        <button class='manage-button' type='button' data-manage-plan>Manage plan</button>
+      </section>
+
+      <section class='invoice-panel' aria-labelledby='invoice-title'>
+        <div class='invoice-toolbar'>
+          <div>
+            <p class='section-label'>Billing history</p>
+            <h2 id='invoice-title'>Invoices</h2>
+          </div>
+          <label>
+            Status
+            <select data-invoice-filter>
+              <option value='all'>All</option>
+              <option value='paid'>Paid</option>
+              <option value='open'>Open</option>
+            </select>
+          </label>
+        </div>
+        <p data-invoice-count role='status' aria-live='polite'>3 invoices</p>
+        <div class='table-wrap'>
+          <table>
+            <thead>
+              <tr>
+                <th scope='col'>Invoice</th>
+                <th scope='col'>Date</th>
+                <th scope='col'>Amount</th>
+                <th scope='col'>Status</th>
+                <th scope='col'>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-invoice-row data-status='paid'>
+                <th scope='row'>INV-1042</th>
+                <td>1 July 2026</td>
+                <td>$24.00</td>
+                <td><span class='paid-badge'>Paid</span></td>
+                <td><button class='download-button' type='button' data-invoice='INV-1042'>Prepare</button></td>
+              </tr>
+              <tr data-invoice-row data-status='paid'>
+                <th scope='row'>INV-1018</th>
+                <td>1 June 2026</td>
+                <td>$24.00</td>
+                <td><span class='paid-pill'>Paid</span></td>
+                <td><button class='invoice-action' type='button' data-invoice='INV-1018'>Prepare</button></td>
+              </tr>
+              <tr data-invoice-row data-status='open'>
+                <th scope='row'>INV-1066</th>
+                <td>20 July 2026</td>
+                <td>$12.00</td>
+                <td><span class='open-badge'>Open</span></td>
+                <td><button class='download-button' type='button' data-invoice='INV-1066'>Prepare</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class='billing-status' data-billing-status role='status' aria-live='polite'></p>
+      </section>
+    </main>
+  </body>
+</html>

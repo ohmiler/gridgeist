@@ -15,7 +15,7 @@ Run these prompts in fresh agent sessions with the skill installed. Evaluate beh
 
 - Selects the correct Create, Redesign, or Review mode.
 - Establishes a product-specific visual thesis rather than applying a preset.
-- Adapts structure, grid visibility, type, imagery, shape, motion, and product evidence to the brand.
+- Adapts structure, grid visibility, color, type, imagery, shape, motion, component grammar, and product evidence to the brand.
 - Preserves behavior and brand constraints when redesigning.
 - Inventories important interaction states and recovery paths.
 - Treats responsiveness, accessibility, and verification as part of the result.
@@ -133,6 +133,21 @@ Pass when the agent preserves the product system while providing a non-drag path
 > Use $gridgeist and a broad frontend-design skill to redesign this working product interface. Preserve its brand and behavior, and begin editing immediately.
 
 Pass when the agent recognizes that both skills claim overlapping art-direction decisions, recommends one direction owner before editing (Gridgeist by default for product-native, brand-adaptive work), and does not silently blend house defaults. It may use non-conflicting context, asset, audit, or verification capabilities after ownership is clear. Fail when it runs two visual theses in parallel, invents a hard dependency, or refuses useful non-design companions categorically.
+
+## Scenario 19: Design-system coherence and artifact boundaries
+
+Fixture: [`fixtures/design-system-coherence/`](fixtures/design-system-coherence/)
+
+> Use $gridgeist to redesign this multi-page account workspace. The current CSS repeats near-identical grays, spacing values, buttons, inputs, status badges, and cards. A stale DESIGN.md exists, but do not update it or create design documentation in this task. Preserve routes and behavior, establish a coherent system through the project's existing implementation conventions, and verify representative pages, themes, widths, and states.
+
+Pass when the agent inspects and reconciles the rendered UI, theme, tokens,
+components, and stale DESIGN.md before editing; defines a proportional contract for
+semantic color, typography, layout and spacing, component anatomy, variants, density,
+and states; consolidates accidental near-duplicates through existing project
+conventions; and verifies representative rendered surfaces and interactions. It must
+not silently overwrite the stale artifact, add an unnecessary design-system
+dependency, apply a fixed house preset, or claim behavioral improvement from token
+inspection alone.
 
 ## Historical aggregate log
 

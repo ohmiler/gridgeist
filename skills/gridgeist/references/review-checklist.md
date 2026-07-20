@@ -25,7 +25,20 @@ Use this checklist after implementation or for a review-only request. Report onl
 - Do sections vary without losing shared structural logic?
 - Are rules, overlap, asymmetry, or empty space explaining structure rather than adding noise?
 
-## 4. Typography, spacing, and geometry
+## 4. Color and theming
+
+- Do foundation, semantic, and component colors have distinct roles rather than
+  accumulating one-off values?
+- Are foreground/background pairs, borders, focus, destructive actions, and status
+  colors mapped consistently across applicable themes and states?
+- Do hover, active, selected, disabled, loading, success, warning, and error
+  relationships remain coherent without relying on color alone?
+- Are light, dark, forced-color, or user-defined themes handled when the product
+  supports them, without undocumented component exceptions?
+- Does rendered contrast support hierarchy and readability rather than merely
+  passing a token-level calculation?
+
+## 5. Typography, spacing, and geometry
 
 - Are type roles limited, consistent, and appropriate to the brand?
 - Is body text comfortable to read at the rendered width?
@@ -34,7 +47,20 @@ Use this checklist after implementation or for a review-only request. Report onl
 - Are radius, border, shadow, crop, and aspect-ratio choices systematic?
 - Are optical misalignments corrected where mathematical alignment looks wrong?
 
-## 5. Responsive behavior
+## 6. Component system
+
+- Do related components share intentional anatomy, tokens, variants, size or
+  density rules, and state behavior?
+- Are variants named from product purpose rather than isolated visual treatments?
+- Do reusable components preserve behavior with long labels, localization, missing
+  media, dynamic data, and loading or error content?
+- Are near-duplicate components or magic values symptoms of a missing shared rule?
+- Are intentional local exceptions documented by product, content, or interaction
+  need instead of convenience?
+- Do component APIs and composition rules preserve semantics, focus, touch, and
+  recovery behavior?
+
+## 7. Responsive behavior
 
 Inspect project-defined widths or, when absent, approximately 360, 768, 1280, and 1600 px.
 
@@ -45,7 +71,7 @@ Inspect project-defined widths or, when absent, approximately 360, 768, 1280, an
 - Do long translated labels, language expansion, zoom, dynamic content, document and in-content language/direction, logical order and properties, and locale-aware dates and numbers remain resilient across LTR and RTL?
 - Do reusable components adapt to narrow and wide containers when viewport-only breakpoints are insufficient? Use container queries only when they fit project conventions and browser support.
 
-## 6. Interaction states and recovery
+## 8. Interaction states and recovery
 
 - Inventory default, hover, focus, active, selected, disabled, loading, empty, error, success, and destructive states when applicable.
 - Does the primary task remain clear in every important state?
@@ -54,7 +80,7 @@ Inspect project-defined widths or, when absent, approximately 360, 768, 1280, an
 - Do overlays close with Escape and restore focus correctly?
 - Do pointer, touch, keyboard, and resize behavior preserve the same underlying task?
 
-## 7. Accessibility and constraints
+## 9. Accessibility and constraints
 
 - Use semantic landmarks, headings, buttons, links, labels, and lists.
 - Verify keyboard order, visible and unobscured focus, accessible names, contrast, and non-color state cues around sticky regions, overlays, and scroll containers.
@@ -64,7 +90,7 @@ Inspect project-defined widths or, when absent, approximately 360, 768, 1280, an
 - Preserve privacy, safety, data, and platform constraints.
 - Do not turn automated checks into claims of usability, compliance, safety, or user research.
 
-## 8. Implementation quality
+## 10. Implementation quality
 
 - Follow existing component and styling conventions.
 - Reuse real tokens rather than duplicating magic values.
@@ -74,7 +100,7 @@ Inspect project-defined widths or, when absent, approximately 360, 768, 1280, an
 - Run the relevant formatter, typecheck, lint, tests, and build.
 - Inspect the rendered result after automated checks pass.
 
-## 9. Verification evidence
+## 11. Verification evidence
 
 Record:
 

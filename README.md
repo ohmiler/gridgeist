@@ -208,6 +208,13 @@ Describe outcomes and genuine constraints rather than prescribing a CSS recipe.
 Unless they are established brand requirements, leave font sizes, spacing, radii,
 shadows, and column counts for Gridgeist to derive as one coherent system.
 
+If a project already contains a `DESIGN.md`, theme, token set, or component
+library, Gridgeist inspects it alongside the implementation and rendered interface
+instead of assuming the sources agree. `DESIGN.md` is optional interoperability,
+not a dependency: Gridgeist should not create or update one unless you request a
+portable design-system artifact or explicitly include durable system documentation
+in the work.
+
 Gridgeist also allows implicit invocation when the agent recognizes a matching web-interface task.
 
 ## Working with companion skills

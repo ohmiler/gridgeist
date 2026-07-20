@@ -15,7 +15,7 @@
 
 - เลือกโหมด Create, Redesign หรือ Review ได้ถูกต้อง
 - สร้าง Visual thesis ที่สัมพันธ์กับผลิตภัณฑ์ ไม่ใช้ Preset เดียวกับทุกงาน
-- ปรับ Structure, Grid visibility, Type, Imagery, Shape, Motion และหลักฐานจากผลิตภัณฑ์ให้เข้ากับแบรนด์
+- ปรับ Structure, Grid visibility, Color, Type, Imagery, Shape, Motion, Component grammar และหลักฐานจากผลิตภัณฑ์ให้เข้ากับแบรนด์
 - รักษาแบรนด์และพฤติกรรมเดิมเมื่อ Redesign
 - ตรวจ State สำคัญและ Recovery path ก่อนออกแบบ
 - ถือ Responsive, Accessibility และ Verification เป็นส่วนหนึ่งของผลลัพธ์
@@ -133,6 +133,20 @@ Fixture: [`fixtures/direction-alignment/`](fixtures/direction-alignment/)
 > ใช้ $gridgeist ร่วมกับ Frontend-design skill แบบกว้างเพื่อปรับดีไซน์ Product interface ที่ทำงานอยู่ รักษาแบรนด์และ Behavior เดิม แล้วเริ่มแก้ทันที
 
 ผ่านเมื่อ Agent ตระหนักว่าทั้งสอง Skill ตัดสินใจด้าน Art direction ซ้ำกัน แนะนำให้กำหนดเจ้าของทิศทางหนึ่งตัวก่อนแก้ไฟล์ (ใช้ Gridgeist เป็นค่าเริ่มต้นสำหรับงานที่ต้องปรับตามผลิตภัณฑ์และแบรนด์) และไม่ผสม House defaults โดยเงียบ ๆ หลังบทบาทชัดเจนแล้วสามารถใช้ความสามารถด้าน Context, Asset, Audit หรือ Verification ที่ไม่ขัดกันได้ ไม่ผ่านเมื่อใช้ Visual thesis สองชุดพร้อมกัน สร้าง Dependency ที่ไม่จำเป็น หรือปฏิเสธ Companion ที่ไม่ใช่งานออกแบบทั้งหมด
+
+## สถานการณ์ 19: ความสอดคล้องของระบบดีไซน์และขอบเขต Artifact
+
+Fixture: [`fixtures/design-system-coherence/`](fixtures/design-system-coherence/)
+
+> ใช้ $gridgeist ปรับดีไซน์ Account workspace ที่มีหลายหน้า ปัจจุบัน CSS ใช้สีเทา ระยะห่าง ปุ่ม Input, Status badge และ Card ที่เกือบเหมือนกันซ้ำหลายค่า มี DESIGN.md ที่ล้าสมัย แต่ห้ามแก้ไฟล์นั้นหรือสร้างเอกสารดีไซน์ในงานนี้ รักษา Route และ Behavior เดิม สร้างระบบที่สอดคล้องผ่าน Convention การ Implement ที่โปรเจกต์ใช้อยู่ และตรวจหน้า Theme, Width และ State ที่เป็นตัวแทน
+
+ผ่านเมื่อ Agent ตรวจและกระทบยอด UI ที่ Render แล้ว Theme, Token, Component และ
+DESIGN.md ที่ล้าสมัยก่อนแก้ กำหนด Contract ที่ได้สัดส่วนสำหรับ Semantic color,
+Typography, Layout และ Spacing, Component anatomy, Variant, Density และ State;
+รวมค่าที่เกือบซ้ำกันโดยใช้ Convention เดิมของโปรเจกต์ และตรวจ Surface กับ
+Interaction ที่เป็นตัวแทนจากผล Render จริง ห้ามเขียนทับ Artifact ที่ล้าสมัยโดย
+เงียบ ๆ เพิ่ม Design-system dependency ที่ไม่จำเป็น ใช้ House preset ตายตัว หรือ
+อ้างว่า Behavior ดีขึ้นจากการตรวจ Token เพียงอย่างเดียว
 
 ## บันทึกผลรวมเดิม
 
