@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ohmiler.github.io/gridgeist/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohmiler.github.io/gridgeist/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ohmiler.github.io/gridgeist/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohmiler.github.io/gridgeist/" />
+  </url>
+  <url>
+    <loc>https://ohmiler.github.io/gridgeist/th/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohmiler.github.io/gridgeist/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ohmiler.github.io/gridgeist/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohmiler.github.io/gridgeist/" />
+  </url>
+  <url>
+    <loc>https://ohmiler.github.io/gridgeist/docs/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohmiler.github.io/gridgeist/docs/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ohmiler.github.io/gridgeist/th/docs/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohmiler.github.io/gridgeist/docs/" />
+  </url>
+  <url>
+    <loc>https://ohmiler.github.io/gridgeist/th/docs/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohmiler.github.io/gridgeist/docs/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ohmiler.github.io/gridgeist/th/docs/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohmiler.github.io/gridgeist/docs/" />
+  </url>
+  <url><loc>https://ohmiler.github.io/gridgeist/examples/</loc><lastmod>2026-07-21</lastmod></url>
+  <url><loc>https://ohmiler.github.io/gridgeist/case-studies/tracefield/</loc><lastmod>2026-07-21</lastmod></url>
+  <url>
+    <loc>https://ohmiler.github.io/gridgeist/updates/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohmiler.github.io/gridgeist/updates/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ohmiler.github.io/gridgeist/th/updates/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohmiler.github.io/gridgeist/updates/" />
+  </url>
+  <url>
+    <loc>https://ohmiler.github.io/gridgeist/th/updates/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohmiler.github.io/gridgeist/updates/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ohmiler.github.io/gridgeist/th/updates/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohmiler.github.io/gridgeist/updates/" />
+  </url>
+  <url>
+    <loc>https://ohmiler.github.io/gridgeist/updates/v1-2-0/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohmiler.github.io/gridgeist/updates/v1-2-0/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ohmiler.github.io/gridgeist/th/updates/v1-2-0/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohmiler.github.io/gridgeist/updates/v1-2-0/" />
+  </url>
+  <url>
+    <loc>https://ohmiler.github.io/gridgeist/th/updates/v1-2-0/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ohmiler.github.io/gridgeist/updates/v1-2-0/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ohmiler.github.io/gridgeist/th/updates/v1-2-0/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ohmiler.github.io/gridgeist/updates/v1-2-0/" />
+  </url>
+</urlset>

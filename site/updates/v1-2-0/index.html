@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="How Gridgeist v1.2.0 moved from strong page-level design decisions to one coherent interface system." />
+    <meta name="theme-color" content="#f2f0e9" />
+    <title>Gridgeist v1.2.0 - From good-looking pages to one coherent system</title>
+    <link rel="canonical" href="https://ohmiler.github.io/gridgeist/updates/v1-2-0/" />
+    <link rel="alternate" hreflang="en" href="https://ohmiler.github.io/gridgeist/updates/v1-2-0/" />
+    <link rel="alternate" hreflang="th" href="https://ohmiler.github.io/gridgeist/th/updates/v1-2-0/" />
+    <link rel="alternate" hreflang="x-default" href="https://ohmiler.github.io/gridgeist/updates/v1-2-0/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Gridgeist" />
+    <meta property="og:title" content="Gridgeist v1.2.0 - From good-looking pages to one coherent system" />
+    <meta property="og:description" content="A release story about foundations, semantic roles, component grammar, direction safety, and evidence-bounded verification." />
+    <meta property="og:url" content="https://ohmiler.github.io/gridgeist/updates/v1-2-0/" />
+    <meta property="og:image" content="https://ohmiler.github.io/gridgeist/updates/v1-2-0/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Gridgeist v1.2.0 - from good-looking pages to one coherent system" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="th_TH" />
+    <meta property="article:published_time" content="2026-07-20" />
+    <meta property="article:modified_time" content="2026-07-21" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gridgeist v1.2.0 - One coherent system" />
+    <meta name="twitter:description" content="What materially changed between v1.1.2 and v1.2.0, and why the output feels more coherent." />
+    <meta name="twitter:image" content="https://ohmiler.github.io/gridgeist/updates/v1-2-0/og-image.png" />
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"TechArticle","headline":"Gridgeist v1.2.0 - From good-looking pages to one coherent system","description":"How Gridgeist v1.2.0 moved from strong page-level design decisions to one coherent interface system.","datePublished":"2026-07-20","dateModified":"2026-07-21","inLanguage":"en","author":{"@type":"Person","name":"Miler"},"publisher":{"@type":"Organization","name":"Gridgeist"},"mainEntityOfPage":"https://ohmiler.github.io/gridgeist/updates/v1-2-0/","image":"https://ohmiler.github.io/gridgeist/updates/v1-2-0/og-image.png"}
+    </script>
+    <link rel="icon" href="../../favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../updates.css" />
+    <script src="../../script.js" defer></script>
+  </head>
+  <body class="updates-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="../../" aria-label="Gridgeist home">GRIDGEIST<span aria-hidden="true">®</span></a>
+      <nav class="desktop-nav" aria-label="Primary navigation"><a href="../../docs/">Docs</a><a href="../../examples/">Examples</a><a href="../" aria-current="page">Updates</a><a href="../../#install">Install</a></nav>
+      <details class="mobile-menu"><summary>Menu</summary><nav aria-label="Mobile navigation"><a href="../../docs/">Docs</a><a href="../../examples/">Examples</a><a href="../" aria-current="page">Updates</a><a href="../../#install">Install</a></nav></details>
+      <div class="header-actions"><a class="header-language" href="../../th/updates/v1-2-0/" lang="th">ไทย</a><a class="header-github" href="https://github.com/ohmiler/gridgeist/releases/tag/v1.2.0">Release ↗</a></div>
+    </header>
+    <main id="main">
+      <article>
+        <header class="release-hero">
+          <div class="release-hero-meta"><span>Release / v1.2.0</span><time datetime="2026-07-20">20 July 2026</time></div>
+          <h1>Good pages.<span>One system.</span></h1>
+          <p class="release-hero-summary">Version 1.2.0 turns strong but separate design decisions into a compact system that connects the whole interface before polish begins.</p>
+        </header>
+
+        <section class="article-intro reveal" aria-labelledby="premise-title">
+          <p class="section-label">01 / The material change</p>
+          <div class="article-prose">
+            <p class="lead" id="premise-title">v1.1.2 already knew how to make a page product-native. v1.2.0 makes those decisions hold together as the product grows.</p>
+            <p>The release does not introduce a new house style. It introduces a clearer contract between raw visual values, the meanings they carry, and the components that use them. The practical result is an interface that is easier to extend without each new screen inventing its own visual logic.</p>
+            <p>That is why the change feels larger than its version number: it moves coherence earlier in the workflow, before isolated styling choices can drift apart.</p>
+          </div>
+        </section>
+
+        <section class="article-section reveal" aria-labelledby="shift-title">
+          <div class="article-heading"><p class="section-label">02 / Before and now</p><h2 id="shift-title">The difference is<br />in the relationships.</h2></div>
+          <div class="shift-table">
+            <div class="shift-row">
+              <div class="shift-label">Visual system</div>
+              <div class="shift-cell"><span>Before / v1.1.2</span><strong>Strong direction, defined across the workflow.</strong><p>Grid, type, color, spacing, and motion were considered, but no single compact contract made every relationship explicit.</p></div>
+              <div class="shift-cell is-now"><span>Now / v1.2.0</span><strong>One contract before implementation.</strong><p>Color, type, layout, spacing, shape, components, states, media, and motion are reconciled as one proportional system.</p></div>
+            </div>
+            <div class="shift-row">
+              <div class="shift-label">Meaning</div>
+              <div class="shift-cell"><span>Before / v1.1.2</span><strong>Prefer reusable tokens over one-off values.</strong><p>A sound rule, with more interpretation left between a raw value and its job in the interface.</p></div>
+              <div class="shift-cell is-now"><span>Now / v1.2.0</span><strong>Foundation → semantic → component.</strong><p>Raw values map to product roles, then to behavior in context, keeping contrast and state relationships intentional.</p></div>
+            </div>
+            <div class="shift-row">
+              <div class="shift-label">Components</div>
+              <div class="shift-cell"><span>Before / v1.1.2</span><strong>Design the complete responsive interface.</strong><p>Components were shaped by the product, but related instances could still accumulate separate decisions.</p></div>
+              <div class="shift-cell is-now"><span>Now / v1.2.0</span><strong>Shared anatomy before instances.</strong><p>Related controls and content define jobs, variants, density, states, long-content behavior, and narrow-container rules together.</p></div>
+            </div>
+            <div class="shift-row">
+              <div class="shift-label">Direction safety</div>
+              <div class="shift-cell"><span>Before / v1.1.2</span><strong>Align when material ambiguity remains.</strong><p>The gate existed, but broad product content could still be mistaken for sufficient brand direction.</p></div>
+              <div class="shift-cell is-now"><span>Now / v1.2.0</span><strong>Provisional means stop.</strong><p>When a broad visual thesis is unresolved, Gridgeist presents distinct directions and does not define the replacement system or edit the interface.</p></div>
+            </div>
+            <div class="shift-row">
+              <div class="shift-label">Coordination</div>
+              <div class="shift-cell"><span>Before / v1.1.2</span><strong>Gridgeist owns product and visual direction.</strong><p>Companion roles were documented, while overlapping broad visual skills still required careful interpretation.</p></div>
+              <div class="shift-cell is-now"><span>Now / v1.2.0</span><strong>One explicit direction owner.</strong><p>Overlapping art-direction skills trigger a visible ownership decision instead of silently blending competing visual systems.</p></div>
+            </div>
+            <div class="shift-row">
+              <div class="shift-label">Verification</div>
+              <div class="shift-cell"><span>Before / v1.1.2</span><strong>Exercise responsive behavior and important states.</strong><p>Already evidence-led, with strong accessibility and resilience guardrails.</p></div>
+              <div class="shift-cell is-now"><span>Now / v1.2.0</span><strong>Review system coherence separately.</strong><p>Representative widths, overflow, focus, themes, interaction states, reduced motion, and component relationships are checked without claiming more than was observed.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-section reveal" aria-labelledby="flow-title">
+          <div class="article-heading"><p class="section-label">03 / The contract</p><h2 id="flow-title">Values become<br />behavior.</h2></div>
+          <div class="system-flow" aria-label="Gridgeist v1.2 system flow">
+            <div><span>01 / Foundation</span><strong>Raw<br />values</strong><code>palette / type / space</code></div>
+            <div><span>02 / Semantic</span><strong>Product<br />roles</strong><code>canvas / text / action</code></div>
+            <div><span>03 / Component</span><strong>Behavior<br />in context</strong><code>default / focus / error</code></div>
+          </div>
+        </section>
+
+        <section class="article-section comparison-stage reveal" aria-labelledby="northline-title">
+          <div class="article-heading"><p class="section-label">04 / See the difference</p><h2 id="northline-title">Same brief.<br />A connected result.</h2></div>
+          <div class="northline-frames">
+            <div class="northline-frame">
+              <header><span>Before</span><b>Generic landing page</b></header>
+              <iframe src="../../readme-showcase/?view=before" title="Generic Northline baseline" loading="lazy"></iframe>
+              <a href="../../readme-showcase/?view=before">Open the Before page ↗</a>
+            </div>
+            <div class="northline-frame">
+              <header><span>With v1.2.0</span><b>Product-native system</b></header>
+              <iframe src="../../readme-showcase/?view=after" title="Northline rebuilt with the Gridgeist v1.2.0 system" loading="lazy"></iframe>
+              <a href="../../readme-showcase/?view=after">Open the v1.2.0 page ↗</a>
+            </div>
+          </div>
+          <p class="comparison-note">Northline and all displayed operating data are fictional. Both frames use the same product, copy, sample data, and viewport; the After version was rebuilt around the v1.2.0 system workflow.</p>
+        </section>
+
+        <section class="article-section reveal" aria-labelledby="evidence-title">
+          <div class="article-heading"><p class="section-label">05 / Evidence, not mythology</p><h2 id="evidence-title">Tested behavior.<br />Bounded claims.</h2></div>
+          <div class="evidence-grid">
+            <div class="evidence-number"><span>Fresh bilingual system runs</span><strong>6</strong></div>
+            <div class="evidence-copy">
+              <h3>Coherence was exercised in English and Thai.</h3>
+              <p>Three English and three Thai Scenario 19 implementations passed with independent responsive browser checks, and the relevant guardrails were repaired. The release and public installation paths were also verified.</p>
+              <p>This is behavioral and technical evidence—not proof of real-user usability, formal WCAG conformance, field performance, or universal agent behavior. Those claims remain open until the corresponding evidence exists.</p>
+              <ul class="source-links">
+                <li><a href="https://github.com/ohmiler/gridgeist/releases/tag/v1.2.0"><span>GitHub release</span><span>↗</span></a></li>
+                <li><a href="https://github.com/ohmiler/gridgeist/blob/main/CHANGELOG.md"><span>Changelog</span><span>↗</span></a></li>
+                <li><a href="https://github.com/ohmiler/gridgeist/blob/main/evals/prompts.md"><span>Evaluation suite</span><span>↗</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-outro reveal" aria-labelledby="outro-title">
+          <p class="section-label section-label-light">06 / In practice</p>
+          <div>
+            <h2 id="outro-title">Coherent now.<br />Extendable later.</h2>
+            <p>v1.2.0 makes Gridgeist more deliberate about when to align, what to define, how components relate, and what evidence supports the final claim. The visible improvement begins with an invisible one: the decisions now form a system.</p>
+            <a class="button button-light" href="../../#install">Install or update Gridgeist <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer><a class="wordmark" href="../">UPDATES / GRIDGEIST®</a><p>v1.2.0 / 20 July 2026</p><p>© 2026 MILER / MIT</p></footer>
+  </body>
+</html>

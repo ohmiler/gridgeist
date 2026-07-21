@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gridgeist v1.2.0 เปลี่ยนจากการตัดสินใจออกแบบแต่ละหน้าให้ดี ไปสู่ระบบ Interface ที่เชื่อมโยงและขยายต่อได้อย่างเป็นหนึ่งเดียว" />
+    <meta name="theme-color" content="#f2f0e9" />
+    <title>Gridgeist v1.2.0 - จากหน้าที่ดูดี สู่ระบบที่เป็นหนึ่งเดียว</title>
+    <link rel="canonical" href="https://ohmiler.github.io/gridgeist/th/updates/v1-2-0/" />
+    <link rel="alternate" hreflang="en" href="https://ohmiler.github.io/gridgeist/updates/v1-2-0/" />
+    <link rel="alternate" hreflang="th" href="https://ohmiler.github.io/gridgeist/th/updates/v1-2-0/" />
+    <link rel="alternate" hreflang="x-default" href="https://ohmiler.github.io/gridgeist/updates/v1-2-0/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Gridgeist" />
+    <meta property="og:title" content="Gridgeist v1.2.0 - จากหน้าที่ดูดี สู่ระบบที่เป็นหนึ่งเดียว" />
+    <meta property="og:description" content="เรื่องราวของ Foundation, Semantic roles, Component grammar, ความปลอดภัยของทิศทาง และการตรวจผลบนหลักฐาน" />
+    <meta property="og:url" content="https://ohmiler.github.io/gridgeist/th/updates/v1-2-0/" />
+    <meta property="og:image" content="https://ohmiler.github.io/gridgeist/updates/v1-2-0/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Gridgeist v1.2.0 - จากหน้าที่ดูดี สู่ระบบที่เป็นหนึ่งเดียว" />
+    <meta property="og:locale" content="th_TH" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="article:published_time" content="2026-07-20" />
+    <meta property="article:modified_time" content="2026-07-21" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gridgeist v1.2.0 - ระบบเดียวที่เชื่อมทุกการตัดสินใจ" />
+    <meta name="twitter:description" content="อะไรเปลี่ยนระหว่าง v1.1.2 และ v1.2.0 และเหตุใดผลลัพธ์จึงเป็นหนึ่งเดียวกว่าเดิม" />
+    <meta name="twitter:image" content="https://ohmiler.github.io/gridgeist/updates/v1-2-0/og-image.png" />
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"TechArticle","headline":"Gridgeist v1.2.0 - จากหน้าที่ดูดี สู่ระบบที่เป็นหนึ่งเดียว","description":"Gridgeist v1.2.0 เปลี่ยนจากการตัดสินใจออกแบบแต่ละหน้าให้ดี ไปสู่ระบบ Interface ที่เชื่อมโยงและขยายต่อได้อย่างเป็นหนึ่งเดียว","datePublished":"2026-07-20","dateModified":"2026-07-21","inLanguage":"th","author":{"@type":"Person","name":"Miler"},"publisher":{"@type":"Organization","name":"Gridgeist"},"mainEntityOfPage":"https://ohmiler.github.io/gridgeist/th/updates/v1-2-0/","image":"https://ohmiler.github.io/gridgeist/updates/v1-2-0/og-image.png"}
+    </script>
+    <link rel="icon" href="../../../favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link rel="stylesheet" href="../../thai.css" />
+    <link rel="stylesheet" href="../../../updates/updates.css" />
+    <script src="../../../script.js" defer></script>
+  </head>
+  <body class="updates-page thai-updates">
+    <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+    <header class="site-header">
+      <a class="wordmark" href="../../" aria-label="หน้าแรก Gridgeist">GRIDGEIST<span aria-hidden="true">®</span></a>
+      <nav class="desktop-nav" aria-label="เมนูหลัก"><a href="../../docs/">คู่มือ</a><a href="../../../examples/">ตัวอย่าง</a><a href="../" aria-current="page">อัปเดต</a><a href="../../#install">ติดตั้ง</a></nav>
+      <details class="mobile-menu"><summary>เมนู</summary><nav aria-label="เมนูมือถือ"><a href="../../docs/">คู่มือ</a><a href="../../../examples/">ตัวอย่าง</a><a href="../" aria-current="page">อัปเดต</a><a href="../../#install">ติดตั้ง</a></nav></details>
+      <div class="header-actions"><a class="header-language" href="../../../updates/v1-2-0/" lang="en">EN</a><a class="header-github" href="https://github.com/ohmiler/gridgeist/releases/tag/v1.2.0">Release ↗</a></div>
+    </header>
+    <main id="main">
+      <article>
+        <header class="release-hero">
+          <div class="release-hero-meta"><span>เวอร์ชัน / v1.2.0</span><time datetime="2026-07-20">20 กรกฎาคม 2026</time></div>
+          <h1>หน้าที่ดูดี.<span>ระบบที่เป็นหนึ่ง.</span></h1>
+          <p class="release-hero-summary">เวอร์ชัน 1.2.0 เปลี่ยนการตัดสินใจออกแบบที่ดีแต่ยังแยกส่วน ให้กลายเป็นระบบกระชับที่เชื่อมทั้ง Interface เข้าด้วยกันก่อนเริ่มเก็บรายละเอียด</p>
+        </header>
+
+        <section class="article-intro reveal" aria-labelledby="premise-title">
+          <p class="section-label">01 / การเปลี่ยนแปลงที่สำคัญ</p>
+          <div class="article-prose">
+            <p class="lead" id="premise-title">v1.1.2 รู้วิธีทำให้แต่ละหน้าสะท้อนผลิตภัณฑ์อยู่แล้ว ส่วน v1.2.0 ทำให้การตัดสินใจเหล่านั้นยังเชื่อมกันเมื่อผลิตภัณฑ์เติบโต</p>
+            <p>เวอร์ชันนี้ไม่ได้เพิ่มสไตล์สำเร็จรูปชุดใหม่ แต่เพิ่มสัญญาที่ชัดขึ้นระหว่างค่าภาพพื้นฐาน ความหมายที่ค่าเหล่านั้นสื่อ และ Component ที่นำไปใช้ ผลในทางปฏิบัติคือ Interface ที่ขยายต่อได้ โดยหน้าใหม่ไม่ต้องสร้างตรรกะภาพของตัวเองทุกครั้ง</p>
+            <p>นี่คือเหตุผลที่ความเปลี่ยนแปลงรู้สึกใหญ่กว่าตัวเลขเวอร์ชัน เพราะความเป็นหนึ่งเดียวถูกย้ายมาอยู่ต้นทาง ก่อนที่รายละเอียดแยกชิ้นจะค่อย ๆ หลุดออกจากกัน</p>
+          </div>
+        </section>
+
+        <section class="article-section reveal" aria-labelledby="shift-title">
+          <div class="article-heading"><p class="section-label">02 / ก่อนและตอนนี้</p><h2 id="shift-title">ความต่างอยู่ที่<br />ความสัมพันธ์.</h2></div>
+          <div class="shift-table">
+            <div class="shift-row">
+              <div class="shift-label">ระบบภาพ</div>
+              <div class="shift-cell"><span>ก่อน / v1.1.2</span><strong>มีทิศทางที่ดีตลอดขั้นตอนทำงาน</strong><p>กริด ตัวอักษร สี ระยะห่าง และ Motion ถูกพิจารณาครบ แต่ยังไม่มีสัญญากระชับชุดเดียวที่ระบุทุกความสัมพันธ์อย่างชัดเจน</p></div>
+              <div class="shift-cell is-now"><span>ตอนนี้ / v1.2.0</span><strong>กำหนดหนึ่งสัญญาก่อนเริ่มทำ</strong><p>สี ตัวอักษร Layout ระยะห่าง รูปทรง Component, State, Media และ Motion ถูกประสานเป็นระบบเดียวตามสัดส่วนของงาน</p></div>
+            </div>
+            <div class="shift-row">
+              <div class="shift-label">ความหมาย</div>
+              <div class="shift-cell"><span>ก่อน / v1.1.2</span><strong>ใช้ Token ซ้ำแทนค่าที่สร้างเฉพาะจุด</strong><p>เป็นกฎที่ดี แต่ยังเหลือพื้นที่ให้ตีความมากระหว่างค่าดิบกับหน้าที่ของมันใน Interface</p></div>
+              <div class="shift-cell is-now"><span>ตอนนี้ / v1.2.0</span><strong>Foundation → Semantic → Component</strong><p>ค่าพื้นฐานถูกผูกกับบทบาทในผลิตภัณฑ์ แล้วจึงผูกกับพฤติกรรมตามบริบท ทำให้ Contrast และ State มีเหตุผลต่อเนื่องกัน</p></div>
+            </div>
+            <div class="shift-row">
+              <div class="shift-label">Component</div>
+              <div class="shift-cell"><span>ก่อน / v1.1.2</span><strong>ออกแบบ Responsive Interface ให้ครบ</strong><p>Component ถูกสร้างจากผลิตภัณฑ์ แต่ Instance ที่เกี่ยวข้องกันยังอาจสะสมการตัดสินใจแยกชุด</p></div>
+              <div class="shift-cell is-now"><span>ตอนนี้ / v1.2.0</span><strong>กำหนด Anatomy ร่วมก่อนสร้างแต่ละชิ้น</strong><p>Control และเนื้อหาที่เกี่ยวข้องกำหนดหน้าที่ Variant, Density, State, เนื้อหายาว และกฎของ Container แคบร่วมกัน</p></div>
+            </div>
+            <div class="shift-row">
+              <div class="shift-label">ความปลอดภัยของทิศทาง</div>
+              <div class="shift-cell"><span>ก่อน / v1.1.2</span><strong>จัดแนวเมื่อยังมีความกำกวมสำคัญ</strong><p>มี Alignment gate อยู่แล้ว แต่เนื้อหากว้าง ๆ ของผลิตภัณฑ์ยังอาจถูกเข้าใจว่าเพียงพอสำหรับกำหนดทิศทางแบรนด์</p></div>
+              <div class="shift-cell is-now"><span>ตอนนี้ / v1.2.0</span><strong>ถ้ายัง Provisional ต้องหยุด</strong><p>เมื่อ Visual thesis กว้างยังไม่ลงตัว Gridgeist จะเสนอทิศทางที่ต่างกัน และยังไม่กำหนดระบบใหม่หรือแก้ Interface</p></div>
+            </div>
+            <div class="shift-row">
+              <div class="shift-label">การประสาน Skill</div>
+              <div class="shift-cell"><span>ก่อน / v1.1.2</span><strong>Gridgeist ดูแลทิศทางผลิตภัณฑ์และภาพ</strong><p>บทบาทของ Companion ถูกบันทึกไว้ แต่ Skill ที่ดูแลศิลป์ภาพกว้างซ้อนกันยังต้องอาศัยการตีความอย่างระมัดระวัง</p></div>
+              <div class="shift-cell is-now"><span>ตอนนี้ / v1.2.0</span><strong>มีเจ้าของทิศทางชัดเจนหนึ่งเดียว</strong><p>เมื่อ Art-direction skills ซ้อนกัน ระบบจะขอให้ตัดสินใจเรื่องเจ้าของ แทนการผสม Visual systems ที่แข่งขันกันโดยไม่บอก</p></div>
+            </div>
+            <div class="shift-row">
+              <div class="shift-label">การตรวจผล</div>
+              <div class="shift-cell"><span>ก่อน / v1.1.2</span><strong>ทดสอบ Responsive และ State สำคัญ</strong><p>มีแนวทางอิงหลักฐาน พร้อม Guardrail ด้าน Accessibility และความทนทานที่แข็งแรงอยู่แล้ว</p></div>
+              <div class="shift-cell is-now"><span>ตอนนี้ / v1.2.0</span><strong>ตรวจความเป็นระบบแยกเป็นเรื่องสำคัญ</strong><p>ตรวจหลายความกว้าง Overflow, Focus, Theme, Interaction states, Reduced motion และความสัมพันธ์ของ Component โดยไม่กล่าวอ้างเกินสิ่งที่สังเกตจริง</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-section reveal" aria-labelledby="flow-title">
+          <div class="article-heading"><p class="section-label">03 / สัญญาของระบบ</p><h2 id="flow-title">จากค่าพื้นฐาน<br />สู่พฤติกรรม.</h2></div>
+          <div class="system-flow" aria-label="ลำดับระบบ Gridgeist v1.2">
+            <div><span>01 / Foundation</span><strong>ค่า<br />พื้นฐาน</strong><code>palette / type / space</code></div>
+            <div><span>02 / Semantic</span><strong>บทบาทใน<br />ผลิตภัณฑ์</strong><code>canvas / text / action</code></div>
+            <div><span>03 / Component</span><strong>พฤติกรรม<br />ตามบริบท</strong><code>default / focus / error</code></div>
+          </div>
+        </section>
+
+        <section class="article-section comparison-stage reveal" aria-labelledby="northline-title">
+          <div class="article-heading"><p class="section-label">04 / ดูความแตกต่าง</p><h2 id="northline-title">โจทย์เดียวกัน.<br />ผลลัพธ์ที่เชื่อมกัน.</h2></div>
+          <div class="northline-frames">
+            <div class="northline-frame">
+              <header><span>ก่อน</span><b>Landing page ทั่วไป</b></header>
+              <iframe src="../../../readme-showcase/?view=before" title="Northline เวอร์ชันตั้งต้นแบบทั่วไป" loading="lazy"></iframe>
+              <a href="../../../readme-showcase/?view=before">เปิดหน้า Before ↗</a>
+            </div>
+            <div class="northline-frame">
+              <header><span>เมื่อใช้ v1.2.0</span><b>ระบบที่มาจากผลิตภัณฑ์</b></header>
+              <iframe src="../../../readme-showcase/?view=after" title="Northline ที่สร้างใหม่ด้วยระบบ Gridgeist v1.2.0" loading="lazy"></iframe>
+              <a href="../../../readme-showcase/?view=after">เปิดหน้า v1.2.0 ↗</a>
+            </div>
+          </div>
+          <p class="comparison-note">Northline และข้อมูลปฏิบัติการทั้งหมดเป็นตัวอย่างสมมติ ทั้งสองเฟรมใช้ผลิตภัณฑ์ เนื้อหา ข้อมูลตัวอย่าง และ Viewport เดียวกัน ส่วนเวอร์ชัน After ถูกสร้างใหม่ด้วย Workflow ของระบบ v1.2.0</p>
+        </section>
+
+        <section class="article-section reveal" aria-labelledby="evidence-title">
+          <div class="article-heading"><p class="section-label">05 / หลักฐาน ไม่ใช่เรื่องเล่าเกินจริง</p><h2 id="evidence-title">ทดสอบพฤติกรรม.<br />จำกัดคำกล่าวอ้าง.</h2></div>
+          <div class="evidence-grid">
+            <div class="evidence-number"><span>รอบระบบใหม่สองภาษา</span><strong>6</strong></div>
+            <div class="evidence-copy">
+              <h3>ความเป็นระบบถูกทดสอบทั้งภาษาไทยและอังกฤษ</h3>
+              <p>Implementation ของ Scenario 19 ภาษาอังกฤษสามรอบและภาษาไทยสามรอบผ่าน พร้อมการตรวจ Responsive ด้วย Browser แบบอิสระ และ Guardrail ที่เกี่ยวข้องได้รับการซ่อมแล้ว เส้นทาง Release และการติดตั้งสาธารณะได้รับการตรวจเช่นกัน</p>
+              <p>นี่คือหลักฐานเชิงพฤติกรรมและเทคนิค ไม่ใช่ข้อพิสูจน์เรื่อง Usability จากผู้ใช้จริง การผ่าน WCAG อย่างเป็นทางการ Field performance หรือพฤติกรรมของ Agent ทุกกรณี เรื่องเหล่านั้นยังเปิดอยู่จนกว่าจะมีหลักฐานตรงประเภท</p>
+              <ul class="source-links">
+                <li><a href="https://github.com/ohmiler/gridgeist/releases/tag/v1.2.0"><span>GitHub Release</span><span>↗</span></a></li>
+                <li><a href="https://github.com/ohmiler/gridgeist/blob/main/CHANGELOG.md"><span>Changelog</span><span>↗</span></a></li>
+                <li><a href="https://github.com/ohmiler/gridgeist/blob/main/evals/prompts.th.md"><span>ชุดการประเมิน</span><span>↗</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-outro reveal" aria-labelledby="outro-title">
+          <p class="section-label section-label-light">06 / ในการใช้งานจริง</p>
+          <div>
+            <h2 id="outro-title">เป็นหนึ่งในวันนี้.<br />ขยายต่อได้ในวันหน้า.</h2>
+            <p>v1.2.0 ทำให้ Gridgeist รอบคอบขึ้นว่าเมื่อใดควรจัดแนว ต้องกำหนดอะไร Component เชื่อมกันอย่างไร และหลักฐานใดรองรับข้อสรุป ความเปลี่ยนแปลงที่มองเห็นเริ่มจากสิ่งที่มองไม่เห็น นั่นคือการตัดสินใจทั้งหมดกลายเป็นระบบเดียวกัน</p>
+            <a class="button button-light" href="../../#install">ติดตั้งหรืออัปเดต Gridgeist <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer><a class="wordmark" href="../">อัปเดต / GRIDGEIST®</a><p>v1.2.0 / 20 กรกฎาคม 2026</p><p>© 2026 MILER / MIT</p></footer>
+  </body>
+</html>
