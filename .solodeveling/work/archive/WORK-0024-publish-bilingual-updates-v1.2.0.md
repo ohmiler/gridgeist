@@ -4,13 +4,14 @@ solodeveling_schema: 1
 
 # WORK-0024: Publish the bilingual v1.2.0 Updates story
 
-- **Status:** Active
+- **Status:** Completed
 - **Class:** Standard
 - **Opened:** 2026-07-21
 - **Operator:** Codex, acting on the repository owner's instruction
 - **Authority:** After local implementation and verification were reported, the
   user explicitly authorized commit, push to main, deployment observation, and
   production verification.
+- **Completed:** 2026-07-21
 
 ## Release boundary
 
@@ -48,3 +49,14 @@ solodeveling_schema: 1
 ## Evidence
 
 - `.solodeveling/evidence/EVIDENCE-0026-publish-bilingual-updates-v1.2.0.md`
+
+## Outcome
+
+- Candidate 7911a8f8ab2b660c46411dc72044eeedd81aad96 was committed and pushed
+  to origin/main without divergence.
+- Validation run 29834100269 and Pages run 29834100320 completed successfully.
+- Eight production route/viewport checks passed across the four EN/TH Updates
+  routes at 360 and 1600 px with HTTP 200, zero overflow, no broken images, and
+  no runtime errors.
+- Production canonical/hreflang, TechArticle identity, sitemap discovery, robots
+  identity, and the 1200 x 630 social PNG passed as recorded in EVIDENCE-0026.
